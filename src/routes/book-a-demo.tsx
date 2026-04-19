@@ -97,7 +97,7 @@ function BookDemoPage() {
               </p>
               <div className="mt-8 space-y-4 text-sm">
                 <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-accent" /> +1 (toll-free) coming soon</div>
-                <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /> demo@mascons.ca</div>
+                <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /> support@mascons.ca</div>
                 <div className="flex items-center gap-3"><Shield className="h-4 w-4 text-accent" /> Your data is never shared.</div>
               </div>
             </div>
@@ -167,7 +167,7 @@ function BookDemoPage() {
                 {submitting ? "Submitting..." : "Book My Demo →"}
               </Button>
               <p className="text-xs text-muted-foreground text-center">
-                Prefer to talk first? Email <a href="mailto:demo@mascons.ca" className="text-primary underline-offset-4 hover:underline">demo@mascons.ca</a>
+                Prefer to talk first? Email <a href="mailto:support@mascons.ca" className="text-primary underline-offset-4 hover:underline">support@mascons.ca</a>
               </p>
             </form>
           </div>
