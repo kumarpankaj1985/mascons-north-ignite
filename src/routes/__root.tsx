@@ -36,6 +36,12 @@ export const Route = createRootRoute({
       { name: "author", content: "Mascons" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Mascons Canada — Intelligent Fintech & Agentic AI" },
+      { name: "twitter:title", content: "Mascons Canada — Intelligent Fintech & Agentic AI" },
+      { property: "og:description", content: "White-labeled fintech platforms and Agentic AI solutions for Canada and the USA. Book a free AI audit today." },
+      { name: "twitter:description", content: "White-labeled fintech platforms and Agentic AI solutions for Canada and the USA. Book a free AI audit today." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da3f3301-1563-4707-aff7-a20c8e74aade/id-preview-f638ce1c--8104feea-edda-49e5-824c-57cdf40578c3.lovable.app-1776599434562.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/da3f3301-1563-4707-aff7-a20c8e74aade/id-preview-f638ce1c--8104feea-edda-49e5-824c-57cdf40578c3.lovable.app-1776599434562.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
