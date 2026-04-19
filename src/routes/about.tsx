@@ -43,10 +43,9 @@ function AboutPage() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            Mascons was founded with one belief: that great financial technology should be accessible
-            to every business — not just the biggest players. Our founders, <span className="text-foreground font-semibold">Gaurav Gupta</span> and{" "}
-            <span className="text-foreground font-semibold">Pankaj Kumar</span>, spent over a decade building, scaling, and exiting fintech ventures
-            before bringing that same operator's eye to Mascons.
+            MASCONS was founded with one belief: that great financial technology should be accessible
+            to every business — not just the biggest players. Over the past decade and a half, we've
+            built, scaled, and launched fintech platforms trusted by clients on three continents.
           </p>
           <p>
             Today we deliver locally-relevant, compliance-aware solutions — backed by a global team of
@@ -58,28 +57,6 @@ function AboutPage() {
             to businesses across Canada and the United States — with North American support, North American
             compliance, and the same battle-tested infrastructure trusted by clients on three continents.
           </p>
-        </div>
-      </section>
-
-      {/* FOUNDERS */}
-      <section className="bg-surface/30 border-y border-border/50">
-        <div className="mx-auto max-w-7xl px-4 md:px-8 py-20">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">Our Founders</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              { name: "Gaurav Gupta", role: "Co-Founder & CEO", bio: "15+ years in fintech leadership. Two successful exits. Sets product vision and North American strategy." },
-              { name: "Pankaj Kumar", role: "Co-Founder & MD", bio: "Operations veteran with deep banking and compliance expertise. Leads delivery and partnerships." },
-            ].map((p) => (
-              <div key={p.name} className="glass-card rounded-2xl p-8 shadow-card">
-                <div className="h-20 w-20 rounded-2xl bg-gradient-brand flex items-center justify-center text-2xl font-bold text-brand-foreground mb-5 shadow-glow">
-                  {p.name.split(" ").map((n) => n[0]).join("")}
-                </div>
-                <h3 className="text-xl font-bold">{p.name}</h3>
-                <p className="text-sm text-accent font-medium mt-1">{p.role}</p>
-                <p className="mt-4 text-muted-foreground leading-relaxed">{p.bio}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

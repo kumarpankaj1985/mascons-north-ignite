@@ -11,7 +11,7 @@ export function SiteFooter() {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-brand">
                 <Sparkles className="h-5 w-5 text-brand-foreground" />
               </div>
-              <span className="text-lg font-bold">Mascons</span>
+              <span className="text-lg font-bold">MASCONS</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               Intelligent Fintech & Agentic AI solutions, purpose-built for Canada and the United States.
@@ -46,7 +46,10 @@ export function SiteFooter() {
           <div>
             <h4 className="text-sm font-semibold mb-4">Get in touch</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> demo@mascons.ca</li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <span>support@mascons.ca</span>
+              </li>
               <li>Mon–Fri · 9 AM – 6 PM EST/PST</li>
               <li>Toronto · Vancouver · New York</li>
             </ul>

@@ -63,7 +63,7 @@ function ContactPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { icon: Mail, title: "Sales & Demos", lines: ["demo@mascons.ca", "Within 4 business hours"] },
+            { icon: Mail, title: "Sales & Demos", lines: ["support@mascons.ca", "Within 4 business hours"] },
             { icon: HandshakeIcon, title: "Partnerships", lines: ["partners@mascons.ca", "Referral program available"] },
             { icon: Briefcase, title: "Careers", lines: ["careers@mascons.ca", "Engineering, Product, AI, Sales"] },
           ].map((c) => (

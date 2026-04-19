@@ -22,7 +22,7 @@ export function SiteHeader() {
             <Sparkles className="h-5 w-5 text-brand-foreground" />
           </div>
           <div className="flex flex-col leading-none">
-            <span className="text-lg font-bold tracking-tight">Mascons</span>
+            <span className="text-lg font-bold tracking-tight">MASCONS</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Canada · USA</span>
           </div>
         </Link>
