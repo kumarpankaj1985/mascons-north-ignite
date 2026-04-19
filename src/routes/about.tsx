@@ -43,10 +43,9 @@ function AboutPage() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            Mascons was founded with one belief: that great financial technology should be accessible
-            to every business — not just the biggest players. Our founders, <span className="text-foreground font-semibold">Gaurav Gupta</span> and{" "}
-            <span className="text-foreground font-semibold">Pankaj Kumar</span>, spent over a decade building, scaling, and exiting fintech ventures
-            before bringing that same operator's eye to Mascons.
+            MASCONS was founded with one belief: that great financial technology should be accessible
+            to every business — not just the biggest players. Over the past decade and a half, we've
+            built, scaled, and launched fintech platforms trusted by clients on three continents.
           </p>
           <p>
             Today we deliver locally-relevant, compliance-aware solutions — backed by a global team of
