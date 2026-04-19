@@ -61,28 +61,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* FOUNDERS */}
-      <section className="bg-surface/30 border-y border-border/50">
-        <div className="mx-auto max-w-7xl px-4 md:px-8 py-20">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">Our Founders</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              { name: "Gaurav Gupta", role: "Co-Founder & CEO", bio: "15+ years in fintech leadership. Two successful exits. Sets product vision and North American strategy." },
-              { name: "Pankaj Kumar", role: "Co-Founder & MD", bio: "Operations veteran with deep banking and compliance expertise. Leads delivery and partnerships." },
-            ].map((p) => (
-              <div key={p.name} className="glass-card rounded-2xl p-8 shadow-card">
-                <div className="h-20 w-20 rounded-2xl bg-gradient-brand flex items-center justify-center text-2xl font-bold text-brand-foreground mb-5 shadow-glow">
-                  {p.name.split(" ").map((n) => n[0]).join("")}
-                </div>
-                <h3 className="text-xl font-bold">{p.name}</h3>
-                <p className="text-sm text-accent font-medium mt-1">{p.role}</p>
-                <p className="mt-4 text-muted-foreground leading-relaxed">{p.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* VALUES */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="text-center max-w-2xl mx-auto mb-14">
