@@ -17,8 +17,13 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
-        <Link to="/" className="flex items-center gap-2 group">
-          <img src="/logo-mascons.png" alt="MASCONS" className="h-9" />
+        <Link to="/" className="flex items-center gap-1 group">
+          <span className="text-xl font-extrabold tracking-tight text-foreground">MASCONS</span>
+          <span className="flex gap-[2px] ml-0.5">
+            <span className="w-[3px] h-5 bg-accent rounded-sm" />
+            <span className="w-[3px] h-5 bg-accent rounded-sm opacity-70" />
+            <span className="w-[3px] h-5 bg-accent rounded-sm opacity-40" />
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
