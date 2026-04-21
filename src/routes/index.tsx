@@ -9,9 +9,9 @@ import heroImg from "@/assets/hero-mascons.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons Canada — Intelligent Fintech & Agentic AI for North America" },
-      { name: "description", content: "White-labeled fintech platforms and Agentic AI solutions transforming how Canadian and US businesses operate, grow, and compete." },
-      { property: "og:title", content: "Mascons Canada — Intelligent Fintech & Agentic AI" },
+      { title: "Mascons — Intelligent Fintech & Agentic AI Solutions" },
+      { name: "description", content: "White-labeled fintech platforms and Agentic AI solutions transforming how businesses operate, grow, and compete globally." },
+      { property: "og:title", content: "Mascons — Intelligent Fintech & Agentic AI" },
       { property: "og:description", content: "Launch-ready fintech platforms and live Agentic AI products. Book a free AI audit." },
     ],
   }),
@@ -36,7 +36,7 @@ const whyUs = [
   "Proven founders with 15+ years in fintech and 2 successful exits",
   "Live AI products already deployed — not concepts, not prototypes",
   "End-to-end support: from AI readiness audit to full implementation",
-  "North America-focused delivery with a global product foundation",
+  "Global delivery with deep domain expertise in financial services",
   "White-label first: you own the brand, we power the technology",
 ];
 
@@ -56,16 +56,16 @@ function HomePage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-              Now serving Canada & the United States
+              Serving businesses globally
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
               Intelligent Fintech &{" "}
               <span className="text-gradient-brand">Agentic AI</span>{" "}
-              for North America
+              for your business
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
               We build white-labeled fintech platforms and deploy Agentic AI solutions that
-              transform how North American businesses operate, grow, and compete.
+              transform how businesses operate, grow, and compete.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Button asChild variant="hero" size="xl">
@@ -209,8 +209,8 @@ function HomePage() {
         <div className="mx-auto max-w-7xl px-4 md:px-8 py-24">
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { q: "Mascons delivered our digital wallet in record time. The platform is rock solid.", a: "Director of Product", c: "Fintech, Toronto" },
-              { q: "Their AI audit identified 4 areas where we could automate immediately. The ROI was instant.", a: "VP Operations", c: "Logistics, New York" },
+              { q: "Mascons delivered our digital wallet in record time. The platform is rock solid.", a: "Director of Product", c: "Fintech Client" },
+              { q: "Their AI audit identified 4 areas where we could automate immediately. The ROI was instant.", a: "VP Operations", c: "Logistics Enterprise" },
             ].map((t) => (
               <div key={t.q} className="glass-card rounded-2xl p-8 shadow-card">
                 <Zap className="h-6 w-6 text-accent mb-4" />
@@ -251,8 +251,8 @@ function ShieldStrip() {
     <div className="border-t border-border/50 bg-surface/40">
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-xs text-muted-foreground">
         <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> PCI-DSS Compliant Infrastructure</div>
-        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> SOC 2 aligned controls</div>
-        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> Canadian + US data residency</div>
+        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> SOC 2 Aligned Controls</div>
+        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> Global Data Residency</div>
       </div>
     </div>
   );

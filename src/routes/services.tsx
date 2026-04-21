@@ -5,9 +5,9 @@ import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, Check
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Fintech Services — Mascons Canada" },
-      { name: "description", content: "White-labeled digital wallets, card management, remittance, branchless banking, corporate expense, and Banking as a Service for Canada and the USA." },
-      { property: "og:title", content: "Fintech-as-a-Service — Mascons Canada" },
+      { title: "Fintech Services — Mascons" },
+      { name: "description", content: "White-labeled digital wallets, card management, remittance, branchless banking, corporate expense, and Banking as a Service — built to launch." },
+      { property: "og:title", content: "Fintech-as-a-Service — Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand." },
     ],
   }),
@@ -18,9 +18,9 @@ const services = [
   {
     icon: Wallet,
     title: "Digital Wallet",
-    desc: "Give your customers a seamless, secure digital wallet experience supporting P2P, bills, merchant payments, and loyalty — all under your brand.",
+    desc: "Empower your customers with a seamless, secure digital wallet experience — P2P, bills, merchant payments, and loyalty — all under your brand.",
     features: [
-      "Multi-currency wallet for CAD & USD markets",
+      "Multi-currency wallet support",
       "Instant P2P transfers and QR-based payments",
       "PCI-DSS compliant infrastructure",
       "Full white-label customization",
@@ -30,23 +30,23 @@ const services = [
   {
     icon: CreditCard,
     title: "Card Management Solution",
-    desc: "Issue, manage, and secure prepaid, debit, and credit card programs with a fully featured backend and customer-facing controls.",
+    desc: "Simplify your payment processes. Issue, manage, and secure prepaid, debit, and credit card programs with a fully featured backend.",
     features: [
       "Virtual & physical card issuance",
       "Real-time spend controls and limits",
       "Tokenization & 3DS-2 secure authentication",
       "Loyalty and rewards program engine",
-      "Network-agnostic (Visa, Mastercard, Interac)",
+      "Network-agnostic (Visa, Mastercard)",
     ],
   },
   {
     icon: Send,
     title: "Remittance Platform",
-    desc: "Move money across borders effortlessly. Compliant, fast, and built for the diverse Canadian and US diaspora corridors.",
+    desc: "Effortlessly transfer money across borders. Compliant, fast, and built for diverse corridors worldwide.",
     features: [
-      "Multi-corridor support (Canada, USA, India, LATAM, more)",
+      "Multi-corridor support globally",
       "FX rate aggregation and best-price routing",
-      "FINTRAC and FinCEN compliance built in",
+      "Compliance frameworks built in",
       "Cash pickup, wallet, and bank account payouts",
       "Mobile-first sender experience",
     ],
@@ -54,7 +54,7 @@ const services = [
   {
     icon: Receipt,
     title: "Corporate Expense Management",
-    desc: "Replace spreadsheets and manual approval chains with an intelligent expense platform — ideal for distributed teams across North America.",
+    desc: "Manage corporate expenses effectively with real-time tracking and insights to optimize your financial operations.",
     features: [
       "Mobile receipt scanning with OCR",
       "Policy-based auto-approval workflows",
@@ -66,7 +66,7 @@ const services = [
   {
     icon: Building2,
     title: "Branchless Banking Platform",
-    desc: "Enable banking access through agents, mobile apps, or kiosks — without physical branch overhead. Perfect for credit unions and community banks.",
+    desc: "Transform your banking experience — accessible and efficient banking services without physical branch overhead.",
     features: [
       "Agent banking network management",
       "Mobile-first account opening and KYC",
@@ -78,7 +78,7 @@ const services = [
   {
     icon: Layers,
     title: "Banking as a Service (BaaS)",
-    desc: "Embed banking, payments, and card capabilities into your own product. Launch your fintech in weeks, not years.",
+    desc: "Unlock seamless banking solutions. Embed banking, payments, and card capabilities into your own product.",
     features: [
       "Modular APIs for accounts, payments, and cards",
       "Sponsor bank network access",

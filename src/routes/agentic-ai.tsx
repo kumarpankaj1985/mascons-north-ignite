@@ -8,9 +8,9 @@ import {
 export const Route = createFileRoute("/agentic-ai")({
   head: () => ({
     meta: [
-      { title: "Agentic AI Solutions — Mascons Canada" },
+      { title: "Agentic AI Solutions — Mascons" },
       { name: "description", content: "Live, deployed Agentic AI products: AI recruitment, expense management, calling, meeting notetaker, procurement, accounting, and more. Start with a free AI audit." },
-      { property: "og:title", content: "Agentic AI for North American Business" },
+      { property: "og:title", content: "Agentic AI for Business — Mascons" },
       { property: "og:description", content: "Live AI products. Free AI audit. Measurable ROI within 90 days." },
     ],
   }),
@@ -22,7 +22,7 @@ const products = [
   { icon: Wallet, title: "AI-Based Expense Management", desc: "Beyond tracking — predict overspend, flag policy violations, and auto-categorize every transaction.", points: ["Receipt OCR and smart auto-categorization", "Anomaly detection for fraud and policy violations", "Predictive budget alerts before limits are breached", "Natural language spend queries", "CFO-ready dashboards with zero manual entry"] },
   { icon: Shirt, title: "AI Wardrobe & Fashion Recommendation", desc: "Personalized styling for retail, e-commerce, and apparel brands. Higher AOV, lower returns.", points: ["Computer vision style matching", "Occasion- and weather-aware recommendations", "Virtual try-on integration", "Personalized merchandising for storefronts", "Loyalty and engagement uplift analytics"] },
   { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent voice agents for sales, support, collections, and surveys — human-grade conversations at scale.", points: ["Natural-sounding multi-accent voice models", "CRM and helpdesk integrations", "Sentiment and intent analysis on every call", "Compliance-aware scripting and recording", "Real-time human handoff when needed"] },
-  { icon: Mic, title: "AI Meeting Notetaker (Vernacular)", desc: "Joins your meetings, transcribes in real time, summarizes, and assigns action items — in English, French, and regional accents.", points: ["English and Canadian French out of the box", "Real-time transcription and post-meeting summary", "Automatic action items with owners and deadlines", "Zoom, Teams, Google Meet, Webex integrations", "Searchable meeting library with semantic search"] },
+  { icon: Mic, title: "AI Meeting Notetaker (Vernacular)", desc: "Joins your meetings, transcribes in real time, summarizes, and assigns action items — in multiple languages.", points: ["Multi-language support out of the box", "Real-time transcription and post-meeting summary", "Automatic action items with owners and deadlines", "Zoom, Teams, Google Meet, Webex integrations", "Searchable meeting library with semantic search"] },
   { icon: ClipboardList, title: "AI Tender & Procurement Management", desc: "Automate the full procurement cycle — from tender creation to bid evaluation, contracts, and compliance.", points: ["Automated tender drafting and vendor outreach", "AI bid evaluation against multiple criteria", "Risk flagging and supplier recommendation", "Contract generation and e-signature workflow", "Cycles reduced by up to 50%"] },
   { icon: Calculator, title: "AI Accounting Management System", desc: "Continuous, autonomous accounting — from invoice ingestion to ledger entries, reconciliation, and reporting.", points: ["Invoice and document OCR with auto-coding", "Bank reconciliation in minutes, not days", "Anomaly and duplicate detection", "Real-time P&L and cash flow dashboards", "Audit-ready logs with full traceability"] },
 ];
