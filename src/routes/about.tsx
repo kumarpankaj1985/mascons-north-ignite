@@ -24,12 +24,12 @@ const values = [
 const leadership = [
   {
     name: "Gaurav Gupta",
-    role: "Co-Founder & CEO",
+    role: "Co-Founder",
     desc: "With over 15 years of experience in fintech and enterprise technology, Gaurav drives the strategic vision and global growth of Mascons. He has led multiple fintech product launches across three continents and overseen two successful exits.",
   },
   {
     name: "Pankaj Kumar",
-    role: "Co-Founder & CTO",
+    role: "Co-Founder",
     desc: "Pankaj leads Mascons' technology architecture and product engineering. A hands-on technologist with deep expertise in payments, digital banking, and AI/ML systems, he ensures every product Mascons ships is scalable, secure, and production-ready.",
   },
   {

@@ -7,8 +7,13 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-14">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-2">
-              <img src="/logo-mascons.png" alt="MASCONS" className="h-9" />
+            <Link to="/" className="flex items-center gap-1">
+              <span className="text-xl font-extrabold tracking-tight text-foreground">MASCONS</span>
+              <span className="flex gap-[2px] ml-0.5">
+                <span className="w-[3px] h-5 bg-accent rounded-sm" />
+                <span className="w-[3px] h-5 bg-accent rounded-sm opacity-70" />
+                <span className="w-[3px] h-5 bg-accent rounded-sm opacity-40" />
+              </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               Intelligent Fintech & Agentic AI solutions for businesses worldwide.
