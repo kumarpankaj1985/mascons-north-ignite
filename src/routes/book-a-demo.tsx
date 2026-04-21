@@ -12,9 +12,9 @@ import { CheckCircle2, Calendar, Phone, Mail, Shield, Clock, Users, Target } fro
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
     meta: [
-      { title: "Book a Demo — Mascons Canada" },
+      { title: "Book a Demo — Mascons" },
       { name: "description", content: "See the future of your business — live. Book a 45-minute Mascons demo and explore fintech infrastructure or Agentic AI for your organization." },
-      { property: "og:title", content: "Book a Demo — Mascons Canada" },
+      { property: "og:title", content: "Book a Demo — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
     ],
   }),
@@ -96,8 +96,7 @@ function BookDemoPage() {
                 4 business hours to confirm your time.
               </p>
               <div className="mt-8 space-y-4 text-sm">
-                <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-accent" /> +1 (toll-free) coming soon</div>
-                <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /> support@mascons.ca</div>
+                <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-accent" /> support@mascons.in</div>
                 <div className="flex items-center gap-3"><Shield className="h-4 w-4 text-accent" /> Your data is never shared.</div>
               </div>
             </div>
@@ -127,8 +126,11 @@ function BookDemoPage() {
                   <Select>
                     <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="ca">Canada</SelectItem>
+                      <SelectItem value="in">India</SelectItem>
                       <SelectItem value="us">USA</SelectItem>
+                      <SelectItem value="uk">UK</SelectItem>
+                      <SelectItem value="ca">Canada</SelectItem>
+                      <SelectItem value="ae">UAE</SelectItem>
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
@@ -167,7 +169,7 @@ function BookDemoPage() {
                 {submitting ? "Submitting..." : "Book My Demo →"}
               </Button>
               <p className="text-xs text-muted-foreground text-center">
-                Prefer to talk first? Email <a href="mailto:support@mascons.ca" className="text-primary underline-offset-4 hover:underline">support@mascons.ca</a>
+                Prefer to talk first? Email <a href="mailto:support@mascons.in" className="text-primary underline-offset-4 hover:underline">support@mascons.in</a>
               </p>
             </form>
           </div>

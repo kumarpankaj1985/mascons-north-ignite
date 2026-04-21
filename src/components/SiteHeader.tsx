@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const nav = [
@@ -18,13 +18,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-brand shadow-glow">
-            <Sparkles className="h-5 w-5 text-brand-foreground" />
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-lg font-bold tracking-tight">MASCONS</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Canada · USA</span>
-          </div>
+          <img src="/logo-mascons.png" alt="MASCONS" className="h-9" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

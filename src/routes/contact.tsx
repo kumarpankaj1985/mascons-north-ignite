@@ -11,10 +11,10 @@ import { Mail, MapPin, Clock, Linkedin, Twitter, Youtube, Briefcase, HandshakeIc
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Mascons Canada" },
-      { name: "description", content: "Talk to Mascons. Sales, partnerships, careers, and support across Canada and the United States." },
-      { property: "og:title", content: "Contact — Mascons Canada" },
-      { property: "og:description", content: "Reach our North American team. Response within 4 business hours." },
+      { title: "Contact — Mascons" },
+      { name: "description", content: "Talk to Mascons. Sales, partnerships, careers, and support worldwide." },
+      { property: "og:title", content: "Contact — Mascons" },
+      { property: "og:description", content: "Reach our team. Response within 4 business hours." },
     ],
   }),
   component: ContactPage,
@@ -22,8 +22,7 @@ export const Route = createFileRoute("/contact")({
 
 const faqs = [
   { q: "How quickly can Mascons deploy a solution?", a: "For our standard fintech platforms, deployment typically takes 4–8 weeks from contract signing. AI solutions vary by complexity — our off-the-shelf AI products can go live in as few as 2 weeks." },
-  { q: "Do you offer customization for Canadian regulatory requirements?", a: "Yes. Our platforms support FINTRAC, OSFI, PIPEDA, and provincial requirements out of the box, with deeper customization available for credit unions, NBFCs, and federally regulated entities." },
-  { q: "Can you serve both Canadian and US clients?", a: "Absolutely. Our platforms support multi-currency (CAD, USD), multi-jurisdiction compliance (FINTRAC, FinCEN), and bilingual interfaces (English, Canadian French)." },
+  { q: "Do you offer customization for regulatory requirements?", a: "Yes. Our platforms support various regulatory frameworks out of the box, with deeper customization available for banks, NBFCs, and regulated entities in any jurisdiction." },
   { q: "Do you offer pilots or POCs before a full engagement?", a: "Yes — most of our AI products are available as 30-day pilots so you can validate ROI before committing to a full rollout." },
 ];
 
@@ -54,7 +53,7 @@ function ContactPage() {
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Sales, partnerships, careers, or just curious — we'd love to hear from you.
-            Our North American team responds within 4 business hours.
+            Our team responds within 4 business hours.
           </p>
         </div>
       </section>
@@ -63,9 +62,9 @@ function ContactPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { icon: Mail, title: "Sales & Demos", lines: ["support@mascons.ca", "Within 4 business hours"] },
-            { icon: HandshakeIcon, title: "Partnerships", lines: ["partners@mascons.ca", "Referral program available"] },
-            { icon: Briefcase, title: "Careers", lines: ["careers@mascons.ca", "Engineering, Product, AI, Sales"] },
+            { icon: Mail, title: "Sales & Demos", lines: ["support@mascons.in", "Within 4 business hours"] },
+            { icon: HandshakeIcon, title: "Partnerships", lines: ["support@mascons.in", "Partnership inquiries welcome"] },
+            { icon: Briefcase, title: "Careers", lines: ["support@mascons.in", "Engineering, Product, AI, Sales"] },
           ].map((c) => (
             <div key={c.title} className="glass-card rounded-2xl p-7 shadow-card">
               <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand mb-5 shadow-glow">
@@ -85,16 +84,19 @@ function ContactPage() {
         <div className="mx-auto max-w-5xl px-4 md:px-8 py-20 grid md:grid-cols-5 gap-10">
           <div className="md:col-span-2 space-y-6">
             <div>
-              <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> North America</h3>
-              <p className="mt-2 text-muted-foreground text-sm leading-relaxed">Toronto · Vancouver · New York · San Francisco</p>
+              <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Headquarters</h3>
+              <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+                648/A, 4th Floor, Binnamangala 1st Stage,<br />
+                Indiranagar, Bangalore - 560038
+              </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> Hours</h3>
-              <p className="mt-2 text-muted-foreground text-sm">Mon–Fri · 9 AM – 6 PM EST/PST</p>
+              <p className="mt-2 text-muted-foreground text-sm">Mon–Fri · 9 AM – 6 PM IST</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Global HQ</h3>
-              <p className="mt-2 text-muted-foreground text-sm">info@mascons.in · www.mascons.in</p>
+              <h3 className="text-lg font-semibold flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> Email</h3>
+              <p className="mt-2 text-muted-foreground text-sm">support@mascons.in · www.mascons.in</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-3">Follow</h3>
@@ -133,27 +135,6 @@ function ContactPage() {
               {submitting ? "Sending..." : "Send Message"}
             </Button>
           </form>
-        </div>
-      </section>
-
-      {/* PARTNER PROGRAM */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
-        <div className="relative overflow-hidden rounded-3xl glass-card p-10 md:p-14 shadow-elevated">
-          <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
-          <div className="relative max-w-3xl">
-            <p className="text-sm font-semibold text-accent uppercase tracking-widest">Referral Partner Program</p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
-              Refer clients. <span className="text-gradient-brand">Earn commissions.</span>
-            </h2>
-            <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              Are you a consultant, IT firm, staffing agency, or financial services provider in
-              Canada or the USA? Join the Mascons Referral Partner Program and earn competitive
-              commissions on every client you refer. We handle delivery — you earn.
-            </p>
-            <Button asChild variant="hero" size="lg" className="mt-8">
-              <a href="mailto:partners@mascons.ca">Become a Partner</a>
-            </Button>
-          </div>
         </div>
       </section>
 
