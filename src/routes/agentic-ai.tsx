@@ -4,6 +4,7 @@ import {
   Bot, Brain, Users, Wallet, Shirt, PhoneCall, Mic, ClipboardList, Calculator,
   ArrowRight, Search, Lightbulb, Rocket, CheckCircle2, Sparkles,
 } from "lucide-react";
+import aiHero from "@/assets/ai-hero.jpg";
 
 export const Route = createFileRoute("/agentic-ai")({
   head: () => ({
@@ -39,6 +40,11 @@ function AIPage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero border-b border-border/50">
         <div className="absolute inset-0 grid-bg opacity-30" />
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{ backgroundImage: `url(${aiHero})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/65 to-background" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-24 md:py-32">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
             <Sparkles className="h-3.5 w-3.5 text-accent" /> Live products · Real deployments

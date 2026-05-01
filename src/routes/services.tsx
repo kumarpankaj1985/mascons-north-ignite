@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, CheckCircle2 } from "lucide-react";
+import fintechHero from "@/assets/fintech-hero.jpg";
+import walletPhoto from "@/assets/wallet-photo.jpg";
+import globalPhoto from "@/assets/global-photo.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -95,6 +98,11 @@ function ServicesPage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero border-b border-border/50">
         <div className="absolute inset-0 grid-bg opacity-30" />
+        <div
+          className="absolute inset-0 opacity-25"
+          style={{ backgroundImage: `url(${fintechHero})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-24 md:py-32">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">Fintech-as-a-Service</p>
           <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight max-w-4xl leading-[1.05]">
@@ -108,6 +116,28 @@ function ServicesPage() {
           <div className="mt-8 flex gap-4">
             <Button asChild variant="hero" size="lg"><Link to="/book-a-demo">Book a Demo</Link></Button>
             <Button asChild variant="glow" size="lg"><Link to="/agentic-ai">Explore Agentic AI</Link></Button>
+          </div>
+        </div>
+      </section>
+
+      {/* VISUAL STRIP */}
+      <section className="mx-auto max-w-7xl px-4 md:px-8 pt-16">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
+            <img src={walletPhoto} alt="Branded digital wallet on mobile" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6">
+              <p className="text-xs font-semibold text-accent uppercase tracking-widest">Wallet & Cards</p>
+              <h3 className="mt-1 text-xl font-bold">Your brand, in every customer's pocket</h3>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
+            <img src={globalPhoto} alt="Global remittance corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6">
+              <p className="text-xs font-semibold text-accent uppercase tracking-widest">Global Rails</p>
+              <h3 className="mt-1 text-xl font-bold">Cross-border payments, ready to launch</h3>
+            </div>
           </div>
         </div>
       </section>

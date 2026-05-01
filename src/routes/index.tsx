@@ -5,6 +5,8 @@ import {
   ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mascons.jpg";
+import fintechPillar from "@/assets/fintech-pillar.jpg";
+import aiPillar from "@/assets/ai-pillar.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
@@ -112,32 +114,44 @@ function HomePage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="glass-card rounded-2xl p-8 md:p-10 shadow-card hover:shadow-elevated transition-all group">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
-              <Building2 className="h-6 w-6 text-brand-foreground" />
+          <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
+            <div className="relative aspect-[16/9] overflow-hidden">
+              <img src={fintechPillar} alt="Fintech infrastructure visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
-            <h3 className="text-2xl font-bold mb-3">Fintech-as-a-Service</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              White-labeled, launch-ready platforms — digital wallets, card management, remittance,
-              branchless banking, corporate expense, and Banking as a Service.
-            </p>
-            <Link to="/services" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-              Explore Fintech <ArrowRight className="h-4 w-4" />
-            </Link>
+            <div className="p-8 md:p-10 -mt-6 relative">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
+                <Building2 className="h-6 w-6 text-brand-foreground" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Fintech-as-a-Service</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                White-labeled, launch-ready platforms — digital wallets, card management, remittance,
+                branchless banking, corporate expense, and Banking as a Service.
+              </p>
+              <Link to="/services" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                Explore Fintech <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
 
-          <div className="glass-card rounded-2xl p-8 md:p-10 shadow-card hover:shadow-elevated transition-all group">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
-              <Bot className="h-6 w-6 text-brand-foreground" />
+          <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
+            <div className="relative aspect-[16/9] overflow-hidden">
+              <img src={aiPillar} alt="Agentic AI visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
-            <h3 className="text-2xl font-bold mb-3">Agentic AI Solutions</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              We assess your organization, identify the highest-impact AI opportunities, and deploy
-              ready-built or custom AI agents that automate your workflows.
-            </p>
-            <Link to="/agentic-ai" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-              Explore Agentic AI <ArrowRight className="h-4 w-4" />
-            </Link>
+            <div className="p-8 md:p-10 -mt-6 relative">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
+                <Bot className="h-6 w-6 text-brand-foreground" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Agentic AI Solutions</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                We assess your organization, identify the highest-impact AI opportunities, and deploy
+                ready-built or custom AI agents that automate your workflows.
+              </p>
+              <Link to="/agentic-ai" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                Explore Agentic AI <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
