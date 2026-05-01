@@ -208,8 +208,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CLIENTS & PARTNERS */}
-      <ClientsSection />
 
       {/* TESTIMONIALS */}
       <section className="border-y border-border/50">
