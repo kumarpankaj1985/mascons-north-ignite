@@ -40,13 +40,13 @@ export function ClientsSection() {
           {clients.map((c) => (
             <div
               key={c.name}
-              className="group relative bg-white rounded-xl p-5 h-24 flex items-center justify-center border border-border/50 hover:border-accent/50 hover:shadow-glow transition-all"
+              className="group relative bg-white rounded-xl p-4 h-28 flex items-center justify-center border border-border/50 hover:border-accent/50 hover:shadow-glow transition-all"
               title={c.name}
             >
               <img
                 src={c.logo}
                 alt={`${c.name} logo`}
-                className="max-h-14 max-w-full object-contain"
+                className="h-16 w-full object-contain"
                 loading="lazy"
               />
             </div>
