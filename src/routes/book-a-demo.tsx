@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { CheckCircle2, Calendar, Phone, Mail, Shield, Clock, Users, Target } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
