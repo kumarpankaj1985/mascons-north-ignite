@@ -179,24 +179,30 @@ function ServicesPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((s, i) => (
-            <div key={s.title} className="glass-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
-                  <s.icon className="h-6 w-6 text-brand-foreground" />
-                </div>
-                <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+            <article key={s.title} className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all flex flex-col">
+              <div className="relative aspect-[16/9] overflow-hidden">
+                <img src={s.image} alt={`${s.title} — Mascons fintech platform`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={720} />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
-              <h3 className="text-2xl font-bold">{s.title}</h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
-              <ul className="mt-6 space-y-2.5">
-                {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
-                    <span className="text-foreground/85">{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
+                    <s.icon className="h-6 w-6 text-brand-foreground" />
+                  </div>
+                  <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+                </div>
+                <h3 className="text-2xl font-bold">{s.title}</h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
+                <ul className="mt-6 space-y-2.5">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
+                      <span className="text-foreground/85">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
           ))}
         </div>
       </section>
