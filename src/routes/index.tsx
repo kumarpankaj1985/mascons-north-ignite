@@ -5,6 +5,8 @@ import {
   ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mascons.jpg";
+import fintechPillar from "@/assets/fintech-pillar.jpg";
+import aiPillar from "@/assets/ai-pillar.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
