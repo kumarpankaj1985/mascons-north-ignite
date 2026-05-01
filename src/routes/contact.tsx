@@ -129,24 +129,24 @@ function ContactPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="cName">Full name</Label>
-                <Input id="cName" required placeholder="Your name" />
+                <Input id="cName" name="cName" required placeholder="Your name" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="cCompany">Company</Label>
-                <Input id="cCompany" placeholder="Company (optional)" />
+                <Input id="cCompany" name="cCompany" placeholder="Company (optional)" />
               </div>
             </div>
             <div className="space-y-2">
               <Label htmlFor="cEmail">Email</Label>
-              <Input id="cEmail" type="email" required placeholder="you@company.com" />
+              <Input id="cEmail" name="cEmail" type="email" required placeholder="you@company.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="cSubject">Subject</Label>
-              <Input id="cSubject" required placeholder="How can we help?" />
+              <Input id="cSubject" name="cSubject" required placeholder="How can we help?" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="cMessage">Message</Label>
-              <Textarea id="cMessage" rows={5} required placeholder="Tell us a bit more..." />
+              <Textarea id="cMessage" name="cMessage" rows={5} required placeholder="Tell us a bit more..." />
             </div>
             <Button type="submit" variant="hero" size="lg" className="w-full" disabled={submitting}>
               {submitting ? "Sending..." : "Send Message"}
