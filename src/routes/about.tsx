@@ -93,8 +93,8 @@ function AboutPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-5">
             {leadership.map((l) => (
-              <div key={l.name} className="glass-card rounded-2xl p-6 hover:shadow-glow transition-all">
-                <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-border bg-white">
+              <div key={l.name} className="glass-card rounded-2xl p-6 text-center hover:shadow-glow transition-all">
+                <div className="mx-auto mb-5 h-32 w-32 overflow-hidden rounded-full border-2 border-accent/40 bg-white shadow-card">
                   <img src={l.image} alt={`${l.name} - Mascons leadership`} className="h-full w-full object-cover object-top" loading="lazy" />
                 </div>
                 <h3 className="font-bold text-lg">{l.name}</h3>
