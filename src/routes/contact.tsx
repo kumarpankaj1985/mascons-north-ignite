@@ -34,14 +34,26 @@ const faqs = [
 function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
-      toast.success("Message sent!", { description: "We'll respond within 4 business hours." });
-    }, 700);
+    const form = e.target as HTMLFormElement;
+    const fd = new FormData(form);
+    const payload = {
+      full_name: String(fd.get("cName") || "").trim(),
+      company: String(fd.get("cCompany") || "").trim() || null,
+      email: String(fd.get("cEmail") || "").trim(),
+      subject: String(fd.get("cSubject") || "").trim(),
+      message: String(fd.get("cMessage") || "").trim(),
+    };
+    const { error } = await supabase.from("contact_submissions").insert(payload);
+    setSubmitting(false);
+    if (error) {
+      toast.error("Could not send message", { description: "Please try again or email support@mascons.in" });
+      return;
+    }
+    form.reset();
+    toast.success("Message sent!", { description: "We'll respond within 4 business hours." });
   };
 
   return (
