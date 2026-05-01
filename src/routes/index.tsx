@@ -198,6 +198,10 @@ function HomePage() {
             <p className="mt-5 text-muted-foreground text-lg">
               We don't sell roadmaps — we deliver platforms our clients launch in weeks, not years.
             </p>
+            <div className="mt-8 relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
+              <img src={teamCollab} alt="Mascons team collaborating on fintech and AI solutions" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1280} height={800} />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+            </div>
           </div>
           <ul className="space-y-4">
             {whyUs.map((item) => (
