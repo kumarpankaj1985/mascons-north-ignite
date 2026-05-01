@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Target, Heart, Sparkles, Globe2, MapPin, Users, Briefcase, Lightbulb, UserCircle } from "lucide-react";
+import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
+import pankajPhoto from "@/assets/pankaj-kumar.jpg";
+import gauravPhoto from "@/assets/gaurav-gupta.png";
+import abhayPhoto from "@/assets/abhay-desai.avif";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -25,21 +28,19 @@ const leadership = [
   {
     name: "Pankaj Kumar",
     role: "Co-Founder",
+    image: pankajPhoto,
     desc: "Pankaj drives Mascons' fintech vision, global growth strategy, and alliance partnerships. With deep expertise in identifying market opportunities, building strategic relationships, and scaling sales across geographies, he has been instrumental in expanding Mascons' footprint across three continents.",
   },
   {
     name: "Gaurav Gupta",
     role: "Co-Founder",
+    image: gauravPhoto,
     desc: "Gaurav leads Mascons' product architecture, engineering strategy, and platform design. With a strong focus on building scalable, secure, and production-ready fintech platforms, he oversees the end-to-end product lifecycle — from concept to launch.",
-  },
-  {
-    name: "Mandeep Kalasi",
-    role: "Growth & International Business",
-    desc: "Mandeep spearheads Mascons' global expansion strategy and international business development. With extensive experience in cross-border partnerships and market entry, he drives growth across new geographies and verticals.",
   },
   {
     name: "Abhay Desai",
     role: "Chief Product Officer",
+    image: abhayPhoto,
     desc: "Abhay leads product strategy, roadmap, and user experience across all Mascons platforms. With a keen eye for market trends and deep customer empathy, he ensures every product delivers real business value and exceptional usability.",
   },
 ];
@@ -90,11 +91,11 @@ function AboutPage() {
             <p className="text-sm font-semibold text-accent uppercase tracking-widest">Leadership</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">Meet our <span className="text-gradient-brand">team</span></h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid md:grid-cols-3 gap-5">
             {leadership.map((l) => (
               <div key={l.name} className="glass-card rounded-2xl p-6 hover:shadow-glow transition-all">
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-surface-elevated border border-border mb-5">
-                  <UserCircle className="h-8 w-8 text-accent" />
+                <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-border bg-surface-elevated">
+                  <img src={l.image} alt={`${l.name} - Mascons leadership`} className="h-full w-full object-cover object-top" loading="lazy" />
                 </div>
                 <h3 className="font-bold text-lg">{l.name}</h3>
                 <p className="text-sm text-accent font-medium mt-1">{l.role}</p>
