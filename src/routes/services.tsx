@@ -4,14 +4,41 @@ import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, Check
 import fintechHero from "@/assets/fintech-hero.jpg";
 import walletPhoto from "@/assets/wallet-photo.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
+import walletMobile from "@/assets/wallet-mobile.jpg";
+import cardsPlatform from "@/assets/cards-platform.jpg";
+import remittanceGlobe from "@/assets/remittance-globe.jpg";
+import branchlessBanking from "@/assets/branchless-banking.jpg";
+import baasApi from "@/assets/baas-api.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Fintech Services — Mascons" },
-      { name: "description", content: "White-labeled digital wallets, card management, remittance, branchless banking, corporate expense, and Banking as a Service — built to launch." },
-      { property: "og:title", content: "Fintech-as-a-Service — Mascons" },
-      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand." },
+      { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
+      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management and Banking-as-a-Service (BaaS) APIs. Launch in weeks." },
+      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development" },
+      { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
+      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS." },
+      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Fintech-as-a-Service by Mascons",
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          areaServed: "Worldwide",
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service"],
+          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, and Banking-as-a-Service APIs.",
+        }),
+      },
     ],
   }),
   component: ServicesPage,
