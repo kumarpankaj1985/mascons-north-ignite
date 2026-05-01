@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { CheckCircle2, Calendar, Phone, Mail, Shield, Clock, Users, Target } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
@@ -34,17 +35,36 @@ const steps = [
 
 function BookDemoPage() {
   const [submitting, setSubmitting] = useState(false);
+  const [country, setCountry] = useState("");
+  const [companySize, setCompanySize] = useState("");
+  const [interest, setInterest] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      (e.target as HTMLFormElement).reset();
-      toast.success("Demo request received!", {
-        description: "A Mascons expert will reach out within 4 business hours.",
-      });
-    }, 800);
+    const form = e.target as HTMLFormElement;
+    const fd = new FormData(form);
+    const payload = {
+      first_name: String(fd.get("firstName") || "").trim(),
+      last_name: String(fd.get("lastName") || "").trim(),
+      email: String(fd.get("email") || "").trim(),
+      company: String(fd.get("company") || "").trim(),
+      country: country || null,
+      company_size: companySize || null,
+      interest: interest || null,
+      goal: String(fd.get("goal") || "").trim() || null,
+    };
+    const { error } = await supabase.from("demo_requests").insert(payload);
+    setSubmitting(false);
+    if (error) {
+      toast.error("Could not submit request", { description: "Please try again or email support@mascons.in" });
+      return;
+    }
+    form.reset();
+    setCountry(""); setCompanySize(""); setInterest("");
+    toast.success("Demo request received!", {
+      description: "A Mascons expert will reach out within 4 business hours.",
+    });
   };
 
   return (
@@ -109,25 +129,25 @@ function BookDemoPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First name</Label>
-                  <Input id="firstName" required placeholder="Jane" />
+                  <Input id="firstName" name="firstName" required placeholder="Jane" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="lastName">Last name</Label>
-                  <Input id="lastName" required placeholder="Doe" />
+                  <Input id="lastName" name="lastName" required placeholder="Doe" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Business email</Label>
-                <Input id="email" type="email" required placeholder="jane@company.com" />
+                <Input id="email" name="email" type="email" required placeholder="jane@company.com" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="company">Company name</Label>
-                <Input id="company" required placeholder="Acme Inc." />
+                <Input id="company" name="company" required placeholder="Acme Inc." />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Country</Label>
-                  <Select>
+                  <Select value={country} onValueChange={setCountry}>
                     <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="in">India</SelectItem>
@@ -141,7 +161,7 @@ function BookDemoPage() {
                 </div>
                 <div className="space-y-2">
                   <Label>Company size</Label>
-                  <Select>
+                  <Select value={companySize} onValueChange={setCompanySize}>
                     <SelectTrigger><SelectValue placeholder="Select" /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="1-10">1–10</SelectItem>
@@ -155,7 +175,7 @@ function BookDemoPage() {
               </div>
               <div className="space-y-2">
                 <Label>What are you looking for?</Label>
-                <Select>
+                <Select value={interest} onValueChange={setInterest}>
                   <SelectTrigger><SelectValue placeholder="Select an interest" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="fintech">Fintech Platform</SelectItem>
@@ -167,7 +187,7 @@ function BookDemoPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="goal">Tell us briefly about your challenge or goal</Label>
-                <Textarea id="goal" rows={4} placeholder="What are you trying to solve or launch?" />
+                <Textarea id="goal" name="goal" rows={4} placeholder="What are you trying to solve or launch?" />
               </div>
               <Button type="submit" variant="hero" size="lg" className="w-full" disabled={submitting}>
                 {submitting ? "Submitting..." : "Book My Demo →"}
