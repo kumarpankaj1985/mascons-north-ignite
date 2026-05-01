@@ -11,10 +11,14 @@ import { Mail, MapPin, Clock, Linkedin, Twitter, Youtube, Briefcase, HandshakeIc
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Mascons" },
-      { name: "description", content: "Talk to Mascons. Sales, partnerships, careers, and support worldwide." },
-      { property: "og:title", content: "Contact — Mascons" },
+      { title: "Contact Mascons — Fintech & Agentic AI Solutions" },
+      { name: "description", content: "Talk to Mascons about white-label fintech platforms or Agentic AI projects. Sales, partnerships, careers and support — response within 4 business hours." },
+      { name: "keywords", content: "contact Mascons, fintech vendor contact, AI consulting contact, fintech partnerships, AI partnerships" },
+      { property: "og:title", content: "Contact Mascons — Fintech & AI" },
       { property: "og:description", content: "Reach our team. Response within 4 business hours." },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/contact" },
     ],
   }),
   component: ContactPage,

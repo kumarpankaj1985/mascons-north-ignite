@@ -12,10 +12,14 @@ import { CheckCircle2, Calendar, Phone, Mail, Shield, Clock, Users, Target } fro
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
     meta: [
-      { title: "Book a Demo — Mascons" },
-      { name: "description", content: "See the future of your business — live. Book a 45-minute Mascons demo and explore fintech infrastructure or Agentic AI for your organization." },
-      { property: "og:title", content: "Book a Demo — Mascons" },
+      { title: "Book a Free Demo & AI Audit — Mascons Fintech & Agentic AI" },
+      { name: "description", content: "Book a 45-minute Mascons demo or free AI Readiness Audit. See live fintech platforms — wallets, cards, remittance, BaaS — and Agentic AI products with real ROI conversations." },
+      { name: "keywords", content: "book fintech demo, AI audit, free AI readiness audit, fintech platform demo, agentic AI demo, Mascons demo" },
+      { property: "og:title", content: "Book a Free Demo & AI Audit — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/book-a-demo" },
     ],
   }),
   component: BookDemoPage,

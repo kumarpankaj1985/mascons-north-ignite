@@ -7,15 +7,46 @@ import {
 import heroImg from "@/assets/hero-mascons.jpg";
 import fintechPillar from "@/assets/fintech-pillar.jpg";
 import aiPillar from "@/assets/ai-pillar.jpg";
+import teamCollab from "@/assets/team-collab.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — Intelligent Fintech & Agentic AI Solutions" },
-      { name: "description", content: "White-labeled fintech platforms and Agentic AI solutions transforming how businesses operate, grow, and compete globally." },
-      { property: "og:title", content: "Mascons — Intelligent Fintech & Agentic AI" },
-      { property: "og:description", content: "Launch-ready fintech platforms and live Agentic AI products. Book a free AI audit." },
+      { title: "Mascons — Fintech Software & Agentic AI Development Company" },
+      { name: "description", content: "Mascons is a fintech software development and Agentic AI company. We build white-label digital wallets, card management, remittance, BaaS platforms and deploy live AI agents for recruitment, expense, calling and more. Book a free AI audit." },
+      { name: "keywords", content: "fintech software development company, agentic AI company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, AI software development, AI agents for business, AI consulting India, fintech and AI solutions" },
+      { property: "og:title", content: "Mascons — Fintech Software & Agentic AI Development Company" },
+      { property: "og:description", content: "White-label fintech platforms and live Agentic AI products. Book a free AI audit." },
+      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
+      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Mascons",
+          url: "https://mascons-north-ignite.lovable.app",
+          logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
+          description: "Fintech software development and Agentic AI company building white-label fintech platforms and live AI products for businesses worldwide.",
+          sameAs: [],
+          areaServed: "Worldwide",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Mascons",
+          url: "https://mascons-north-ignite.lovable.app",
+        }),
+      },
     ],
   }),
   component: HomePage,
@@ -167,6 +198,10 @@ function HomePage() {
             <p className="mt-5 text-muted-foreground text-lg">
               We don't sell roadmaps — we deliver platforms our clients launch in weeks, not years.
             </p>
+            <div className="mt-8 relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
+              <img src={teamCollab} alt="Mascons team collaborating on fintech and AI solutions" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1280} height={800} />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+            </div>
           </div>
           <ul className="space-y-4">
             {whyUs.map((item) => (

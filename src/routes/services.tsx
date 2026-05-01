@@ -4,14 +4,41 @@ import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, Check
 import fintechHero from "@/assets/fintech-hero.jpg";
 import walletPhoto from "@/assets/wallet-photo.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
+import walletMobile from "@/assets/wallet-mobile.jpg";
+import cardsPlatform from "@/assets/cards-platform.jpg";
+import remittanceGlobe from "@/assets/remittance-globe.jpg";
+import branchlessBanking from "@/assets/branchless-banking.jpg";
+import baasApi from "@/assets/baas-api.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Fintech Services — Mascons" },
-      { name: "description", content: "White-labeled digital wallets, card management, remittance, branchless banking, corporate expense, and Banking as a Service — built to launch." },
-      { property: "og:title", content: "Fintech-as-a-Service — Mascons" },
-      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand." },
+      { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
+      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management and Banking-as-a-Service (BaaS) APIs. Launch in weeks." },
+      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development" },
+      { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
+      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS." },
+      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Fintech-as-a-Service by Mascons",
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          areaServed: "Worldwide",
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service"],
+          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, and Banking-as-a-Service APIs.",
+        }),
+      },
     ],
   }),
   component: ServicesPage,
@@ -20,6 +47,7 @@ export const Route = createFileRoute("/services")({
 const services = [
   {
     icon: Wallet,
+    image: walletMobile,
     title: "Digital Wallet",
     desc: "Empower your customers with a seamless, secure digital wallet experience — P2P, bills, merchant payments, and loyalty — all under your brand.",
     features: [
@@ -32,6 +60,7 @@ const services = [
   },
   {
     icon: CreditCard,
+    image: cardsPlatform,
     title: "Card Management Solution",
     desc: "Simplify your payment processes. Issue, manage, and secure prepaid, debit, and credit card programs with a fully featured backend.",
     features: [
@@ -44,6 +73,7 @@ const services = [
   },
   {
     icon: Send,
+    image: remittanceGlobe,
     title: "Remittance Platform",
     desc: "Effortlessly transfer money across borders. Compliant, fast, and built for diverse corridors worldwide.",
     features: [
@@ -56,6 +86,7 @@ const services = [
   },
   {
     icon: Receipt,
+    image: expenseDashboard,
     title: "Corporate Expense Management",
     desc: "Manage corporate expenses effectively with real-time tracking and insights to optimize your financial operations.",
     features: [
@@ -68,6 +99,7 @@ const services = [
   },
   {
     icon: Building2,
+    image: branchlessBanking,
     title: "Branchless Banking Platform",
     desc: "Transform your banking experience — accessible and efficient banking services without physical branch overhead.",
     features: [
@@ -80,6 +112,7 @@ const services = [
   },
   {
     icon: Layers,
+    image: baasApi,
     title: "Banking as a Service (BaaS)",
     desc: "Unlock seamless banking solutions. Embed banking, payments, and card capabilities into your own product.",
     features: [
@@ -146,24 +179,30 @@ function ServicesPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((s, i) => (
-            <div key={s.title} className="glass-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
-                  <s.icon className="h-6 w-6 text-brand-foreground" />
-                </div>
-                <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+            <article key={s.title} className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all flex flex-col">
+              <div className="relative aspect-[16/9] overflow-hidden">
+                <img src={s.image} alt={`${s.title} — Mascons fintech platform`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={720} />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
-              <h3 className="text-2xl font-bold">{s.title}</h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
-              <ul className="mt-6 space-y-2.5">
-                {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
-                    <span className="text-foreground/85">{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
+                    <s.icon className="h-6 w-6 text-brand-foreground" />
+                  </div>
+                  <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+                </div>
+                <h3 className="text-2xl font-bold">{s.title}</h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
+                <ul className="mt-6 space-y-2.5">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
+                      <span className="text-foreground/85">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
           ))}
         </div>
       </section>

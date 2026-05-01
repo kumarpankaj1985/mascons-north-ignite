@@ -5,27 +5,53 @@ import {
   ArrowRight, Search, Lightbulb, Rocket, CheckCircle2, Sparkles,
 } from "lucide-react";
 import aiHero from "@/assets/ai-hero.jpg";
+import aiAgent from "@/assets/ai-agent.jpg";
+import aiRecruitment from "@/assets/ai-recruitment.jpg";
+import aiCalling from "@/assets/ai-calling.jpg";
+import aiMeeting from "@/assets/ai-meeting.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
+import teamCollab from "@/assets/team-collab.jpg";
 
 export const Route = createFileRoute("/agentic-ai")({
   head: () => ({
     meta: [
-      { title: "Agentic AI Solutions — Mascons" },
-      { name: "description", content: "Live, deployed Agentic AI products: AI recruitment, expense management, calling, meeting notetaker, procurement, accounting, and more. Start with a free AI audit." },
-      { property: "og:title", content: "Agentic AI for Business — Mascons" },
+      { title: "Agentic AI Solutions & AI Software Development Company — Mascons" },
+      { name: "description", content: "Mascons builds and deploys live Agentic AI products: AI recruitment, AI expense management, AI inbound/outbound calling, AI meeting notetaker, AI procurement, AI accounting and more. Start with a free AI Readiness Audit." },
+      { name: "keywords", content: "agentic AI, AI software development company, AI agents for business, AI recruitment software, AI expense management, AI calling agent, AI meeting notetaker, AI procurement software, AI accounting automation, generative AI for enterprise, AI consulting, AI audit, AI implementation partner" },
+      { property: "og:title", content: "Agentic AI for Business — Live AI Products | Mascons" },
       { property: "og:description", content: "Live AI products. Free AI audit. Measurable ROI within 90 days." },
+      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
+      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/agentic-ai" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Agentic AI Solutions by Mascons",
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          areaServed: "Worldwide",
+          serviceType: ["AI Recruitment", "AI Expense Management", "AI Calling Agent", "AI Meeting Notetaker", "AI Procurement", "AI Accounting", "AI Readiness Audit"],
+          description: "Live, deployed Agentic AI products and custom AI agents that plan, execute and adapt across your business workflows.",
+        }),
+      },
     ],
   }),
   component: AIPage,
 });
 
 const products = [
-  { icon: Users, title: "AI-Powered Recruitment Portal", desc: "Hire smarter for both employers and candidates. Reduce time-to-hire by up to 60%.", points: ["AI-driven JD parsing and candidate matching", "Automated screening calls and video interview analysis", "Bias-detection and diversity hiring insights", "ATS integration with real-time hiring dashboard", "Mobile-first candidate experience"] },
-  { icon: Wallet, title: "AI-Based Expense Management", desc: "Beyond tracking — predict overspend, flag policy violations, and auto-categorize every transaction.", points: ["Receipt OCR and smart auto-categorization", "Anomaly detection for fraud and policy violations", "Predictive budget alerts before limits are breached", "Natural language spend queries", "CFO-ready dashboards with zero manual entry"] },
-  { icon: Shirt, title: "AI Wardrobe & Fashion Recommendation", desc: "Personalized styling for retail, e-commerce, and apparel brands. Higher AOV, lower returns.", points: ["Computer vision style matching", "Occasion- and weather-aware recommendations", "Virtual try-on integration", "Personalized merchandising for storefronts", "Loyalty and engagement uplift analytics"] },
-  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent voice agents for sales, support, collections, and surveys — human-grade conversations at scale.", points: ["Natural-sounding multi-accent voice models", "CRM and helpdesk integrations", "Sentiment and intent analysis on every call", "Compliance-aware scripting and recording", "Real-time human handoff when needed"] },
-  { icon: Mic, title: "AI Meeting Notetaker (Vernacular)", desc: "Joins your meetings, transcribes in real time, summarizes, and assigns action items — in multiple languages.", points: ["Multi-language support out of the box", "Real-time transcription and post-meeting summary", "Automatic action items with owners and deadlines", "Zoom, Teams, Google Meet, Webex integrations", "Searchable meeting library with semantic search"] },
-  { icon: ClipboardList, title: "AI Tender & Procurement Management", desc: "Automate the full procurement cycle — from tender creation to bid evaluation, contracts, and compliance.", points: ["Automated tender drafting and vendor outreach", "AI bid evaluation against multiple criteria", "Risk flagging and supplier recommendation", "Contract generation and e-signature workflow", "Cycles reduced by up to 50%"] },
-  { icon: Calculator, title: "AI Accounting Management System", desc: "Continuous, autonomous accounting — from invoice ingestion to ledger entries, reconciliation, and reporting.", points: ["Invoice and document OCR with auto-coding", "Bank reconciliation in minutes, not days", "Anomaly and duplicate detection", "Real-time P&L and cash flow dashboards", "Audit-ready logs with full traceability"] },
+  { icon: Users, image: aiRecruitment, title: "AI-Powered Recruitment Portal", desc: "Hire smarter for both employers and candidates. Reduce time-to-hire by up to 60%.", points: ["AI-driven JD parsing and candidate matching", "Automated screening calls and video interview analysis", "Bias-detection and diversity hiring insights", "ATS integration with real-time hiring dashboard", "Mobile-first candidate experience"] },
+  { icon: Wallet, image: expenseDashboard, title: "AI-Based Expense Management", desc: "Beyond tracking — predict overspend, flag policy violations, and auto-categorize every transaction.", points: ["Receipt OCR and smart auto-categorization", "Anomaly detection for fraud and policy violations", "Predictive budget alerts before limits are breached", "Natural language spend queries", "CFO-ready dashboards with zero manual entry"] },
+  { icon: Shirt, image: aiAgent, title: "AI Wardrobe & Fashion Recommendation", desc: "Personalized styling for retail, e-commerce, and apparel brands. Higher AOV, lower returns.", points: ["Computer vision style matching", "Occasion- and weather-aware recommendations", "Virtual try-on integration", "Personalized merchandising for storefronts", "Loyalty and engagement uplift analytics"] },
+  { icon: PhoneCall, image: aiCalling, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent voice agents for sales, support, collections, and surveys — human-grade conversations at scale.", points: ["Natural-sounding multi-accent voice models", "CRM and helpdesk integrations", "Sentiment and intent analysis on every call", "Compliance-aware scripting and recording", "Real-time human handoff when needed"] },
+  { icon: Mic, image: aiMeeting, title: "AI Meeting Notetaker (Vernacular)", desc: "Joins your meetings, transcribes in real time, summarizes, and assigns action items — in multiple languages.", points: ["Multi-language support out of the box", "Real-time transcription and post-meeting summary", "Automatic action items with owners and deadlines", "Zoom, Teams, Google Meet, Webex integrations", "Searchable meeting library with semantic search"] },
+  { icon: ClipboardList, image: teamCollab, title: "AI Tender & Procurement Management", desc: "Automate the full procurement cycle — from tender creation to bid evaluation, contracts, and compliance.", points: ["Automated tender drafting and vendor outreach", "AI bid evaluation against multiple criteria", "Risk flagging and supplier recommendation", "Contract generation and e-signature workflow", "Cycles reduced by up to 50%"] },
+  { icon: Calculator, image: expenseDashboard, title: "AI Accounting Management System", desc: "Continuous, autonomous accounting — from invoice ingestion to ledger entries, reconciliation, and reporting.", points: ["Invoice and document OCR with auto-coding", "Bank reconciliation in minutes, not days", "Anomaly and duplicate detection", "Real-time P&L and cash flow dashboards", "Audit-ready logs with full traceability"] },
 ];
 
 const auditSteps = [
@@ -120,24 +146,30 @@ function AIPage() {
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {products.map((p, i) => (
-            <div key={p.title} className="glass-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
-                  <p.icon className="h-6 w-6 text-brand-foreground" />
-                </div>
-                <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+            <article key={p.title} className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all flex flex-col">
+              <div className="relative aspect-[16/9] overflow-hidden">
+                <img src={p.image} alt={`${p.title} — Mascons Agentic AI product`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={720} />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
-              <h3 className="text-2xl font-bold">{p.title}</h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{p.desc}</p>
-              <ul className="mt-5 space-y-2.5">
-                {p.points.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
-                    <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
-                    <span className="text-foreground/85">{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand shadow-glow">
+                    <p.icon className="h-6 w-6 text-brand-foreground" />
+                  </div>
+                  <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
+                </div>
+                <h3 className="text-2xl font-bold">{p.title}</h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">{p.desc}</p>
+                <ul className="mt-5 space-y-2.5">
+                  {p.points.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent mt-0.5 shrink-0" />
+                      <span className="text-foreground/85">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
           ))}
         </div>
         <p className="text-center text-muted-foreground mt-10">
