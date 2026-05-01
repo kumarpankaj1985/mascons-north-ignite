@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, CheckCircle2 } from "lucide-react";
+import fintechHero from "@/assets/fintech-hero.jpg";
+import walletPhoto from "@/assets/wallet-photo.jpg";
+import globalPhoto from "@/assets/global-photo.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
