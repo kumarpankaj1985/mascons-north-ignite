@@ -5,6 +5,7 @@ import {
   ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mascons.jpg";
+import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -204,13 +205,24 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CLIENTS & PARTNERS */}
+      <ClientsSection />
+
       {/* TESTIMONIALS */}
-      <section className="bg-surface/30 border-y border-border/50">
+      <section className="border-y border-border/50">
         <div className="mx-auto max-w-7xl px-4 md:px-8 py-24">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-sm font-semibold text-accent uppercase tracking-widest">Testimonials</p>
+            <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">What our <span className="text-gradient-brand">clients say</span></h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { q: "Mascons delivered our digital wallet in record time. The platform is rock solid.", a: "Director of Product", c: "Fintech Client" },
-              { q: "Their AI audit identified 4 areas where we could automate immediately. The ROI was instant.", a: "VP Operations", c: "Logistics Enterprise" },
+              { q: "Mascons delivered our digital wallet in record time. The platform is rock solid and our customers love the experience.", a: "Director of Product", c: "HiWiPay" },
+              { q: "Their AI audit identified four areas where we could automate immediately. The ROI was instant and measurable.", a: "VP Operations", c: "Cashzen, Canada" },
+              { q: "From card issuance to compliance workflows, Mascons became a true extension of our team. Truly white-label, truly turnkey.", a: "Head of Payments", c: "Instapay Technologies" },
+              { q: "We launched our remittance corridor in under 90 days. The platform scales effortlessly across geographies.", a: "Founder & CEO", c: "MEGO Forex" },
+              { q: "The Mascons team understands fintech end-to-end — from regulatory nuances to customer experience.", a: "Chief Technology Officer", c: "Royal Bank Pacific" },
+              { q: "Their Agentic AI for expense management saved our finance team dozens of hours every week.", a: "Finance Director", c: "MYNTPE" },
             ].map((t) => (
               <div key={t.q} className="glass-card rounded-2xl p-8 shadow-card">
                 <Zap className="h-6 w-6 text-accent mb-4" />
