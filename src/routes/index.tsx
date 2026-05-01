@@ -95,6 +95,9 @@ function HomePage() {
         </div>
       </section>
 
+      {/* CLIENTS & PARTNERS — moved up so visitors see trust signals immediately */}
+      <ClientsSection />
+
       {/* TWO PILLARS */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
