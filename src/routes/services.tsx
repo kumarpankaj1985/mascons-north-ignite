@@ -47,6 +47,7 @@ export const Route = createFileRoute("/services")({
 const services = [
   {
     icon: Wallet,
+    image: walletMobile,
     title: "Digital Wallet",
     desc: "Empower your customers with a seamless, secure digital wallet experience — P2P, bills, merchant payments, and loyalty — all under your brand.",
     features: [
@@ -59,6 +60,7 @@ const services = [
   },
   {
     icon: CreditCard,
+    image: cardsPlatform,
     title: "Card Management Solution",
     desc: "Simplify your payment processes. Issue, manage, and secure prepaid, debit, and credit card programs with a fully featured backend.",
     features: [
@@ -71,6 +73,7 @@ const services = [
   },
   {
     icon: Send,
+    image: remittanceGlobe,
     title: "Remittance Platform",
     desc: "Effortlessly transfer money across borders. Compliant, fast, and built for diverse corridors worldwide.",
     features: [
@@ -83,6 +86,7 @@ const services = [
   },
   {
     icon: Receipt,
+    image: expenseDashboard,
     title: "Corporate Expense Management",
     desc: "Manage corporate expenses effectively with real-time tracking and insights to optimize your financial operations.",
     features: [
@@ -95,6 +99,7 @@ const services = [
   },
   {
     icon: Building2,
+    image: branchlessBanking,
     title: "Branchless Banking Platform",
     desc: "Transform your banking experience — accessible and efficient banking services without physical branch overhead.",
     features: [
@@ -107,6 +112,7 @@ const services = [
   },
   {
     icon: Layers,
+    image: baasApi,
     title: "Banking as a Service (BaaS)",
     desc: "Unlock seamless banking solutions. Embed banking, payments, and card capabilities into your own product.",
     features: [
