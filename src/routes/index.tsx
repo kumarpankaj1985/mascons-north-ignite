@@ -54,7 +54,7 @@ function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-24 md:py-36">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Serving businesses globally
@@ -64,11 +64,11 @@ function HomePage() {
               <span className="text-gradient-brand">Agentic AI</span>{" "}
               for your business
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               We build white-labeled fintech platforms and deploy Agentic AI solutions that
               transform how businesses operate, grow, and compete.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild variant="hero" size="xl">
                 <Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
@@ -94,6 +94,9 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* CLIENTS & PARTNERS — moved up so visitors see trust signals immediately */}
+      <ClientsSection />
 
       {/* TWO PILLARS */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
@@ -205,8 +208,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CLIENTS & PARTNERS */}
-      <ClientsSection />
 
       {/* TESTIMONIALS */}
       <section className="border-y border-border/50">
