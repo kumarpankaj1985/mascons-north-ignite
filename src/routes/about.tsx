@@ -8,10 +8,14 @@ import abhayPhoto from "@/assets/abhay-desai.avif";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Mascons" },
-      { name: "description", content: "Two decades of fintech innovation and a new chapter in Agentic AI. Meet the leadership team behind Mascons." },
-      { property: "og:title", content: "About Mascons — Fintech & AI Innovators" },
-      { property: "og:description", content: "Meet the founders and the mission behind Mascons." },
+      { title: "About Mascons — Fintech & Agentic AI Innovators" },
+      { name: "description", content: "Mascons is a global fintech software development and Agentic AI company with two decades of experience building digital wallets, card platforms, remittance and AI agents. Meet the founders." },
+      { name: "keywords", content: "Mascons, fintech company, agentic AI company, Pankaj Kumar, Gaurav Gupta, Abhay Desai, fintech founders, AI startup founders" },
+      { property: "og:title", content: "About Mascons — Fintech & Agentic AI Innovators" },
+      { property: "og:description", content: "Two decades of fintech innovation, a new chapter in Agentic AI. Meet the leadership behind Mascons." },
+    ],
+    links: [
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/about" },
     ],
   }),
   component: AboutPage,
