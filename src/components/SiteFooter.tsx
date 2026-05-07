@@ -53,7 +53,17 @@ export function SiteFooter() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>648/A, 4th Floor, Binnamangala 1st Stage, Indiranagar, Bangalore - 560038</span>
+                <div>
+                  <p className="font-medium text-foreground/80">India Office</p>
+                  <span>648/A, 4th Floor, Binnamangala 1st Stage, Indiranagar, Bangalore - 560038</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
+                <div>
+                  <p className="font-medium text-foreground/80">Canada Office</p>
+                  <span>295 The West Mall, Etobicoke ON M9C 4Z4, Canada</span>
+                </div>
               </li>
             </ul>
           </div>

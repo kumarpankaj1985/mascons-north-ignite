@@ -101,11 +101,23 @@ function ContactPage() {
         <div className="mx-auto max-w-5xl px-4 md:px-8 py-20 grid md:grid-cols-5 gap-10">
           <div className="md:col-span-2 space-y-6">
             <div>
-              <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Headquarters</h3>
-              <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-                648/A, 4th Floor, Binnamangala 1st Stage,<br />
-                Indiranagar, Bangalore - 560038
-              </p>
+              <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Offices</h3>
+              <div className="mt-2 space-y-3">
+                <div>
+                  <p className="text-sm font-medium text-foreground">India</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    648/A, 4th Floor, Binnamangala 1st Stage,<br />
+                    Indiranagar, Bangalore - 560038
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">Canada</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    295 The West Mall,<br />
+                    Etobicoke ON M9C 4Z4, Canada
+                  </p>
+                </div>
+              </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2"><Clock className="h-4 w-4 text-accent" /> Hours</h3>
