@@ -104,10 +104,17 @@ function ContactPage() {
               <h3 className="text-lg font-semibold flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Offices</h3>
               <div className="mt-2 space-y-3">
                 <div>
-                  <p className="text-sm font-medium text-foreground">India</p>
+                  <p className="text-sm font-medium text-foreground">India — Indiranagar</p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     648/A, 4th Floor, Binnamangala 1st Stage,<br />
                     Indiranagar, Bangalore - 560038
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">India — HSR Layout</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    652, 22nd Cross, 23rd Main Rd, Parangi Palaya,<br />
+                    Sector 2, HSR Layout, Bengaluru, Karnataka 560102
                   </p>
                 </div>
                 <div>
