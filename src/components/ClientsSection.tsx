@@ -59,14 +59,13 @@ export function ClientsSection() {
             {loop.map((c, i) => (
               <div
                 key={`${c.name}-${i}`}
-                className="shrink-0 w-44 h-24 bg-white rounded-xl border border-border/50 hover:border-accent/50 hover:shadow-glow transition-all flex items-center justify-center p-4"
+                className="shrink-0 w-44 h-28 bg-white rounded-xl border border-border/50 hover:border-accent/50 hover:shadow-glow transition-all flex items-center justify-center p-3"
                 title={c.name}
               >
                 <img
                   src={c.logo}
                   alt={`${c.name} logo`}
-                  className="max-h-12 max-w-[80%] w-auto h-auto object-contain"
-                  loading="lazy"
+                  className="max-h-20 max-w-[90%] w-auto h-auto object-contain"
                 />
               </div>
             ))}
