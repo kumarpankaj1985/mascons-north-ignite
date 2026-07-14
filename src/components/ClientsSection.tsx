@@ -24,10 +24,10 @@ const clients = [
   { name: "RUcards", logo: rucards },
   { name: "MYNTPE", logo: myntpe },
   { name: "ANEO Money", logo: aneomoney },
-  { name: "Zoqq", logo: zoqq, className: "max-h-14 max-w-[75%]" },
+  { name: "Zoqq", logo: zoqq, className: "max-h-12 max-w-[60%]" },
   { name: "BuckBox", logo: buckbox },
   { name: "Knight Fintech", logo: knightFintech },
-  { name: "Quid", logo: quid, className: "max-h-12 max-w-[65%]" },
+  { name: "Quid", logo: quid, className: "max-h-10 max-w-[55%]" },
 ];
 
 export function ClientsSection() {
