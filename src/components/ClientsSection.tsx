@@ -24,10 +24,10 @@ const clients = [
   { name: "RUcards", logo: rucards },
   { name: "MYNTPE", logo: myntpe },
   { name: "ANEO Money", logo: aneomoney },
-  { name: "Zoqq", logo: zoqq },
+  { name: "Zoqq", logo: zoqq, className: "max-h-12 max-w-[60%]" },
   { name: "BuckBox", logo: buckbox },
   { name: "Knight Fintech", logo: knightFintech },
-  { name: "Quid", logo: quid },
+  { name: "Quid", logo: quid, className: "max-h-10 max-w-[55%]" },
 ];
 
 export function ClientsSection() {
@@ -65,7 +65,7 @@ export function ClientsSection() {
                 <img
                   src={c.logo}
                   alt={`${c.name} logo`}
-                  className="max-h-20 max-w-[90%] w-auto h-auto object-contain"
+                  className={`${c.className ?? "max-h-20 max-w-[90%]"} w-auto h-auto object-contain`}
                 />
               </div>
             ))}
