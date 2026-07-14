@@ -65,7 +65,7 @@ export function ClientsSection() {
                 <img
                   src={c.logo}
                   alt={`${c.name} logo`}
-                  className="max-h-20 max-w-[90%] w-auto h-auto object-contain"
+                  className={`${c.className ?? "max-h-20 max-w-[90%]"} w-auto h-auto object-contain`}
                 />
               </div>
             ))}
