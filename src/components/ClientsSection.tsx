@@ -10,8 +10,8 @@ import buckbox from "@/assets/clients/buckbox.png";
 import knightFintech from "@/assets/clients/knight-fintech.png";
 import quid from "@/assets/clients/quid.png";
 import findiAsset from "@/assets/clients/findi.png.asset.json";
-import f8walletAsset from "@/assets/clients/f8wallet.png.asset.json";
-import myntpeAsset from "@/assets/clients/myntpe-new.png.asset.json";
+import f8wallet from "@/assets/clients/f8wallet.png";
+import myntpe from "@/assets/clients/myntpe-new.png";
 import megoforexAsset from "@/assets/clients/megoforex-new.png.asset.json";
 
 const clients = [
