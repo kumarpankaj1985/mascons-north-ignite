@@ -1,33 +1,35 @@
 import hiwipay from "@/assets/clients/hiwipay.jpg";
 import viacarte from "@/assets/clients/viacarte.png";
 import instapay from "@/assets/clients/instapay.jpeg";
-import cashzen from "@/assets/clients/cashzen.jpg";
 import royalBank from "@/assets/clients/royal-bank-pacific.png";
-import megoforex from "@/assets/clients/megoforex.avif";
 import rucards from "@/assets/clients/rucards.jpeg";
-import myntpe from "@/assets/clients/myntpe.png";
 import blockgration from "@/assets/clients/blockgration.avif";
 import aneomoney from "@/assets/clients/aneomoney.png";
 import zoqq from "@/assets/clients/zoqq.png";
 import buckbox from "@/assets/clients/buckbox.png";
 import knightFintech from "@/assets/clients/knight-fintech.png";
 import quid from "@/assets/clients/quid.png";
+import findiAsset from "@/assets/clients/findi.png.asset.json";
+import f8walletAsset from "@/assets/clients/f8wallet.png.asset.json";
+import myntpeAsset from "@/assets/clients/myntpe-new.png.asset.json";
+import megoforexAsset from "@/assets/clients/megoforex-new.png.asset.json";
 
 const clients = [
   { name: "HiWiPay", logo: hiwipay },
   { name: "ViaCarte", logo: viacarte },
   { name: "Blockgration", logo: blockgration },
   { name: "Instapay Technologies (Malaysia)", logo: instapay },
-  { name: "Cashzen (Canada)", logo: cashzen },
   { name: "Royal Bank Pacific", logo: royalBank },
-  { name: "MEGO Forex", logo: megoforex },
+  { name: "MEGO Forex", logo: megoforexAsset.url },
   { name: "RUcards", logo: rucards },
-  { name: "MYNTPE", logo: myntpe },
+  { name: "MYNTPE", logo: myntpeAsset.url },
   { name: "ANEO Money", logo: aneomoney },
   { name: "Zoqq", logo: zoqq, className: "max-h-12 max-w-[60%]" },
   { name: "BuckBox", logo: buckbox },
   { name: "Knight Fintech", logo: knightFintech },
   { name: "Quid", logo: quid, className: "max-h-10 max-w-[55%]" },
+  { name: "FINDI", logo: findiAsset.url },
+  { name: "F8 Wallet", logo: f8walletAsset.url },
 ];
 
 export function ClientsSection() {
