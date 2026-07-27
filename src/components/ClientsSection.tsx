@@ -10,8 +10,8 @@ import buckbox from "@/assets/clients/buckbox.png";
 import knightFintech from "@/assets/clients/knight-fintech.png";
 import quid from "@/assets/clients/quid.png";
 import findiAsset from "@/assets/clients/findi.png.asset.json";
-import f8walletAsset from "@/assets/clients/f8wallet.png.asset.json";
-import myntpeAsset from "@/assets/clients/myntpe-new.png.asset.json";
+import f8wallet from "@/assets/clients/f8wallet.png";
+import myntpe from "@/assets/clients/myntpe-new.png";
 import megoforexAsset from "@/assets/clients/megoforex-new.png.asset.json";
 
 const clients = [
@@ -22,14 +22,14 @@ const clients = [
   { name: "Royal Bank Pacific", logo: royalBank },
   { name: "MEGO Forex", logo: megoforexAsset.url },
   { name: "RUcards", logo: rucards },
-  { name: "MYNTPE", logo: myntpeAsset.url },
+  { name: "MYNTPE", logo: myntpe, className: "max-h-14 max-w-[70%]" },
   { name: "ANEO Money", logo: aneomoney },
   { name: "Zoqq", logo: zoqq, className: "max-h-12 max-w-[60%]" },
   { name: "BuckBox", logo: buckbox },
   { name: "Knight Fintech", logo: knightFintech },
   { name: "Quid", logo: quid, className: "max-h-10 max-w-[55%]" },
   { name: "FINDI", logo: findiAsset.url },
-  { name: "F8 Wallet", logo: f8walletAsset.url },
+  { name: "F8 Wallet", logo: f8wallet },
 ];
 
 export function ClientsSection() {
