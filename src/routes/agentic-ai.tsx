@@ -78,6 +78,9 @@ function AIPage() {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-4xl leading-[1.05]">
             Agentic AI that <span className="text-gradient-brand">acts, not just answers.</span>
           </h1>
+          <p className="mt-4 text-lg md:text-xl text-accent font-medium max-w-3xl">
+            For intelligent fintech and agentic AI.
+          </p>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
             Unlike traditional AI tools that respond to individual queries, Agentic AI systems plan,
             execute, and adapt — making decisions, calling APIs, and managing workflows across your
