@@ -93,7 +93,7 @@ function HomePage() {
               Serving businesses globally
             </div>
             <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">AI Powered Fintech-as-a-Service</p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
+            <h1 className="text-[clamp(1.75rem,4.5vw,3.75rem)] font-bold tracking-tight leading-[1.05] whitespace-nowrap">
               Launch financial products <span className="text-gradient-brand">under your brand.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
