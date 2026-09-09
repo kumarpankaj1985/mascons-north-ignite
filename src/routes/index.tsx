@@ -156,8 +156,9 @@ function HomePage() {
               </div>
               <h3 className="text-2xl font-bold mb-3">Fintech-as-a-Service</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                White-labeled, launch-ready platforms — digital wallets, card management, remittance,
-                branchless banking, corporate expense, and Banking as a Service.
+                End-to-end, compliance-ready financial infrastructure — wallets, card issuing,
+                remittance, branchless banking, BaaS, and expense management — all white-labeled
+                and built to scale with your business.
               </p>
               <Link to="/services" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
                 Explore Fintech <ArrowRight className="h-4 w-4" />
