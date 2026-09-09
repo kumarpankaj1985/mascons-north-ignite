@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Gift, Landmark, Users, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Gift, Landmark, Users, Store, ArrowRight, CheckCircle2 } from "lucide-react";
 import fintechHero from "@/assets/fintech-hero.jpg";
 import walletPhoto from "@/assets/wallet-photo.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
@@ -13,15 +13,16 @@ import expenseDashboard from "@/assets/expense-dashboard.jpg";
 import rewardsLoyalty from "@/assets/rewards-loyalty.jpg";
 import loanManagement from "@/assets/loan-management.jpg";
 import hrmsExpense from "@/assets/hrms-expense.jpg";
+import merchantAcquiring from "@/assets/merchant-acquiring.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
-      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service (BaaS) APIs, AI-powered rewards & loyalty, loan origination & management systems, and AI-powered HRMS with expense management. Launch in weeks." },
-      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software" },
+      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service (BaaS) APIs, AI-powered rewards & loyalty, loan origination & management systems, AI-powered HRMS with expense management, and merchant acquiring platforms for digital wallet and UPI-based payments. Launch in weeks." },
+      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
-      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, and AI HRMS." },
+      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
       { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
       { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
       { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
@@ -38,8 +39,8 @@ export const Route = createFileRoute("/services")({
           name: "Fintech-as-a-Service by Mascons",
           provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
           areaServed: "Worldwide",
-          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management"],
-          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, and AI-powered HRMS with expense management.",
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management", "Merchant Acquiring Platform"],
+          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, AI-powered HRMS with expense management, and merchant acquiring platforms for digital wallet and UPI-based payments.",
         }),
       },
     ],
@@ -163,6 +164,19 @@ const services = [
       "Mobile receipt scanning and OCR expense claims",
       "Policy-based approvals and budget controls",
       "Corporate card integration and real-time spend visibility",
+    ],
+  },
+  {
+    icon: Store,
+    image: merchantAcquiring,
+    title: "Merchant Acquiring Platform",
+    desc: "Enable merchants to accept digital wallet and UPI-based payments effortlessly. A complete acquiring stack for in-store, online, and on-the-go commerce.",
+    features: [
+      "Digital wallet and UPI payment acceptance",
+      "QR-based, POS, and e-commerce checkout flows",
+      "Real-time settlement and transaction routing",
+      "Merchant onboarding, KYC, and risk monitoring",
+      "Unified dashboard for transactions, disputes, and payouts",
     ],
   },
 ];
