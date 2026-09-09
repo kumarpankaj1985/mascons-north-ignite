@@ -13,11 +13,11 @@ import { ClientsSection } from "@/components/ClientsSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — Fintech Software & Agentic AI Development Company" },
-      { name: "description", content: "Mascons is a fintech software development and Agentic AI company. We build white-label digital wallets, card management, remittance, BaaS platforms and deploy live AI agents for recruitment, expense, calling and more. Book a free AI audit." },
-      { name: "keywords", content: "fintech software development company, agentic AI company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, AI software development, AI agents for business, AI consulting India, fintech and AI solutions" },
-      { property: "og:title", content: "Mascons — Fintech Software & Agentic AI Development Company" },
-      { property: "og:description", content: "White-label fintech platforms and live Agentic AI products. Book a free AI audit." },
+      { title: "Mascons — AI Powered Fintech-as-a-Service" },
+      { name: "description", content: "Mascons is an AI powered Fintech-as-a-Service company. We build white-label digital wallets, card management, remittance, BaaS platforms and intelligent fintech infrastructure for banks, NBFCs, and enterprises. Launch financial products under your brand." },
+      { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
+      { property: "og:title", content: "Mascons — AI Powered Fintech-as-a-Service" },
+      { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
       { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
       { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
     ],
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
           name: "Mascons",
           url: "https://mascons-north-ignite.lovable.app",
           logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
-          description: "Fintech software development and Agentic AI company building white-label fintech platforms and live AI products for businesses worldwide.",
+          description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
         }),
@@ -92,14 +92,14 @@ function HomePage() {
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Serving businesses globally
             </div>
+            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">AI Powered Fintech-as-a-Service</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
-              Intelligent Fintech &{" "}
-              <span className="text-gradient-brand">Agentic AI</span>{" "}
-              for your business
+              Launch financial products <span className="text-gradient-brand">under your brand.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              We build white-labeled fintech platforms and deploy Agentic AI solutions that
-              transform how businesses operate, grow, and compete.
+              Our fintech suite gives businesses, banks, NBFCs, and enterprises the ability to launch,
+              manage, and scale financial products under their own brand — powered by Mascons'
+              battle-tested infrastructure.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild variant="hero" size="xl">
