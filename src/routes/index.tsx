@@ -93,8 +93,9 @@ function HomePage() {
               Serving businesses globally
             </div>
             <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">AI Powered Fintech-as-a-Service</p>
-            <h1 className="text-[clamp(1.75rem,4.5vw,3.75rem)] font-bold tracking-tight leading-[1.05] whitespace-nowrap">
-              Launch financial products <span className="text-gradient-brand">under your brand.</span>
+            <h1 className="text-[clamp(1.5rem,4.5vw,3.75rem)] font-bold tracking-tight leading-[1.05]">
+              <span className="whitespace-nowrap">Launch financial products</span><br />
+              <span className="text-gradient-brand whitespace-nowrap">under your brand.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Our fintech suite gives businesses, banks, NBFCs, and enterprises the ability to launch,
