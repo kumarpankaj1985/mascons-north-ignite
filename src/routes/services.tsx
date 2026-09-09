@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Wallet, CreditCard, Send, Receipt, Building2, Layers, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Gift, Landmark, Users, ArrowRight, CheckCircle2 } from "lucide-react";
 import fintechHero from "@/assets/fintech-hero.jpg";
 import walletPhoto from "@/assets/wallet-photo.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
@@ -10,15 +10,18 @@ import remittanceGlobe from "@/assets/remittance-globe.jpg";
 import branchlessBanking from "@/assets/branchless-banking.jpg";
 import baasApi from "@/assets/baas-api.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
+import rewardsLoyalty from "@/assets/rewards-loyalty.jpg";
+import loanManagement from "@/assets/loan-management.jpg";
+import hrmsExpense from "@/assets/hrms-expense.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
-      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management and Banking-as-a-Service (BaaS) APIs. Launch in weeks." },
-      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development" },
+      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service (BaaS) APIs, AI-powered rewards & loyalty, loan origination & management systems, and AI-powered HRMS with expense management. Launch in weeks." },
+      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
-      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS." },
+      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, and AI HRMS." },
       { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
       { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
       { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
@@ -35,8 +38,8 @@ export const Route = createFileRoute("/services")({
           name: "Fintech-as-a-Service by Mascons",
           provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
           areaServed: "Worldwide",
-          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service"],
-          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, and Banking-as-a-Service APIs.",
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management"],
+          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, and AI-powered HRMS with expense management.",
         }),
       },
     ],
@@ -121,6 +124,45 @@ const services = [
       "KYC/KYB orchestration",
       "Compliance and reporting dashboards",
       "Sandbox-to-production parity",
+    ],
+  },
+  {
+    icon: Gift,
+    image: rewardsLoyalty,
+    title: "AI-Powered Rewards & Loyalty",
+    desc: "Drive repeat engagement with intelligent incentives. Our AI-powered rewards engine personalizes cashback, points, and loyalty programs to maximize customer lifetime value.",
+    features: [
+      "Dynamic points and cashback orchestration",
+      "AI-driven personalized reward recommendations",
+      "Multi-tier loyalty and referral programs",
+      "Real-time redemption across wallets and merchants",
+      "Campaign analytics and churn prediction",
+    ],
+  },
+  {
+    icon: Landmark,
+    image: loanManagement,
+    title: "Loan Origination & Management System",
+    desc: "Digitize your entire lending lifecycle from application to disbursement and recovery. Built for banks, NBFCs, and fintech lenders with built-in compliance and credit decisioning.",
+    features: [
+      "End-to-end digital loan application journey",
+      "AI-powered credit scoring and risk assessment",
+      "Automated document verification and KYC",
+      "Flexible repayment schedules and EMI management",
+      "Collections, NPA tracking, and regulatory reporting",
+    ],
+  },
+  {
+    icon: Users,
+    image: hrmsExpense,
+    title: "AI-Powered HRMS with Expense Management",
+    desc: "Unify workforce operations and employee spending in one intelligent platform. From payroll and attendance to expense claims and corporate cards, streamline it all.",
+    features: [
+      "AI-assisted recruitment and employee onboarding",
+      "Attendance, leave, and payroll automation",
+      "Mobile receipt scanning and OCR expense claims",
+      "Policy-based approvals and budget controls",
+      "Corporate card integration and real-time spend visibility",
     ],
   },
 ];
