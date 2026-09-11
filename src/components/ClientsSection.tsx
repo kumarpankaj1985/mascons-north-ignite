@@ -33,6 +33,9 @@ const clients = [
   { name: "Quid", logo: quid, className: "max-h-10 max-w-[55%]" },
   { name: "FINDI", logo: findiAsset.url },
   { name: "F8 Wallet", logo: f8wallet },
+  { name: "KrosRemit", logo: krosremitAsset.url },
+  { name: "FINDI Bankit", logo: findiBankitAsset.url },
+  { name: "RIS", logo: risAsset.url },
 ];
 
 export function ClientsSection() {
