@@ -224,22 +224,28 @@ function HomePage() {
 
       {/* AI READINESS SPOTLIGHT */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
-        <div className="relative overflow-hidden rounded-3xl glass-card p-10 md:p-16 shadow-elevated">
+        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
           <div className="absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-accent opacity-10 blur-3xl" />
-          <div className="relative max-w-3xl">
-            <Sparkles className="h-10 w-10 text-accent mb-6" />
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-              Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
-            </h2>
-            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              Most organizations know they need AI — but don't know where to start. Our structured
-              AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
-              can deliver measurable ROI within 90 days.
-            </p>
-            <Button asChild variant="hero" size="lg" className="mt-8">
-              <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
-            </Button>
+          <div className="relative grid md:grid-cols-2 items-stretch">
+            <div className="p-10 md:p-16">
+              <Sparkles className="h-10 w-10 text-accent mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
+              </h2>
+              <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+                Most organizations know they need AI — but don't know where to start. Our structured
+                AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
+                can deliver measurable ROI within 90 days.
+              </p>
+              <Button asChild variant="hero" size="lg" className="mt-8">
+                <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              </Button>
+            </div>
+            <div className="relative min-h-[260px] md:min-h-0">
+              <img src={aiHero} alt="AI audit and intelligent automation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
+            </div>
           </div>
         </div>
       </section>
