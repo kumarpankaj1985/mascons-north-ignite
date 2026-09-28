@@ -8,6 +8,12 @@ import heroImg from "@/assets/hero-mascons.jpg";
 import fintechPillar from "@/assets/fintech-pillar.jpg";
 import aiPillar from "@/assets/ai-pillar.jpg";
 import teamCollab from "@/assets/team-collab.jpg";
+import aiRecruitment from "@/assets/ai-recruitment.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
+import aiCalling from "@/assets/ai-calling.jpg";
+import cardsPlatform from "@/assets/cards-platform.jpg";
+import aiHero from "@/assets/ai-hero.jpg";
+import globalPhoto from "@/assets/global-photo.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
@@ -60,10 +66,10 @@ const stats = [
 ];
 
 const featured = [
-  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening." },
-  { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week." },
-  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations." },
-  { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand." },
+  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening.", image: aiRecruitment },
+  { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week.", image: expenseDashboard },
+  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations.", image: aiCalling },
+  { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand.", image: cardsPlatform },
 ];
 
 const whyUs = [
@@ -218,22 +224,28 @@ function HomePage() {
 
       {/* AI READINESS SPOTLIGHT */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
-        <div className="relative overflow-hidden rounded-3xl glass-card p-10 md:p-16 shadow-elevated">
+        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
           <div className="absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-accent opacity-10 blur-3xl" />
-          <div className="relative max-w-3xl">
-            <Sparkles className="h-10 w-10 text-accent mb-6" />
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-              Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
-            </h2>
-            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              Most organizations know they need AI — but don't know where to start. Our structured
-              AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
-              can deliver measurable ROI within 90 days.
-            </p>
-            <Button asChild variant="hero" size="lg" className="mt-8">
-              <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
-            </Button>
+          <div className="relative grid md:grid-cols-2 items-stretch">
+            <div className="p-10 md:p-16">
+              <Sparkles className="h-10 w-10 text-accent mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
+              </h2>
+              <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+                Most organizations know they need AI — but don't know where to start. Our structured
+                AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
+                can deliver measurable ROI within 90 days.
+              </p>
+              <Button asChild variant="hero" size="lg" className="mt-8">
+                <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              </Button>
+            </div>
+            <div className="relative min-h-[260px] md:min-h-0">
+              <img src={aiHero} alt="AI audit and intelligent automation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
+            </div>
           </div>
         </div>
       </section>
@@ -248,12 +260,18 @@ function HomePage() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {featured.map((f) => (
-            <div key={f.title} className="glass-card rounded-2xl p-6 hover:shadow-glow hover:-translate-y-1 transition-all">
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5">
-                <f.icon className="h-5 w-5 text-accent" />
+            <div key={f.title} className="glass-card rounded-2xl overflow-hidden hover:shadow-glow hover:-translate-y-1 transition-all group">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              <div className="p-6 -mt-5 relative">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5 shadow-card">
+                  <f.icon className="h-5 w-5 text-accent" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -290,18 +308,24 @@ function HomePage() {
       </section>
 
       {/* FOOTER CTA */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24 text-center">
-        <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
-          Ready to <span className="text-gradient-brand">transform your business?</span>
-        </h2>
-        <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Whether you need a ready-to-launch fintech platform or want to explore where AI fits in
-          your organization — Mascons is your partner for the journey.
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
-          <Button asChild variant="glow" size="xl"><Link to="/contact">Contact Us</Link></Button>
+      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
+        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
+          <img src={globalPhoto} alt="Global fintech and AI delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
+          <div className="relative">
+            <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
+              Ready to <span className="text-gradient-brand">transform your business?</span>
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Whether you need a ready-to-launch fintech platform or want to explore where AI fits in
+              your organization — Mascons is your partner for the journey.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+              <Button asChild variant="hero" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
+              <Button asChild variant="glow" size="xl"><Link to="/contact">Contact Us</Link></Button>
+            </div>
+          </div>
         </div>
       </section>
 
