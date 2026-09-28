@@ -308,18 +308,24 @@ function HomePage() {
       </section>
 
       {/* FOOTER CTA */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24 text-center">
-        <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
-          Ready to <span className="text-gradient-brand">transform your business?</span>
-        </h2>
-        <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Whether you need a ready-to-launch fintech platform or want to explore where AI fits in
-          your organization — Mascons is your partner for the journey.
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <Button asChild variant="hero" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
-          <Button asChild variant="glow" size="xl"><Link to="/contact">Contact Us</Link></Button>
+      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
+        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
+          <img src={globalPhoto} alt="Global fintech and AI delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
+          <div className="relative">
+            <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
+              Ready to <span className="text-gradient-brand">transform your business?</span>
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Whether you need a ready-to-launch fintech platform or want to explore where AI fits in
+              your organization — Mascons is your partner for the journey.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+              <Button asChild variant="hero" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
+              <Button asChild variant="glow" size="xl"><Link to="/contact">Contact Us</Link></Button>
+            </div>
+          </div>
         </div>
       </section>
 

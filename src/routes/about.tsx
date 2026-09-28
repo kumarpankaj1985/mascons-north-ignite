@@ -67,24 +67,32 @@ function AboutPage() {
       </section>
 
       {/* STORY */}
-      <section className="mx-auto max-w-5xl px-4 md:px-8 py-20">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
-        <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
-          <p>
-            At MASCONS, we specialize in building white-labeled fintech solutions customized to your
-            needs — so you can focus on growing, not building. Over the past decade and a half, we've
-            built, scaled, and launched fintech platforms trusted by clients on three continents.
-          </p>
-          <p>
-            Today we deliver compliance-aware solutions — backed by a global team of technologists,
-            domain experts, and AI specialists. Our move into Agentic AI is a natural extension of
-            that mission: helping organizations use intelligent automation to do more with less.
-          </p>
-          <p>
-            Our product portfolio spans digital wallets, card management, remittance, branchless banking,
-            corporate expense management, and Banking as a Service — all white-labeled, all launch-ready.
-            Combined with our Agentic AI capabilities, we help businesses transform operations at every level.
-          </p>
+      <section className="mx-auto max-w-6xl px-4 md:px-8 py-20">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Our Story</h2>
+            <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                At MASCONS, we specialize in building white-labeled fintech solutions customized to your
+                needs — so you can focus on growing, not building. Over the past decade and a half, we've
+                built, scaled, and launched fintech platforms trusted by clients on three continents.
+              </p>
+              <p>
+                Today we deliver compliance-aware solutions — backed by a global team of technologists,
+                domain experts, and AI specialists. Our move into Agentic AI is a natural extension of
+                that mission: helping organizations use intelligent automation to do more with less.
+              </p>
+              <p>
+                Our product portfolio spans digital wallets, card management, remittance, branchless banking,
+                corporate expense management, and Banking as a Service — all white-labeled, all launch-ready.
+                Combined with our Agentic AI capabilities, we help businesses transform operations at every level.
+              </p>
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl glass-card aspect-[4/3] shadow-card">
+            <img src={fintechHero} alt="Mascons fintech platform development" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <div className="absolute inset-0 bg-gradient-to-t from-card/70 via-transparent to-transparent" />
+          </div>
         </div>
       </section>
 
