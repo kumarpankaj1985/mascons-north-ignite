@@ -4,6 +4,8 @@ import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
 import pankajPhoto from "@/assets/pankaj-kumar.jpg";
 import gauravPhoto from "@/assets/gaurav-gupta.png";
 import abhayPhoto from "@/assets/abhay-desai.avif";
+import fintechHero from "@/assets/fintech-hero.jpg";
+import remittanceGlobe from "@/assets/remittance-globe.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -153,14 +155,20 @@ function AboutPage() {
               get enterprise-grade infrastructure with hands-on support.
             </p>
           </div>
-          <div className="glass-card rounded-xl p-8">
-            <MapPin className="h-6 w-6 text-accent mb-3" />
-            <div className="font-semibold text-lg">Headquarters</div>
-            <p className="text-muted-foreground mt-2 leading-relaxed">
-              652, 22nd Cross, 23rd Main Rd, Parangi Palaya,<br />
-              Sector 2, HSR Layout, Bengaluru, Karnataka 560102
-            </p>
-            <p className="text-muted-foreground mt-2">support@mascons.in</p>
+          <div className="space-y-6">
+            <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/9] shadow-card">
+              <img src={remittanceGlobe} alt="Mascons global delivery network" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/70 via-transparent to-transparent" />
+            </div>
+            <div className="glass-card rounded-xl p-8">
+              <MapPin className="h-6 w-6 text-accent mb-3" />
+              <div className="font-semibold text-lg">Headquarters</div>
+              <p className="text-muted-foreground mt-2 leading-relaxed">
+                652, 22nd Cross, 23rd Main Rd, Parangi Palaya,<br />
+                Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+              </p>
+              <p className="text-muted-foreground mt-2">support@mascons.in</p>
+            </div>
           </div>
         </div>
       </section>
