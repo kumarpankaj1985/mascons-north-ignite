@@ -8,6 +8,12 @@ import heroImg from "@/assets/hero-mascons.jpg";
 import fintechPillar from "@/assets/fintech-pillar.jpg";
 import aiPillar from "@/assets/ai-pillar.jpg";
 import teamCollab from "@/assets/team-collab.jpg";
+import aiRecruitment from "@/assets/ai-recruitment.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
+import aiCalling from "@/assets/ai-calling.jpg";
+import cardsPlatform from "@/assets/cards-platform.jpg";
+import aiHero from "@/assets/ai-hero.jpg";
+import globalPhoto from "@/assets/global-photo.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
@@ -60,10 +66,10 @@ const stats = [
 ];
 
 const featured = [
-  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening." },
-  { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week." },
-  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations." },
-  { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand." },
+  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening.", image: aiRecruitment },
+  { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week.", image: expenseDashboard },
+  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations.", image: aiCalling },
+  { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand.", image: cardsPlatform },
 ];
 
 const whyUs = [
