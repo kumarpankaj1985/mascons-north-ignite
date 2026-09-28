@@ -149,8 +149,8 @@ function AboutPage() {
             <MapPin className="h-6 w-6 text-accent mb-3" />
             <div className="font-semibold text-lg">Headquarters</div>
             <p className="text-muted-foreground mt-2 leading-relaxed">
-              648/A, 4th Floor, Binnamangala 1st Stage,<br />
-              Indiranagar, Bangalore - 560038
+              652, 22nd Cross, 23rd Main Rd, Parangi Palaya,<br />
+              Sector 2, HSR Layout, Bengaluru, Karnataka 560102
             </p>
             <p className="text-muted-foreground mt-2">support@mascons.in</p>
           </div>
