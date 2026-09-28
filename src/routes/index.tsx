@@ -254,12 +254,18 @@ function HomePage() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {featured.map((f) => (
-            <div key={f.title} className="glass-card rounded-2xl p-6 hover:shadow-glow hover:-translate-y-1 transition-all">
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5">
-                <f.icon className="h-5 w-5 text-accent" />
+            <div key={f.title} className="glass-card rounded-2xl overflow-hidden hover:shadow-glow hover:-translate-y-1 transition-all group">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              <div className="p-6 -mt-5 relative">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5 shadow-card">
+                  <f.icon className="h-5 w-5 text-accent" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              </div>
             </div>
           ))}
         </div>
