@@ -1,3 +1,4 @@
 - [x] Remove standalone Agentic AI page, navigation and promotions while retaining AI in fintech products.
 - [x] Update homepage headline and supporting statement.
 - [x] Refresh site colors and layout with a light blue-and-white fintech palette and image-led homepage hero.
+- [x] Redesign the site with an Alaan-inspired lilac, sky, white and violet visual system.

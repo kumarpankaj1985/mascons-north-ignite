@@ -79,31 +79,29 @@ function HomePage() {
     <div>
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero border-b border-border">
-        <div className="absolute inset-0 grid-bg opacity-40" />
-        <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-20 md:py-28 grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-16 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-card/80 px-4 py-2 text-xs font-semibold text-primary mb-8 shadow-card">
+        <div className="relative mx-auto max-w-7xl px-4 md:px-8 pt-16 md:pt-24 text-center">
+          <div className="mx-auto max-w-4xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-card/80 px-4 py-2 text-xs font-semibold text-primary mb-6 shadow-card">
               <span className="h-2 w-2 rounded-full bg-accent" />
               Fintech infrastructure for the world
             </div>
-            <p className="text-sm font-bold text-accent uppercase tracking-[0.18em] mb-5">MASCONS / FINANCIAL TECHNOLOGY</p>
-            <h1 className="text-[clamp(2.7rem,5vw,5rem)] font-bold leading-[1.07] tracking-[-0.045em] max-w-3xl">Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span></h1>
-            <p className="mt-7 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products.</p>
-            <div className="mt-9 flex flex-wrap gap-4">
+            <p className="text-sm font-bold text-primary uppercase tracking-[0.18em] mb-5">MASCONS / FINANCIAL TECHNOLOGY</p>
+            <h1 className="text-[clamp(2.7rem,5vw,5rem)] font-bold leading-[1.05] max-w-4xl mx-auto">Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span></h1>
+            <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-3xl mx-auto">Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products.</p>
+            <div className="mt-8 flex flex-wrap gap-3 justify-center">
               <Button asChild variant="hero" size="xl"><Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
               <Button asChild variant="glow" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
             </div>
-            <div className="mt-10 flex flex-wrap items-center gap-5 text-sm text-muted-foreground">
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-5 text-sm text-foreground/70">
               <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> White-label platforms</span>
               <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> Built to scale globally</span>
             </div>
           </div>
-          <div className="relative lg:pl-5">
-            <div className="absolute -inset-5 rounded-[2.5rem] bg-surface-elevated/60 rotate-3" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-card/90 bg-[#1c2420] shadow-elevated aspect-[5/4]">
+          <div className="relative mx-auto mt-12 max-w-5xl px-2 md:px-12">
+            <div className="relative overflow-hidden rounded-xl border-8 border-foreground/90 bg-foreground shadow-elevated aspect-[16/8]">
               <img src={fintechPillar} alt="Connected digital wallets and payment cards" className="w-full h-full object-cover" fetchPriority="high" />
             </div>
-            <div className="absolute -bottom-6 -left-3 md:-left-8 bg-card rounded-2xl border border-border shadow-elevated px-5 py-4">
+            <div className="absolute bottom-4 left-0 md:left-8 bg-card rounded-lg border border-border shadow-elevated px-5 py-4 text-left">
               <p className="text-xs uppercase tracking-widest font-semibold text-muted-foreground">Built for growth</p>
               <p className="mt-1 text-lg font-bold text-foreground">One platform. More possibilities.</p>
             </div>
