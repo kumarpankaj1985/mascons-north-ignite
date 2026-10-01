@@ -21,9 +21,8 @@ export const Route = createFileRoute("/agentic-ai")({
       { property: "og:title", content: "Agentic AI for Business — Live AI Products | Mascons" },
       { property: "og:description", content: "Live AI products. Free AI audit. Measurable ROI within 90 days." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/agentic-ai" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://mascons.in/agentic-ai" },

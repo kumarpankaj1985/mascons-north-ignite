@@ -19,6 +19,7 @@ export const Route = createFileRoute("/book-a-demo")({
       { property: "og:title", content: "Book a Free Demo & AI Audit — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/book-a-demo" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

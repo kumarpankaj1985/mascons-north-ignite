@@ -16,6 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Mascons — Fintech & Agentic AI Innovators" },
       { property: "og:description", content: "Two decades of fintech innovation, a new chapter in Agentic AI. Meet the leadership behind Mascons." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/about" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

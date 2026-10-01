@@ -24,9 +24,8 @@ export const Route = createFileRoute("/services")({
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/services" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://mascons.in/services" },

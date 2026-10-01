@@ -25,9 +25,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
       { property: "og:description", content: "Enterprise-grade fintech software and infrastructure for modern financial products." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://mascons.in/" },

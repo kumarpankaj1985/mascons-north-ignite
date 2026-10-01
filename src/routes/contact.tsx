@@ -18,6 +18,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Mascons — Fintech & AI" },
       { property: "og:description", content: "Reach our team. Response within 4 business hours." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/contact" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
