@@ -40,38 +40,38 @@
 :root {
   --radius: 0.75rem;
 
-  /* Clear, light fintech canvas with financial navy and blue accents */
-  --background: #ffffff;
-  --foreground: #10243d;
-  --surface: #f4f8fc;
-  --surface-elevated: #e9f1f9;
-  --card: #ffffff;
-  --card-foreground: #10243d;
-  --popover: #ffffff;
-  --popover-foreground: #10243d;
-  --primary: #1569b5;
-  --primary-foreground: #ffffff;
-  --brand: #1569b5;
-  --brand-foreground: #ffffff;
-  --brand-glow: #1c95c7;
-  --secondary: #e9f1f9;
-  --secondary-foreground: #10243d;
-  --muted: #edf3f8;
-  --muted-foreground: #52657b;
-  --accent: #087aa6;
-  --accent-foreground: #ffffff;
-  --destructive: #c44343;
+  /* Warm premium fintech canvas — cream base, deep evergreen primary, gold accent */
+  --background: #faf6ee;
+  --foreground: #211d15;
+  --surface: #f2ebdd;
+  --surface-elevated: #eadfc9;
+  --card: #fffdf8;
+  --card-foreground: #211d15;
+  --popover: #fffdf8;
+  --popover-foreground: #211d15;
+  --primary: #17604c;
+  --primary-foreground: #fdfbf4;
+  --brand: #17604c;
+  --brand-foreground: #fdfbf4;
+  --brand-glow: #2e9a78;
+  --secondary: #f2ebdd;
+  --secondary-foreground: #211d15;
+  --muted: #f1ead9;
+  --muted-foreground: #6f6754;
+  --accent: #a9761f;
+  --accent-foreground: #fffdf8;
+  --destructive: #c0492f;
   --destructive-foreground: #ffffff;
-  --border: #dce6ef;
-  --input: #cbd9e7;
-  --ring: #1569b5;
-  --gradient-brand: linear-gradient(115deg, #1257a4, #0e91b5);
-  --gradient-hero: linear-gradient(130deg, #f8fbff 0%, #e8f4fc 58%, #dceff8 100%);
-  --gradient-card: linear-gradient(160deg, #ffffff, #fbfdff);
-  --gradient-text: linear-gradient(120deg, #143e75, #087aa6);
-  --shadow-glow: 0 15px 40px -18px rgb(16 91 154 / 20%);
-  --shadow-card: 0 14px 40px -26px rgb(14 52 87 / 25%);
-  --shadow-elevated: 0 24px 64px -30px rgb(14 52 87 / 28%);
+  --border: #e3d9c2;
+  --input: #d5c8aa;
+  --ring: #17604c;
+  --gradient-brand: linear-gradient(115deg, #14523f, #2e9a78);
+  --gradient-hero: linear-gradient(130deg, #fdfaf3 0%, #f6eedd 58%, #efe4cb 100%);
+  --gradient-card: linear-gradient(160deg, #fffdf8, #faf4e6);
+  --gradient-text: linear-gradient(120deg, #14523f, #8a6a1e);
+  --shadow-glow: 0 15px 40px -18px rgb(23 96 76 / 22%);
+  --shadow-card: 0 14px 40px -26px rgb(60 50 28 / 28%);
+  --shadow-elevated: 0 24px 64px -30px rgb(60 50 28 / 32%);
 
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -91,7 +91,7 @@
     background-image: none;
   }
   ::selection {
-    background-color: #b7e5f5;
+    background-color: #e9d9ae;
     color: var(--foreground);
   }
 }
