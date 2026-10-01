@@ -4,9 +4,9 @@ import {
   Shield, Rocket, Globe2, Zap, Wallet, CreditCard, Send, Store,
   ArrowRight, CheckCircle2, TrendingUp, Award, Building2,
 } from "lucide-react";
-import heroPoster from "@/assets/coffee-shop-pos-poster.jpg.asset.json";
-import heroVideo from "@/assets/coffee-shop-pos-loop.mp4.asset.json";
-import heroWebm from "@/assets/coffee-shop-pos-loop.webm.asset.json";
+import heroPoster from "@/assets/coffee-shop-pos-bright.jpg.asset.json";
+import heroVideo from "@/assets/coffee-shop-pos-bright.mp4.asset.json";
+import heroWebm from "@/assets/coffee-shop-pos-bright.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/payment-infrastructure-wallet.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
@@ -92,7 +92,7 @@ function HomePage() {
           <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/35 via-background/40 to-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/35 to-background/80" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center">
@@ -259,7 +259,7 @@ function HomePage() {
             <p className="text-sm font-semibold text-accent uppercase tracking-widest">Testimonials</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">What our <span className="text-gradient-brand">clients say</span></h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               { q: "Mascons delivered our digital wallet in record time. The platform is rock solid and our customers love the experience.", a: "Director of Product", c: "HiWiPay" },
               { q: "From card issuance to compliance workflows, Mascons became a true extension of our team. Truly white-label, truly turnkey.", a: "Head of Payments", c: "Instapay Technologies" },
