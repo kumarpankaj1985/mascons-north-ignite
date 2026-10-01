@@ -23,11 +23,12 @@ export const Route = createFileRoute("/services")({
       { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons.in/services" },
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
     ],
     scripts: [
       {
@@ -36,7 +37,7 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Fintech-as-a-Service by Mascons",
-          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons.in" },
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
           areaServed: "Worldwide",
           serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management", "Merchant Acquiring Platform"],
           description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, AI-powered HRMS with expense management, and merchant acquiring platforms for digital wallet and UPI-based payments.",
@@ -190,7 +191,7 @@ function ServicesPage() {
           className="absolute inset-0 opacity-25"
           style={{ backgroundImage: `url(${fintechHero})`, backgroundSize: "cover", backgroundPosition: "center" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/90 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-24 md:py-32">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">Fintech-as-a-Service</p>
           <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight max-w-4xl leading-[1.05]">
@@ -203,7 +204,7 @@ function ServicesPage() {
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild variant="hero" size="lg"><Link to="/book-a-demo">Book a Demo</Link></Button>
-            <Button asChild variant="glow" size="lg"><Link to="/contact">Talk to Us</Link></Button>
+            <Button asChild variant="glow" size="lg"><Link to="/agentic-ai">Explore Agentic AI</Link></Button>
           </div>
         </div>
       </section>
@@ -213,7 +214,7 @@ function ServicesPage() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
             <img src={walletPhoto} alt="Branded digital wallet on mobile" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Wallet & Cards</p>
               <h3 className="mt-1 text-xl font-bold">Your brand, in every customer's pocket</h3>
@@ -221,7 +222,7 @@ function ServicesPage() {
           </div>
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
             <img src={globalPhoto} alt="Global remittance corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Global Rails</p>
               <h3 className="mt-1 text-xl font-bold">Cross-border payments, ready to launch</h3>
@@ -237,7 +238,7 @@ function ServicesPage() {
             <article key={s.title} className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all flex flex-col">
               <div className="relative aspect-[16/9] overflow-hidden">
                 <img src={s.image} alt={`${s.title} — Mascons fintech platform`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={720} />
-                <div className="absolute inset-0 bg-gradient-to-t from-card/40 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex items-center gap-3 mb-5">

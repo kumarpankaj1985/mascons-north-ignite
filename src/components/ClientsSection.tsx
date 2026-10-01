@@ -45,7 +45,7 @@ export function ClientsSection() {
   const loop = [...clients, ...clients];
 
   return (
-    <section className="bg-background border-y border-border/50">
+    <section className="bg-surface/30 border-y border-border/50">
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-20">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">Clients & Partners</p>
@@ -70,7 +70,7 @@ export function ClientsSection() {
             {loop.map((c, i) => (
               <div
                 key={`${c.name}-${i}`}
-                className="shrink-0 w-44 h-28 bg-card rounded-lg border border-border/60 hover:border-accent/50 hover:shadow-glow transition-all flex items-center justify-center p-3"
+                className="shrink-0 w-44 h-28 bg-white rounded-xl border border-border/50 hover:border-accent/50 hover:shadow-glow transition-all flex items-center justify-center p-3"
                 title={c.name}
               >
                 <img

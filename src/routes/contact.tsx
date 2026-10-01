@@ -12,25 +12,23 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Mascons — Fintech Solutions" },
-      { name: "description", content: "Talk to Mascons about white-label fintech platforms. Sales, partnerships, careers and support — response within 4 business hours." },
-      { name: "keywords", content: "contact Mascons, fintech vendor contact, fintech partnerships, fintech partnerships" },
-      { property: "og:title", content: "Contact Mascons — Fintech Solutions" },
+      { title: "Contact Mascons — Fintech & Agentic AI Solutions" },
+      { name: "description", content: "Talk to Mascons about white-label fintech platforms or Agentic AI projects. Sales, partnerships, careers and support — response within 4 business hours." },
+      { name: "keywords", content: "contact Mascons, fintech vendor contact, AI consulting contact, fintech partnerships, AI partnerships" },
+      { property: "og:title", content: "Contact Mascons — Fintech & AI" },
       { property: "og:description", content: "Reach our team. Response within 4 business hours." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons.in/contact" },
+      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/contact" },
     ],
   }),
   component: ContactPage,
 });
 
 const faqs = [
-  { q: "How quickly can Mascons deploy a solution?", a: "For our standard fintech platforms, deployment typically takes 4–8 weeks from contract signing. Timelines depend on your integrations and requirements." },
+  { q: "How quickly can Mascons deploy a solution?", a: "For our standard fintech platforms, deployment typically takes 4–8 weeks from contract signing. AI solutions vary by complexity — our off-the-shelf AI products can go live in as few as 2 weeks." },
   { q: "Do you offer customization for regulatory requirements?", a: "Yes. Our platforms support various regulatory frameworks out of the box, with deeper customization available for banks, NBFCs, and regulated entities in any jurisdiction." },
-  { q: "Do you offer pilots or POCs before a full engagement?", a: "We can discuss a pilot or proof of concept for your fintech requirements before a wider rollout." },
+  { q: "Do you offer pilots or POCs before a full engagement?", a: "Yes — most of our AI products are available as 30-day pilots so you can validate ROI before committing to a full rollout." },
 ];
 
 function ContactPage() {
@@ -83,7 +81,7 @@ function ContactPage() {
           {[
             { icon: Mail, title: "Sales & Demos", lines: ["support@mascons.in", "Within 4 business hours"] },
             { icon: HandshakeIcon, title: "Partnerships", lines: ["support@mascons.in", "Partnership inquiries welcome"] },
-            { icon: Briefcase, title: "Careers", lines: ["support@mascons.in", "Engineering, Product, Sales"] },
+            { icon: Briefcase, title: "Careers", lines: ["support@mascons.in", "Engineering, Product, AI, Sales"] },
           ].map((c) => (
             <div key={c.title} className="glass-card rounded-2xl p-7 shadow-card">
               <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand mb-5 shadow-glow">

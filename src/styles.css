@@ -38,40 +38,54 @@
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.75rem;
 
-  /* Alaan-inspired fintech system: airy whites, lilac sky, crisp ink and electric violet */
-  --background: oklch(0.995 0.003 280);
-  --foreground: oklch(0.16 0.035 276);
-  --surface: oklch(0.965 0.025 285);
-  --surface-elevated: oklch(0.93 0.055 282);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.16 0.035 276);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.035 276);
-  --primary: oklch(0.56 0.245 285);
-  --primary-foreground: oklch(1 0 0);
-  --brand: oklch(0.56 0.245 285);
-  --brand-foreground: oklch(1 0 0);
-  --brand-glow: oklch(0.7 0.19 285);
-  --secondary: oklch(0.97 0.018 284);
-  --secondary-foreground: oklch(0.2 0.04 276);
-  --muted: oklch(0.965 0.012 278);
-  --muted-foreground: oklch(0.49 0.03 276);
-  --accent: oklch(0.57 0.25 287);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.58 0.22 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0.025 280);
-  --input: oklch(0.87 0.03 280);
-  --ring: oklch(0.56 0.245 285);
-  --gradient-brand: linear-gradient(115deg, oklch(0.53 0.26 286), oklch(0.64 0.23 280));
-  --gradient-hero: linear-gradient(125deg, oklch(0.9 0.09 304) 0%, oklch(0.92 0.075 285) 48%, oklch(0.89 0.065 254) 100%);
-  --gradient-card: linear-gradient(160deg, oklch(1 0 0), oklch(0.985 0.01 282));
-  --gradient-text: linear-gradient(115deg, oklch(0.47 0.25 287), oklch(0.62 0.22 277));
-  --shadow-glow: 0 16px 40px -20px oklch(0.56 0.245 285 / 40%);
-  --shadow-card: 0 16px 44px -30px oklch(0.2 0.04 276 / 24%);
-  --shadow-elevated: 0 28px 70px -36px oklch(0.2 0.04 276 / 36%);
+  /* Premium Fintech Dark — always dark */
+  --background: oklch(0.16 0.025 260);
+  --foreground: oklch(0.97 0.01 250);
+
+  --surface: oklch(0.20 0.028 260);
+  --surface-elevated: oklch(0.235 0.032 260);
+
+  --card: oklch(0.205 0.03 260);
+  --card-foreground: oklch(0.97 0.01 250);
+
+  --popover: oklch(0.21 0.03 260);
+  --popover-foreground: oklch(0.97 0.01 250);
+
+  --primary: oklch(0.72 0.18 235);
+  --primary-foreground: oklch(0.14 0.025 260);
+
+  --brand: oklch(0.72 0.18 235);
+  --brand-foreground: oklch(0.14 0.025 260);
+  --brand-glow: oklch(0.82 0.16 200);
+
+  --secondary: oklch(0.26 0.03 260);
+  --secondary-foreground: oklch(0.95 0.01 250);
+
+  --muted: oklch(0.24 0.025 260);
+  --muted-foreground: oklch(0.70 0.025 250);
+
+  --accent: oklch(0.82 0.16 200);
+  --accent-foreground: oklch(0.14 0.025 260);
+
+  --destructive: oklch(0.65 0.22 25);
+  --destructive-foreground: oklch(0.98 0.01 250);
+
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.72 0.18 235);
+
+  --gradient-brand: linear-gradient(135deg, oklch(0.72 0.18 235) 0%, oklch(0.82 0.16 200) 100%);
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.30 0.10 235 / 0.55) 0%, transparent 60%),
+                   radial-gradient(ellipse at bottom right, oklch(0.35 0.12 200 / 0.35) 0%, transparent 50%),
+                   linear-gradient(180deg, oklch(0.16 0.025 260) 0%, oklch(0.13 0.022 260) 100%);
+  --gradient-card: linear-gradient(160deg, oklch(0.22 0.03 260 / 0.9), oklch(0.18 0.028 260 / 0.9));
+  --gradient-text: linear-gradient(135deg, oklch(0.95 0.02 240), oklch(0.78 0.16 215));
+
+  --shadow-glow: 0 0 60px -10px oklch(0.72 0.18 235 / 0.45);
+  --shadow-card: 0 10px 40px -15px oklch(0.05 0.02 260 / 0.6);
+  --shadow-elevated: 0 20px 60px -20px oklch(0.05 0.02 260 / 0.8);
 
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -88,10 +102,12 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    background-image: none;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.30 0.10 235 / 0.25), transparent),
+      linear-gradient(180deg, var(--background), var(--background));
   }
   ::selection {
-    background-color: var(--surface-elevated);
+    background-color: oklch(0.72 0.18 235 / 0.4);
     color: var(--foreground);
   }
 }
@@ -118,7 +134,7 @@
   .glass-card {
     background: var(--gradient-card);
     backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
+    border: 1px solid oklch(1 0 0 / 0.08);
   }
   .grid-bg {
     background-image:
