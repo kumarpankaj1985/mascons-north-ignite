@@ -1,34 +1,30 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import {
-  Sparkles, Shield, Rocket, Globe2, Zap, Bot, Wallet, CreditCard, PhoneCall,
-  ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
+  Rocket, Globe2, Zap, Wallet, CreditCard, Building2,
+  ArrowRight, CheckCircle2, TrendingUp, Award, Gift, Landmark,
 } from "lucide-react";
-import heroImg from "@/assets/hero-mascons.jpg";
+
 import fintechPillar from "@/assets/fintech-pillar.jpg";
-import aiPillar from "@/assets/ai-pillar.jpg";
 import teamCollab from "@/assets/team-collab.jpg";
-import aiRecruitment from "@/assets/ai-recruitment.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
-import aiCalling from "@/assets/ai-calling.jpg";
 import cardsPlatform from "@/assets/cards-platform.jpg";
-import aiHero from "@/assets/ai-hero.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — AI Powered Fintech-as-a-Service" },
+      { title: "Mascons — Technology That Enables the Future of Fintech" },
       { name: "description", content: "Mascons is an AI powered Fintech-as-a-Service company. We build white-label digital wallets, card management, remittance, BaaS platforms and intelligent fintech infrastructure for banks, NBFCs, and enterprises. Launch financial products under your brand." },
       { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
-      { property: "og:title", content: "Mascons — AI Powered Fintech-as-a-Service" },
+      { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
       { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/" },
+      { rel: "canonical", href: "https://mascons.in/" },
     ],
     scripts: [
       {
@@ -37,8 +33,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
-          logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
+          url: "https://mascons.in",
+          logo: "https://mascons.in/logo-mascons.png",
           description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
@@ -50,7 +46,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
+          url: "https://mascons.in",
         }),
       },
     ],
@@ -60,22 +56,20 @@ export const Route = createFileRoute("/")({
 
 const stats = [
   { value: "15+", label: "Years of Fintech Expertise", icon: Award },
-  { value: "7+", label: "Live AI Products Deployed", icon: Bot },
+  { value: "10", label: "Fintech Solutions", icon: Wallet },
   { value: "3", label: "Continents of Global Clients", icon: Globe2 },
   { value: "2", label: "Successful Fintech Exits", icon: TrendingUp },
 ];
 
 const featured = [
-  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening.", image: aiRecruitment },
   { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week.", image: expenseDashboard },
-  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations.", image: aiCalling },
   { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand.", image: cardsPlatform },
+  { icon: Gift, title: "AI-Powered Rewards & Loyalty", desc: "Personalize incentives and keep customers engaged across every payment journey.", image: fintechPillar },
+  { icon: Landmark, title: "Loan Origination & Management", desc: "Bring lending from application to repayment onto one connected platform.", image: teamCollab },
 ];
 
 const whyUs = [
   "Proven founders with 15+ years in fintech and 2 successful exits",
-  "Live AI products already deployed — not concepts, not prototypes",
-  "End-to-end support: from AI readiness audit to full implementation",
   "Global delivery with deep domain expertise in financial services",
   "White-label first: you own the brand, we power the technology",
 ];
@@ -84,37 +78,34 @@ function HomePage() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-hero">
+      <section className="relative overflow-hidden bg-gradient-hero border-b border-border">
         <div className="absolute inset-0 grid-bg opacity-40" />
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
-
-        <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-6 md:py-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
-              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-              Serving businesses globally
+        <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-20 md:py-28 grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/80 px-4 py-2 text-xs font-semibold text-primary mb-8 shadow-card">
+              <span className="h-2 w-2 rounded-full bg-accent" />
+              Fintech infrastructure for the world
             </div>
-            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">AI Powered Fintech-as-a-Service</p>
-            <h1 className="text-[clamp(1.5rem,4.5vw,3.75rem)] font-bold tracking-tight leading-[1.05]">
-              <span className="whitespace-nowrap">Launch financial products</span><br />
-              <span className="text-gradient-brand whitespace-nowrap">under your brand.</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Our fintech suite gives businesses, banks, NBFCs, and enterprises the ability to launch,
-              manage, and scale financial products under their own brand — powered by Mascons'
-              battle-tested infrastructure.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Button asChild variant="hero" size="xl">
-                <Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
-              <Button asChild variant="glow" size="xl">
-                <Link to="/book-a-demo">Book a Free AI Audit</Link>
-              </Button>
+            <p className="text-sm font-bold text-accent uppercase tracking-[0.18em] mb-5">MASCONS / FINANCIAL TECHNOLOGY</p>
+            <h1 className="text-[clamp(2.7rem,5vw,5rem)] font-bold leading-[1.07] tracking-[-0.045em] max-w-3xl">Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span></h1>
+            <p className="mt-7 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products.</p>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <Button asChild variant="hero" size="xl"><Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+              <Button asChild variant="glow" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
+            </div>
+            <div className="mt-10 flex flex-wrap items-center gap-5 text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> White-label platforms</span>
+              <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> Built to scale globally</span>
+            </div>
+          </div>
+          <div className="relative lg:pl-5">
+            <div className="absolute -inset-5 rounded-[2.5rem] bg-white/50 rotate-3" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/90 bg-[#11253e] shadow-elevated aspect-[5/4]">
+              <img src={fintechPillar} alt="Connected digital wallets and payment cards" className="w-full h-full object-cover" fetchPriority="high" />
+            </div>
+            <div className="absolute -bottom-6 -left-3 md:-left-8 bg-white rounded-2xl border border-border shadow-elevated px-5 py-4">
+              <p className="text-xs uppercase tracking-widest font-semibold text-muted-foreground">Built for growth</p>
+              <p className="mt-1 text-lg font-bold text-foreground">One platform. More possibilities.</p>
             </div>
           </div>
         </div>
@@ -138,24 +129,23 @@ function HomePage() {
       {/* CLIENTS & PARTNERS — moved up so visitors see trust signals immediately */}
       <ClientsSection />
 
-      {/* TWO PILLARS */}
+      {/* FINTECH PLATFORMS */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">What we do</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">
-            Two pillars. <span className="text-gradient-brand">Infinite outcomes.</span>
+            Built for the way <span className="text-gradient-brand">money moves.</span>
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
-            Mascons operates at the intersection of advanced fintech infrastructure and Agentic AI —
-            built for compliance, built for scale.
+            From digital payments to lending, our connected platforms help financial products reach more people.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-6">
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
               <img src={fintechPillar} alt="Fintech infrastructure visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/50 via-transparent to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
@@ -173,25 +163,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
-            <div className="relative aspect-[16/9] overflow-hidden">
-              <img src={aiPillar} alt="Agentic AI visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
-            </div>
-            <div className="p-8 md:p-10 -mt-6 relative">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
-                <Bot className="h-6 w-6 text-brand-foreground" />
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Agentic AI Solutions</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                We assess your organization, identify the highest-impact AI opportunities, and deploy
-                ready-built or custom AI agents that automate your workflows.
-              </p>
-              <Link to="/agentic-ai" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                Explore Agentic AI <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -207,7 +179,7 @@ function HomePage() {
               We don't sell roadmaps — we deliver platforms our clients launch in weeks, not years.
             </p>
             <div className="mt-8 relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-              <img src={teamCollab} alt="Mascons team collaborating on fintech and AI solutions" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1280} height={800} />
+              <img src={teamCollab} alt="Mascons team collaborating on fintech solutions" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1280} height={800} />
               <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
             </div>
           </div>
@@ -219,34 +191,6 @@ function HomePage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* AI READINESS SPOTLIGHT */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
-        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated">
-          <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
-          <div className="absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-accent opacity-10 blur-3xl" />
-          <div className="relative grid md:grid-cols-2 items-stretch">
-            <div className="p-10 md:p-16">
-              <Sparkles className="h-10 w-10 text-accent mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
-              </h2>
-              <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-                Most organizations know they need AI — but don't know where to start. Our structured
-                AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
-                can deliver measurable ROI within 90 days.
-              </p>
-              <Button asChild variant="hero" size="lg" className="mt-8">
-                <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
-            </div>
-            <div className="relative min-h-[260px] md:min-h-0">
-              <img src={aiHero} alt="AI audit and intelligent automation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
-            </div>
-          </div>
         </div>
       </section>
 
@@ -263,7 +207,7 @@ function HomePage() {
             <div key={f.title} className="glass-card rounded-2xl overflow-hidden hover:shadow-glow hover:-translate-y-1 transition-all group">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/30 via-transparent to-transparent" />
               </div>
               <div className="p-6 -mt-5 relative">
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5 shadow-card">
@@ -288,11 +232,9 @@ function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { q: "Mascons delivered our digital wallet in record time. The platform is rock solid and our customers love the experience.", a: "Director of Product", c: "HiWiPay" },
-              { q: "Their AI audit identified four areas where we could automate immediately. The ROI was instant and measurable.", a: "VP Operations", c: "Cashzen, Canada" },
               { q: "From card issuance to compliance workflows, Mascons became a true extension of our team. Truly white-label, truly turnkey.", a: "Head of Payments", c: "Instapay Technologies" },
               { q: "We launched our remittance corridor in under 90 days. The platform scales effortlessly across geographies.", a: "Founder & CEO", c: "MEGO Forex" },
               { q: "The Mascons team understands fintech end-to-end — from regulatory nuances to customer experience.", a: "Chief Technology Officer", c: "Royal Bank Pacific" },
-              { q: "Their Agentic AI for expense management saved our finance team dozens of hours every week.", a: "Finance Director", c: "MYNTPE" },
             ].map((t) => (
               <div key={t.q} className="glass-card rounded-2xl p-8 shadow-card">
                 <Zap className="h-6 w-6 text-accent mb-4" />
@@ -310,16 +252,15 @@ function HomePage() {
       {/* FOOTER CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
-          <img src={globalPhoto} alt="Global fintech and AI delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
+          <img src={globalPhoto} alt="Global fintech delivery" className="absolute inset-0 h-full w-full object-cover opacity-20" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/85 to-white/95" />
           <div className="relative">
             <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
               Ready to <span className="text-gradient-brand">transform your business?</span>
             </h2>
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Whether you need a ready-to-launch fintech platform or want to explore where AI fits in
-              your organization — Mascons is your partner for the journey.
+              Launch a modern financial product on infrastructure designed to grow with your business.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild variant="hero" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
@@ -329,19 +270,7 @@ function HomePage() {
         </div>
       </section>
 
-      <ShieldStrip />
     </div>
   );
 }
 
-function ShieldStrip() {
-  return (
-    <div className="border-t border-border/50 bg-surface/40">
-      <div className="mx-auto max-w-7xl px-4 md:px-8 py-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-xs text-muted-foreground">
-        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> PCI-DSS Compliant Infrastructure</div>
-        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> SOC 2 Aligned Controls</div>
-        <div className="flex items-center gap-2"><Shield className="h-4 w-4 text-accent" /> Global Data Residency</div>
-      </div>
-    </div>
-  );
-}
