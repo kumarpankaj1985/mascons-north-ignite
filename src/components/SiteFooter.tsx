@@ -16,7 +16,7 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              Intelligent Fintech & Agentic AI solutions for businesses worldwide.
+              Fintech technology and financial infrastructure for businesses worldwide.
             </p>
             <div className="mt-5 flex gap-3">
               <a href="#" className="p-2 rounded-md bg-surface hover:bg-surface-elevated transition-colors" aria-label="LinkedIn"><Linkedin className="h-4 w-4" /></a>
@@ -29,8 +29,6 @@ export function SiteFooter() {
             <h4 className="text-sm font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li><Link to="/services" className="hover:text-foreground">Fintech Platforms</Link></li>
-              <li><Link to="/agentic-ai" className="hover:text-foreground">Agentic AI</Link></li>
-              <li><Link to="/agentic-ai" className="hover:text-foreground">AI Audit</Link></li>
               <li><Link to="/services" className="hover:text-foreground">Banking as a Service</Link></li>
             </ul>
           </div>
@@ -71,7 +69,7 @@ export function SiteFooter() {
 
         <div className="mt-12 pt-6 border-t border-border/50 flex flex-col md:flex-row justify-between gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Mascons. All rights reserved.</p>
-          <p>Fintech & Agentic AI — Serving businesses globally</p>
+          <p>Fintech technology — Serving businesses globally</p>
         </div>
       </div>
     </footer>
