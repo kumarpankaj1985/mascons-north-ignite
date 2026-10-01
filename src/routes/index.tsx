@@ -4,7 +4,7 @@ import {
   Rocket, Globe2, Zap, Wallet, CreditCard, Building2,
   ArrowRight, CheckCircle2, TrendingUp, Award, Gift, Landmark,
 } from "lucide-react";
-import heroImg from "@/assets/hero-mascons.jpg";
+
 import fintechPillar from "@/assets/fintech-pillar.jpg";
 import teamCollab from "@/assets/team-collab.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
@@ -78,30 +78,34 @@ function HomePage() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-hero">
+      <section className="relative overflow-hidden bg-gradient-hero border-b border-border">
         <div className="absolute inset-0 grid-bg opacity-40" />
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
-
-        <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-6 md:py-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
-              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-              Serving businesses globally
+        <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-20 md:py-28 grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/80 px-4 py-2 text-xs font-semibold text-primary mb-8 shadow-card">
+              <span className="h-2 w-2 rounded-full bg-accent" />
+              Fintech infrastructure for the world
             </div>
-            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Mascons · Fintech infrastructure</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-[1.08] max-w-4xl mx-auto">Technology That Enables the Future of Fintech</h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products.</p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
-              <Button asChild variant="hero" size="xl">
-                <Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
-              <Button asChild variant="glow" size="xl">
-                <Link to="/book-a-demo">Book a Demo</Link>
-              </Button>
+            <p className="text-sm font-bold text-accent uppercase tracking-[0.18em] mb-5">MASCONS / FINANCIAL TECHNOLOGY</p>
+            <h1 className="text-[clamp(2.7rem,5vw,5rem)] font-bold leading-[1.07] tracking-[-0.045em] max-w-3xl">Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span></h1>
+            <p className="mt-7 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products.</p>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <Button asChild variant="hero" size="xl"><Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link></Button>
+              <Button asChild variant="glow" size="xl"><Link to="/book-a-demo">Book a Demo</Link></Button>
+            </div>
+            <div className="mt-10 flex flex-wrap items-center gap-5 text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> White-label platforms</span>
+              <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-accent" /> Built to scale globally</span>
+            </div>
+          </div>
+          <div className="relative lg:pl-5">
+            <div className="absolute -inset-5 rounded-[2.5rem] bg-white/50 rotate-3" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/90 bg-[#11253e] shadow-elevated aspect-[5/4]">
+              <img src={fintechPillar} alt="Connected digital wallets and payment cards" className="w-full h-full object-cover" fetchPriority="high" />
+            </div>
+            <div className="absolute -bottom-6 -left-3 md:-left-8 bg-white rounded-2xl border border-border shadow-elevated px-5 py-4">
+              <p className="text-xs uppercase tracking-widest font-semibold text-muted-foreground">Built for growth</p>
+              <p className="mt-1 text-lg font-bold text-foreground">One platform. More possibilities.</p>
             </div>
           </div>
         </div>
@@ -141,7 +145,7 @@ function HomePage() {
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
               <img src={fintechPillar} alt="Fintech infrastructure visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-card/50 via-transparent to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand mb-6 shadow-glow">
@@ -203,7 +207,7 @@ function HomePage() {
             <div key={f.title} className="glass-card rounded-2xl overflow-hidden hover:shadow-glow hover:-translate-y-1 transition-all group">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/30 via-transparent to-transparent" />
               </div>
               <div className="p-6 -mt-5 relative">
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5 shadow-card">
@@ -248,8 +252,8 @@ function HomePage() {
       {/* FOOTER CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
-          <img src={globalPhoto} alt="Global fintech delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
+          <img src={globalPhoto} alt="Global fintech delivery" className="absolute inset-0 h-full w-full object-cover opacity-20" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/85 to-white/95" />
           <div className="relative">
             <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto">
