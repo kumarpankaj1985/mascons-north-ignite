@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import {
   Shield, Rocket, Globe2, Zap, Wallet, CreditCard, Send, Store,
-  ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
+  ArrowRight, CheckCircle2, TrendingUp, Award, Building2,
 } from "lucide-react";
 import heroImg from "@/assets/fintech-global-team.jpg";
 import heroVideo from "@/assets/fintech-workplace-hero.mp4.asset.json";
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/")({
 
 const stats = [
   { value: "15+", label: "Years of Fintech Expertise", icon: Award },
-  { value: "10+", label: "Fintech Solutions", icon: Wallet },
+  { value: "8", label: "Fintech Solutions", icon: Wallet },
   { value: "3", label: "Continents of Global Clients", icon: Globe2 },
   { value: "2", label: "Successful Fintech Exits", icon: TrendingUp },
 ];
@@ -215,34 +215,6 @@ function HomePage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* AI READINESS SPOTLIGHT */}
-      <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
-        <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated">
-          <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gradient-brand opacity-20 blur-3xl" />
-          <div className="absolute -left-20 -bottom-20 h-72 w-72 rounded-full bg-accent opacity-10 blur-3xl" />
-          <div className="relative grid md:grid-cols-2 items-stretch">
-            <div className="p-10 md:p-16">
-              <Sparkles className="h-10 w-10 text-accent mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Not sure where AI <span className="text-gradient-brand">fits in your business?</span>
-              </h2>
-              <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-                Most organizations know they need AI — but don't know where to start. Our structured
-                AI Audit maps your current operations and surfaces the top 3–5 areas where Agentic AI
-                can deliver measurable ROI within 90 days.
-              </p>
-              <Button asChild variant="hero" size="lg" className="mt-8">
-                <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
-            </div>
-            <div className="relative min-h-[260px] md:min-h-0">
-              <img src={aiHero} alt="Global business team conducting an AI readiness audit" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
-              <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
-            </div>
-          </div>
         </div>
       </section>
 

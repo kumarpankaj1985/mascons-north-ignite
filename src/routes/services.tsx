@@ -18,7 +18,7 @@ export const Route = createFileRoute("/services")({
     meta: [
       { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
       { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service (BaaS) APIs, loan origination & management systems, and merchant acquiring platforms for digital wallet and UPI-based payments. Launch in weeks." },
-      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, ... loan origination system, loan management system, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
+      { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, loan origination system, loan management system, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, loan management and merchant acquiring for digital wallet and UPI payments." },
       { property: "og:type", content: "website" },
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/services")({
           name: "Fintech-as-a-Service by Mascons",
           provider: { "@type": "Organization", name: "Mascons", url: "https://mascons.in" },
           areaServed: "Worldwide",
-          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "Loan Origination & Management System",  "Merchant Acquiring Platform"],
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "Loan Origination & Management System", "Merchant Acquiring Platform"],
           description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, loan origination & management and merchant acquiring platforms for digital wallet and UPI-based payments.",
         }),
       },
