@@ -1,9 +1,11 @@
 {
   "version": 1,
-  "asset_id": "6494056e-1528-458b-9cf9-0a05da3e5f82",
+  "asset_id": "f1e51ef4-ff17-4b54-aa3e-92bd8435c983",
   "project_id": "8104feea-edda-49e5-824c-57cdf40578c3",
-  "url": "/__l5e/assets-v1/6494056e-1528-458b-9cf9-0a05da3e5f82/coffee-payment-v2.mp4",
+  "url": "/__l5e/assets-v1/f1e51ef4-ff17-4b54-aa3e-92bd8435c983/coffee-payment-v2.mp4",
+  "r2_key": "a/v1/8104feea-edda-49e5-824c-57cdf40578c3/f1e51ef4-ff17-4b54-aa3e-92bd8435c983/coffee-payment-v2.mp4",
   "original_filename": "coffee-payment-v2.mp4",
-  "size": 6252762,
-  "created_at": "2026-10-01T11:00:55Z"
+  "size": 5252037,
+  "content_type": "video/mp4",
+  "created_at": "2026-10-01T11:01:41Z"
 }
