@@ -94,7 +94,7 @@ function HomePage() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/60 to-background pointer-events-none" />
 
-        <div className="relative mx-auto max-w-7xl px-4 md:px-8 pt-72 pb-12 md:pt-14 md:pb-20 lg:pt-16 lg:pb-24">
+        <div className="relative mx-auto max-w-7xl px-4 md:px-8 pt-72 pb-12 md:pt-6 md:pb-20 lg:pt-10 lg:pb-24">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
