@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Gift, Landmark, Users, Store, ArrowRight, CheckCircle2 } from "lucide-react";
-import fintechHero from "@/assets/fintech-hero.jpg";
-import walletPhoto from "@/assets/wallet-photo.jpg";
-import globalPhoto from "@/assets/global-photo.jpg";
-import walletMobile from "@/assets/wallet-mobile.jpg";
+import fintechHero from "@/assets/fintech-global-team.jpg";
+import walletPhoto from "@/assets/mobile-wallet-user.jpg";
+import globalPhoto from "@/assets/global-payments-team.jpg";
+import walletMobile from "@/assets/mobile-wallet-user.jpg";
 import cardsPlatform from "@/assets/cards-platform.jpg";
 import remittanceGlobe from "@/assets/remittance-globe.jpg";
 import branchlessBanking from "@/assets/branchless-banking.jpg";
@@ -13,7 +13,7 @@ import expenseDashboard from "@/assets/expense-dashboard.jpg";
 import rewardsLoyalty from "@/assets/rewards-loyalty.jpg";
 import loanManagement from "@/assets/loan-management.jpg";
 import hrmsExpense from "@/assets/hrms-expense.jpg";
-import merchantAcquiring from "@/assets/merchant-acquiring.jpg";
+import merchantAcquiring from "@/assets/merchant-wallet-transaction.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -23,12 +23,12 @@ export const Route = createFileRoute("/services")({
       { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/services" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+      { rel: "canonical", href: "https://mascons.in/services" },
     ],
     scripts: [
       {
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Fintech-as-a-Service by Mascons",
-          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons.in" },
           areaServed: "Worldwide",
           serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management", "Merchant Acquiring Platform"],
           description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, AI-powered HRMS with expense management, and merchant acquiring platforms for digital wallet and UPI-based payments.",
@@ -213,7 +213,7 @@ function ServicesPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 pt-16">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-            <img src={walletPhoto} alt="Branded digital wallet on mobile" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <img src={walletPhoto} alt="Customer using a mobile wallet and payment card" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Wallet & Cards</p>
@@ -221,7 +221,7 @@ function ServicesPage() {
             </div>
           </div>
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-            <img src={globalPhoto} alt="Global remittance corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <img src={globalPhoto} alt="Global payments team reviewing international transaction corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Global Rails</p>

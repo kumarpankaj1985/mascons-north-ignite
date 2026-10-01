@@ -4,31 +4,32 @@ import {
   Sparkles, Shield, Rocket, Globe2, Zap, Bot, Wallet, CreditCard, PhoneCall,
   ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
 } from "lucide-react";
-import heroImg from "@/assets/hero-mascons.jpg";
-import fintechPillar from "@/assets/fintech-pillar.jpg";
+import heroImg from "@/assets/fintech-global-team.jpg";
+import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import aiPillar from "@/assets/ai-pillar.jpg";
-import teamCollab from "@/assets/team-collab.jpg";
+import teamCollab from "@/assets/global-payments-team.jpg";
 import aiRecruitment from "@/assets/ai-recruitment.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
 import aiCalling from "@/assets/ai-calling.jpg";
-import cardsPlatform from "@/assets/cards-platform.jpg";
-import aiHero from "@/assets/ai-hero.jpg";
-import globalPhoto from "@/assets/global-photo.jpg";
+import cardsPlatform from "@/assets/merchant-wallet-transaction.jpg";
+import aiHero from "@/assets/ai-audit-workshop.jpg";
+import globalPhoto from "@/assets/global-payments-team.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — AI Powered Fintech-as-a-Service" },
-      { name: "description", content: "Mascons is an AI powered Fintech-as-a-Service company. We build white-label digital wallets, card management, remittance, BaaS platforms and intelligent fintech infrastructure for banks, NBFCs, and enterprises. Launch financial products under your brand." },
+      { title: "Mascons — Technology That Enables the Future of Fintech" },
+      { name: "description", content: "Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products." },
       { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
-      { property: "og:title", content: "Mascons — AI Powered Fintech-as-a-Service" },
-      { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
+      { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
+      { property: "og:description", content: "Enterprise-grade fintech software and infrastructure for modern financial products." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/" },
+      { rel: "canonical", href: "https://mascons.in/" },
     ],
     scripts: [
       {
@@ -37,8 +38,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
-          logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
+          url: "https://mascons.in",
+          logo: "https://mascons.in/logo-mascons.png",
           description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
@@ -50,7 +51,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
+          url: "https://mascons.in",
         }),
       },
     ],
@@ -87,10 +88,10 @@ function HomePage() {
       <section className="relative overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-55"
           style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/35 via-background/65 to-background" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-6 md:py-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -98,15 +99,13 @@ function HomePage() {
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Serving businesses globally
             </div>
-            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">AI Powered Fintech-as-a-Service</p>
-            <h1 className="text-[clamp(1.5rem,4.5vw,3.75rem)] font-bold tracking-tight leading-[1.05]">
-              <span className="whitespace-nowrap">Launch financial products</span><br />
-              <span className="text-gradient-brand whitespace-nowrap">under your brand.</span>
+            <p className="text-sm font-semibold text-accent uppercase tracking-widest mb-4">Enterprise Fintech Infrastructure</p>
+            <h1 className="text-[clamp(2rem,5vw,4.25rem)] font-bold tracking-tight leading-[1.04] text-balance">
+              Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Our fintech suite gives businesses, banks, NBFCs, and enterprises the ability to launch,
-              manage, and scale financial products under their own brand — powered by Mascons'
-              battle-tested infrastructure.
+              Mascons provides enterprise-grade fintech software and infrastructure that empowers banks,
+              businesses and financial institutions to build, launch and scale modern financial products.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild variant="hero" size="xl">
@@ -154,7 +153,7 @@ function HomePage() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
-              <img src={fintechPillar} alt="Fintech infrastructure visual" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <img src={fintechPillar} alt="Merchant accepting a digital wallet payment at a retail store" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">
@@ -207,7 +206,7 @@ function HomePage() {
               We don't sell roadmaps — we deliver platforms our clients launch in weeks, not years.
             </p>
             <div className="mt-8 relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-              <img src={teamCollab} alt="Mascons team collaborating on fintech and AI solutions" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1280} height={800} />
+              <img src={teamCollab} alt="Global payments professionals collaborating on cross-border fintech" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
             </div>
           </div>
@@ -243,7 +242,7 @@ function HomePage() {
               </Button>
             </div>
             <div className="relative min-h-[260px] md:min-h-0">
-              <img src={aiHero} alt="AI audit and intelligent automation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <img src={aiHero} alt="Global business team conducting an AI readiness audit" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
             </div>
           </div>
@@ -310,7 +309,7 @@ function HomePage() {
       {/* FOOTER CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
-          <img src={globalPhoto} alt="Global fintech and AI delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
+          <img src={globalPhoto} alt="International banking professionals reviewing global payment flows" className="absolute inset-0 h-full w-full object-cover opacity-30" loading="lazy" width={1408} height={912} />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
           <div className="relative">
             <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />

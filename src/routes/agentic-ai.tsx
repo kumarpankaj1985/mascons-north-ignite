@@ -4,13 +4,13 @@ import {
   Bot, Brain, Users, Wallet, Shirt, PhoneCall, Mic, ClipboardList, Calculator,
   ArrowRight, Search, Lightbulb, Rocket, CheckCircle2, Sparkles,
 } from "lucide-react";
-import aiHero from "@/assets/ai-hero.jpg";
+import aiHero from "@/assets/ai-audit-workshop.jpg";
 import aiAgent from "@/assets/ai-agent.jpg";
 import aiRecruitment from "@/assets/ai-recruitment.jpg";
 import aiCalling from "@/assets/ai-calling.jpg";
 import aiMeeting from "@/assets/ai-meeting.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
-import teamCollab from "@/assets/team-collab.jpg";
+import teamCollab from "@/assets/ai-audit-workshop.jpg";
 
 export const Route = createFileRoute("/agentic-ai")({
   head: () => ({
@@ -20,11 +20,12 @@ export const Route = createFileRoute("/agentic-ai")({
       { name: "keywords", content: "agentic AI, AI software development company, AI agents for business, AI recruitment software, AI expense management, AI calling agent, AI meeting notetaker, AI procurement software, AI accounting automation, generative AI for enterprise, AI consulting, AI audit, AI implementation partner" },
       { property: "og:title", content: "Agentic AI for Business — Live AI Products | Mascons" },
       { property: "og:description", content: "Live AI products. Free AI audit. Measurable ROI within 90 days." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-ai.jpg" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://mascons.in/agentic-ai" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/agentic-ai" },
+      { rel: "canonical", href: "https://mascons.in/agentic-ai" },
     ],
     scripts: [
       {
@@ -33,7 +34,7 @@ export const Route = createFileRoute("/agentic-ai")({
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Agentic AI Solutions by Mascons",
-          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons.in" },
           areaServed: "Worldwide",
           serviceType: ["AI Recruitment", "AI Expense Management", "AI Calling Agent", "AI Meeting Notetaker", "AI Procurement", "AI Accounting", "AI Readiness Audit"],
           description: "Live, deployed Agentic AI products and custom AI agents that plan, execute and adapt across your business workflows.",
