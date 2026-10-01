@@ -4,9 +4,9 @@ import {
   Shield, Rocket, Globe2, Zap, Wallet, CreditCard, Send, Store,
   ArrowRight, CheckCircle2, TrendingUp, Award, Building2,
 } from "lucide-react";
-import heroPoster from "@/assets/coffee-payment-poster.jpg.asset.json";
-import heroVideo from "@/assets/coffee-payment-story-optimized.mp4.asset.json";
-import heroWebm from "@/assets/coffee-payment-story.webm.asset.json";
+import heroPoster from "@/assets/coffee-payment-v2-poster.jpg.asset.json";
+import heroVideo from "@/assets/coffee-payment-v2.mp4.asset.json";
+import heroWebm from "@/assets/coffee-payment-v2.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/payment-infrastructure-wallet.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
@@ -92,11 +92,10 @@ function HomePage() {
           <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
-        <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-transparent via-transparent to-background md:inset-0 md:h-full md:bg-gradient-to-r md:from-background/95 md:via-background/75 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/70 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/60 to-background pointer-events-none" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 pt-72 pb-12 md:py-24 lg:py-28">
-          <div className="max-w-2xl text-center md:text-left">
+          <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Serving businesses globally
@@ -105,11 +104,11 @@ function HomePage() {
             <h1 className="text-[clamp(2rem,5vw,4.25rem)] font-bold tracking-tight leading-[1.04] text-balance">
               Technology That Enables the <span className="text-gradient-brand">Future of Fintech</span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+            <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Mascons provides enterprise-grade fintech software and infrastructure that empowers banks,
               businesses and financial institutions to build, launch and scale modern financial products.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Button asChild variant="hero" size="xl">
                 <Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
