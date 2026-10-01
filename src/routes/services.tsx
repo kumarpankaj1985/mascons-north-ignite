@@ -4,14 +4,14 @@ import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Landmark, Store, 
 import fintechHero from "@/assets/fintech-global-team.jpg";
 import walletPhoto from "@/assets/merchant-counter-payment.jpg";
 import globalPhoto from "@/assets/cross-border-people.jpg";
-import walletMobile from "@/assets/mobile-wallet-user.jpg";
-import cardsPlatform from "@/assets/card-payments-person.jpg";
-import remittancePhoto from "@/assets/cross-border-people.jpg";
-import branchlessBanking from "@/assets/fintech-engineers.jpg";
-import baasApi from "@/assets/ai-audit-workshop.jpg";
-import expenseDashboard from "@/assets/expense-dashboard.jpg";
-import loanManagement from "@/assets/fintech-global-team.jpg";
-import merchantAcquiring from "@/assets/merchant-wallet-transaction.jpg";
+import walletMobile from "@/assets/product-digital-wallet.jpg";
+import cardsPlatform from "@/assets/product-card-management.jpg";
+import remittancePhoto from "@/assets/product-remittance.jpg";
+import branchlessBanking from "@/assets/product-branchless-banking.jpg";
+import baasApi from "@/assets/product-baas.jpg";
+import expenseDashboard from "@/assets/product-expense.jpg";
+import loanManagement from "@/assets/product-lending.jpg";
+import merchantAcquiring from "@/assets/product-merchant-acquiring.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -208,9 +208,10 @@ function ServicesPage() {
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((s, i) => (
             <article key={s.title} className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all flex flex-col">
-              <div className="relative aspect-[16/9] overflow-hidden">
-                <img src={s.image} alt={`${s.title} — Mascons fintech platform`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={720} />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img src={s.image} alt={`${s.title} — Mascons fintech platform`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width={1280} height={800} />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+                <h2 className="absolute bottom-0 left-0 max-w-[90%] p-5 md:p-7 text-xl md:text-3xl font-bold leading-tight text-foreground">{s.title}</h2>
               </div>
               <div className="p-8 flex-1 flex flex-col">
                 <div className="flex items-center gap-3 mb-5">
@@ -219,8 +220,7 @@ function ServicesPage() {
                   </div>
                   <span className="text-xs text-muted-foreground font-mono">0{i + 1}</span>
                 </div>
-                <h3 className="text-2xl font-bold">{s.title}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{s.desc}</p>
+                <p className="text-muted-foreground leading-relaxed">{s.desc}</p>
                 <ul className="mt-6 space-y-2.5">
                   {s.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-sm">
