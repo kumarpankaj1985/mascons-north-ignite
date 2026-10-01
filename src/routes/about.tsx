@@ -19,7 +19,7 @@ export const Route = createFileRoute("/about")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.mascons.in/about" },
+      { rel: "canonical", href: "https://mascons.in/about" },
     ],
   }),
   component: AboutPage,

@@ -22,7 +22,7 @@ export const Route = createFileRoute("/book-a-demo")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.mascons.in/book-a-demo" },
+      { rel: "canonical", href: "https://mascons.in/book-a-demo" },
     ],
   }),
   component: BookDemoPage,
