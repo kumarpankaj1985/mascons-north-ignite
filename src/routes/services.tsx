@@ -10,7 +10,7 @@ import remittancePhoto from "@/assets/product-remittance-reference.jpg";
 import branchlessBanking from "@/assets/product-branchless-banking.jpg";
 import baasApi from "@/assets/product-baas-reference.jpg";
 import expenseDashboard from "@/assets/product-expense-v2.jpg";
-import loanManagement from "@/assets/product-lending-reference.jpg";
+import loanManagement from "@/assets/product-loan-approved.jpg";
 import merchantAcquiring from "@/assets/product-merchant-acquiring.jpg";
 
 export const Route = createFileRoute("/services")({
