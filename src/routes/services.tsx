@@ -6,11 +6,11 @@ import walletPhoto from "@/assets/merchant-counter-payment.jpg";
 import globalPhoto from "@/assets/cross-border-people.jpg";
 import walletMobile from "@/assets/product-digital-wallet.jpg";
 import cardsPlatform from "@/assets/product-card-management.jpg";
-import remittancePhoto from "@/assets/product-remittance.jpg";
+import remittancePhoto from "@/assets/product-remittance-v2.jpg";
 import branchlessBanking from "@/assets/product-branchless-banking.jpg";
-import baasApi from "@/assets/product-baas.jpg";
-import expenseDashboard from "@/assets/product-expense.jpg";
-import loanManagement from "@/assets/product-lending.jpg";
+import baasApi from "@/assets/product-baas-v2.jpg";
+import expenseDashboard from "@/assets/product-expense-v2.jpg";
+import loanManagement from "@/assets/product-lending-v2.jpg";
 import merchantAcquiring from "@/assets/product-merchant-acquiring.jpg";
 
 export const Route = createFileRoute("/services")({

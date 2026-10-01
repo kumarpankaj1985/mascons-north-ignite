@@ -7,3 +7,5 @@
 - [x] Verify desktop and mobile rendering and preview health
 - [x] Replace product visuals with distinct reference-inspired people-focused imagery and place clear titles on each image
 - [x] Verify the updated product imagery and titles at desktop and mobile widths
+- [x] Review reference image against every product visual and replace repetitive loan, remittance, expense, and BaaS scenes
+- [x] Check updated service imagery in desktop and mobile previews
