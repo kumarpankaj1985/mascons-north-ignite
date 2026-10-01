@@ -13,10 +13,10 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
     meta: [
-      { title: "Book a Free Demo & AI Audit — Mascons Fintech & Agentic AI" },
-      { name: "description", content: "Book a 45-minute Mascons demo or free AI Readiness Audit. See live fintech platforms — wallets, cards, remittance, BaaS — and Agentic AI products with real ROI conversations." },
-      { name: "keywords", content: "book fintech demo, AI audit, free AI readiness audit, fintech platform demo, agentic AI demo, Mascons demo" },
-      { property: "og:title", content: "Book a Free Demo & AI Audit — Mascons" },
+      { title: "Book a Fintech Demo — Mascons" },
+      { name: "description", content: "Book a 45-minute Mascons demo. Explore fintech platforms for wallets, cards, remittance and banking." },
+      { name: "keywords", content: "book fintech demo, fintech platform demo, Mascons demo, digital wallet demo" },
+      { property: "og:title", content: "Book a Fintech Demo — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://mascons.in/book-a-demo" },
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/book-a-demo")({
 
 const steps = [
   { icon: Target, title: "Discovery", time: "10 min", desc: "We learn about your business, your goals, and where you are today." },
-  { icon: Users, title: "Live Product Walkthrough", time: "20 min", desc: "A hands-on tour of the Mascons platform or AI products most relevant to you." },
+  { icon: Users, title: "Live Product Walkthrough", time: "20 min", desc: "A walkthrough of the Mascons fintech platforms most relevant to you." },
   { icon: Calendar, title: "ROI Discussion", time: "10 min", desc: "Realistic timelines, implementation approach, and the expected business impact." },
   { icon: CheckCircle2, title: "Q&A and Next Steps", time: "5 min", desc: "All your questions answered. You leave with clarity — zero pressure." },
 ];
@@ -83,8 +83,8 @@ function BookDemoPage() {
             See the future of your business — <span className="text-gradient-brand">live.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-            Whether you're exploring fintech infrastructure or ready to deploy AI, a 45-minute Mascons
-            demo will show you exactly what's possible — with real products, real data, and real ROI.
+            Explore fintech infrastructure in a 45-minute Mascons demo. See the products,
+            discuss your requirements, and plan the next steps with our team.
           </p>
         </div>
       </section>
@@ -182,8 +182,6 @@ function BookDemoPage() {
                   <SelectTrigger><SelectValue placeholder="Select an interest" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="fintech">Fintech Platform</SelectItem>
-                    <SelectItem value="ai">AI Solution</SelectItem>
-                    <SelectItem value="audit">AI Audit</SelectItem>
                     <SelectItem value="unsure">Not sure yet</SelectItem>
                   </SelectContent>
                 </Select>

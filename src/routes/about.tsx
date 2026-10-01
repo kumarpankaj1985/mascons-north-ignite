@@ -10,11 +10,11 @@ import remittanceGlobe from "@/assets/global-payments-team.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Mascons — Fintech & Agentic AI Innovators" },
-      { name: "description", content: "Mascons is a global fintech software development and Agentic AI company with two decades of experience building digital wallets, card platforms, remittance and AI agents. Meet the founders." },
-      { name: "keywords", content: "Mascons, fintech company, agentic AI company, Pankaj Kumar, Gaurav Gupta, Abhay Desai, fintech founders, AI startup founders" },
-      { property: "og:title", content: "About Mascons — Fintech & Agentic AI Innovators" },
-      { property: "og:description", content: "Two decades of fintech innovation, a new chapter in Agentic AI. Meet the leadership behind Mascons." },
+      { title: "About Mascons — Global Fintech Technology" },
+      { name: "description", content: "Mascons builds global fintech software for digital wallets, card platforms, remittance and modern banking. Meet the team." },
+      { name: "keywords", content: "Mascons, fintech company, financial technology company, Pankaj Kumar, Gaurav Gupta, Abhay Desai, fintech founders, fintech leaders" },
+      { property: "og:title", content: "About Mascons — Global Fintech Technology" },
+      { property: "og:description", content: "Fintech platforms built for real-world use. Meet the leadership behind Mascons." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://mascons.in/about" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -66,7 +66,7 @@ function AboutPage() {
             Innovative Solutions. <span className="text-gradient-brand">Tailored Fintech Platforms.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-            Two decades of fintech innovation. A new chapter in Agentic AI. Rooted in trust, driven by results.
+            Fintech innovation rooted in trust and driven by results.
           </p>
         </div>
       </section>
@@ -83,14 +83,13 @@ function AboutPage() {
                 built, scaled, and launched fintech platforms trusted by clients on three continents.
               </p>
               <p>
-                Today we deliver compliance-aware solutions — backed by a global team of technologists,
-                domain experts, and AI specialists. Our move into Agentic AI is a natural extension of
-                that mission: helping organizations use intelligent automation to do more with less.
+                Today we deliver compliance-aware fintech solutions — backed by a global team of
+                technologists and financial services experts.
               </p>
               <p>
                 Our product portfolio spans digital wallets, card management, remittance, branchless banking,
                 corporate expense management, and Banking as a Service — all white-labeled, all launch-ready.
-                Combined with our Agentic AI capabilities, we help businesses transform operations at every level.
+                We help businesses launch and scale financial products with confidence.
               </p>
             </div>
           </div>
@@ -150,7 +149,7 @@ function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Global Presence</h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
               With clients on three continents and a proven track record of delivering enterprise-grade
-              fintech and AI solutions, Mascons serves businesses worldwide — from startups to large
+              fintech solutions, Mascons serves businesses worldwide — from startups to large
               financial institutions.
             </p>
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
