@@ -5,3 +5,5 @@
 - [x] Replace illustrated and repeated imagery with distinct people-focused photos
 - [x] Add a short looping fintech workplace video behind the homepage title
 - [x] Verify desktop and mobile rendering and preview health
+- [ ] Replace product visuals with distinct reference-inspired people-focused imagery and place clear titles on each image
+- [ ] Verify the updated product imagery and titles at desktop and mobile widths
