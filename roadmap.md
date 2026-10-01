@@ -17,3 +17,4 @@
 - [x] Align the Why Mascons photo and benefits, then check desktop and mobile
 - [x] Rename the Fintech navigation entry to Solutions and the expense product to HRMS & Expense Management
 - [x] Add Loyalty & Rewards Platform and Payment Gateway with the supplied imagery while preserving existing products
+- [ ] Replace the home background clip with a three-beat café payment story and keep the POS moment visible behind readable text
