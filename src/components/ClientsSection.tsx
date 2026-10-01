@@ -16,6 +16,9 @@ import megoforexAsset from "@/assets/clients/megoforex-new.png.asset.json";
 import krosremitAsset from "@/assets/clients/krosremit.png.asset.json";
 import findiBankitAsset from "@/assets/clients/findi-bankit.png.asset.json";
 import ris from "@/assets/clients/ris.png";
+import moxeyAsset from "@/assets/clients/moxey.png.asset.json";
+import mosGroupAsset from "@/assets/clients/mos-group.png.asset.json";
+import zokudoAsset from "@/assets/clients/zokudo.png.asset.json";
 
 
 const clients = [
