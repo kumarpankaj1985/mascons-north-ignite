@@ -4,8 +4,8 @@ import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
 import pankajPhoto from "@/assets/pankaj-kumar.jpg";
 import gauravPhoto from "@/assets/gaurav-gupta.png";
 import abhayPhoto from "@/assets/abhay-desai.avif";
-import fintechHero from "@/assets/fintech-hero.jpg";
-import remittanceGlobe from "@/assets/remittance-globe.jpg";
+import fintechHero from "@/assets/fintech-global-team.jpg";
+import remittanceGlobe from "@/assets/global-payments-team.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -92,7 +92,7 @@ function AboutPage() {
             </div>
           </div>
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[4/3] shadow-card">
-            <img src={fintechHero} alt="Mascons fintech platform development" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <img src={fintechHero} alt="Global fintech professionals building enterprise financial platforms" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1600} height={900} />
             <div className="absolute inset-0 bg-gradient-to-t from-card/70 via-transparent to-transparent" />
           </div>
         </div>
@@ -157,7 +157,7 @@ function AboutPage() {
           </div>
           <div className="space-y-6">
             <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/9] shadow-card">
-              <img src={remittanceGlobe} alt="Mascons global delivery network" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <img src={remittanceGlobe} alt="International banking team reviewing global payment networks" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-t from-card/70 via-transparent to-transparent" />
             </div>
             <div className="glass-card rounded-xl p-8">

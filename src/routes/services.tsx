@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Gift, Landmark, Users, Store, ArrowRight, CheckCircle2 } from "lucide-react";
-import fintechHero from "@/assets/fintech-hero.jpg";
-import walletPhoto from "@/assets/wallet-photo.jpg";
-import globalPhoto from "@/assets/global-photo.jpg";
-import walletMobile from "@/assets/wallet-mobile.jpg";
+import fintechHero from "@/assets/fintech-global-team.jpg";
+import walletPhoto from "@/assets/mobile-wallet-user.jpg";
+import globalPhoto from "@/assets/global-payments-team.jpg";
+import walletMobile from "@/assets/mobile-wallet-user.jpg";
 import cardsPlatform from "@/assets/cards-platform.jpg";
 import remittanceGlobe from "@/assets/remittance-globe.jpg";
 import branchlessBanking from "@/assets/branchless-banking.jpg";
@@ -13,7 +13,7 @@ import expenseDashboard from "@/assets/expense-dashboard.jpg";
 import rewardsLoyalty from "@/assets/rewards-loyalty.jpg";
 import loanManagement from "@/assets/loan-management.jpg";
 import hrmsExpense from "@/assets/hrms-expense.jpg";
-import merchantAcquiring from "@/assets/merchant-acquiring.jpg";
+import merchantAcquiring from "@/assets/merchant-wallet-transaction.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -213,7 +213,7 @@ function ServicesPage() {
       <section className="mx-auto max-w-7xl px-4 md:px-8 pt-16">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-            <img src={walletPhoto} alt="Branded digital wallet on mobile" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <img src={walletPhoto} alt="Customer using a mobile wallet and payment card" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Wallet & Cards</p>
@@ -221,7 +221,7 @@ function ServicesPage() {
             </div>
           </div>
           <div className="relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
-            <img src={globalPhoto} alt="Global remittance corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+            <img src={globalPhoto} alt="Global payments team reviewing international transaction corridors" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6">
               <p className="text-xs font-semibold text-accent uppercase tracking-widest">Global Rails</p>

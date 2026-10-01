@@ -4,13 +4,13 @@ import {
   Bot, Brain, Users, Wallet, Shirt, PhoneCall, Mic, ClipboardList, Calculator,
   ArrowRight, Search, Lightbulb, Rocket, CheckCircle2, Sparkles,
 } from "lucide-react";
-import aiHero from "@/assets/ai-hero.jpg";
+import aiHero from "@/assets/ai-audit-workshop.jpg";
 import aiAgent from "@/assets/ai-agent.jpg";
 import aiRecruitment from "@/assets/ai-recruitment.jpg";
 import aiCalling from "@/assets/ai-calling.jpg";
 import aiMeeting from "@/assets/ai-meeting.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
-import teamCollab from "@/assets/team-collab.jpg";
+import teamCollab from "@/assets/ai-audit-workshop.jpg";
 
 export const Route = createFileRoute("/agentic-ai")({
   head: () => ({
