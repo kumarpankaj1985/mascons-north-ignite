@@ -10,10 +10,10 @@ import heroWebm from "@/assets/coffee-shop-pos-loop.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/fintech-engineers.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
-import walletPhoto from "@/assets/mobile-wallet-user.jpg";
-import cardPhoto from "@/assets/card-payments-person.jpg";
-import merchantPhoto from "@/assets/merchant-counter-payment.jpg";
-import globalPhoto from "@/assets/global-payments-team.jpg";
+import walletPhoto from "@/assets/product-digital-wallet.jpg";
+import cardPhoto from "@/assets/product-card-management.jpg";
+import merchantPhoto from "@/assets/product-merchant-acquiring.jpg";
+import globalPhoto from "@/assets/product-remittance.jpg";
 import closingPhoto from "@/assets/ai-audit-workshop.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
@@ -234,14 +234,14 @@ function HomePage() {
           {featured.map((f) => (
             <div key={f.title} className="glass-card rounded-2xl overflow-hidden hover:shadow-glow hover:-translate-y-1 transition-all group">
               <div className="relative aspect-[16/10] overflow-hidden">
-                <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                <img src={f.image} alt={f.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1280} height={800} />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+                <h3 className="absolute bottom-0 left-0 p-4 text-lg font-semibold leading-tight text-foreground">{f.title}</h3>
               </div>
               <div className="p-6 -mt-5 relative">
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-surface-elevated border border-border mb-5 shadow-card">
                   <f.icon className="h-5 w-5 text-accent" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
               </div>
             </div>
