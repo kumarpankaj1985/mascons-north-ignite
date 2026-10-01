@@ -13,7 +13,7 @@ import teamCollab from "@/assets/cross-border-people.jpg";
 import walletPhoto from "@/assets/product-digital-wallet.jpg";
 import cardPhoto from "@/assets/product-card-management.jpg";
 import merchantPhoto from "@/assets/product-merchant-acquiring.jpg";
-import globalPhoto from "@/assets/product-remittance.jpg";
+import globalPhoto from "@/assets/product-remittance-v2.jpg";
 import closingPhoto from "@/assets/ai-audit-workshop.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
