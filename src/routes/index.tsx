@@ -92,7 +92,7 @@ function HomePage() {
           <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/35 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center">
