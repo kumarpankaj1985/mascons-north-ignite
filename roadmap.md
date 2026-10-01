@@ -11,3 +11,7 @@
 - [x] Check updated service imagery in desktop and mobile previews
 - [x] Match the supplied loan, banking API, payment infrastructure, and remittance references in their respective sections
 - [x] Check the four revised visuals on desktop and mobile
+- [x] Brighten and reframe the homepage payment video to show card and POS clearly
+- [x] Set testimonials to a balanced three without inventing new quotes
+- [x] Restore wallet send-money interface in the payment infrastructure image
+- [x] Align the Why Mascons photo and benefits, then check desktop and mobile
