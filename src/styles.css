@@ -91,7 +91,7 @@
     background-image: none;
   }
   ::selection {
-    background-color: #b7e5f5;
+    background-color: #e9d9ae;
     color: var(--foreground);
   }
 }
