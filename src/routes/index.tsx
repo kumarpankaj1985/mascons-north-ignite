@@ -8,7 +8,7 @@ import heroPoster from "@/assets/coffee-shop-pos-poster.jpg.asset.json";
 import heroVideo from "@/assets/coffee-shop-pos-loop.mp4.asset.json";
 import heroWebm from "@/assets/coffee-shop-pos-loop.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
-import platformPhoto from "@/assets/payment-infrastructure-reference.jpg";
+import platformPhoto from "@/assets/payment-infrastructure-wallet.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
 import walletPhoto from "@/assets/product-digital-wallet.jpg";
 import cardPhoto from "@/assets/product-card-management.jpg";
@@ -87,12 +87,12 @@ function HomePage() {
     <div>
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <img src={heroPoster.url} alt="" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />
-        <video className="hero-motion-video absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="auto" poster={heroPoster.url} aria-hidden="true">
+        <img src={heroPoster.url} alt="" className="absolute inset-0 h-full w-full object-cover object-[center_32%]" aria-hidden="true" />
+        <video className="hero-motion-video absolute inset-0 h-full w-full object-cover object-[center_32%]" autoPlay muted loop playsInline preload="auto" poster={heroPoster.url} aria-hidden="true">
           <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/35 via-background/40 to-background/85" />
 
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-12 md:py-20">
           <div className="max-w-3xl mx-auto text-center">
@@ -175,7 +175,7 @@ function HomePage() {
 
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
-              <img src={platformPhoto} alt="Customer using a digital wallet with connected payment services" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1280} height={800} />
+              <img src={platformPhoto} alt="Customer sending money from a digital wallet with visible wallet balance and transactions" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1280} height={800} />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">
@@ -197,28 +197,30 @@ function HomePage() {
 
       {/* WHY MASCONS */}
       <section className="bg-surface/30 border-y border-border/50">
-        <div className="mx-auto max-w-7xl px-4 md:px-8 py-24 grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="mx-auto max-w-7xl px-4 md:px-8 py-24">
+          <div className="max-w-2xl mb-10">
             <p className="text-sm font-semibold text-accent uppercase tracking-widest">Why Mascons</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">
-              Proven products. <br /> <span className="text-gradient-brand">Real deployments.</span>
+              Proven products. <span className="text-gradient-brand">Real deployments.</span>
             </h2>
             <p className="mt-5 text-muted-foreground text-lg">
               We don't sell roadmaps — we deliver platforms our clients launch in weeks, not years.
             </p>
-            <div className="mt-8 relative overflow-hidden rounded-2xl glass-card aspect-[16/10] shadow-card">
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-stretch">
+            <div className="relative min-h-64 overflow-hidden rounded-2xl glass-card shadow-card">
               <img src={teamCollab} alt="Global payments professionals collaborating on cross-border fintech" className="absolute inset-0 h-full w-full object-cover" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
             </div>
+            <ul className="grid gap-3 content-stretch">
+              {whyUs.map((item) => (
+                <li key={item} className="flex items-center gap-3 glass-card rounded-xl p-4">
+                  <CheckCircle2 className="h-5 w-5 text-accent shrink-0" />
+                  <span className="text-foreground/90">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="space-y-4">
-            {whyUs.map((item) => (
-              <li key={item} className="flex items-start gap-3 glass-card rounded-xl p-4">
-                <CheckCircle2 className="h-5 w-5 text-accent mt-0.5 shrink-0" />
-                <span className="text-foreground/90">{item}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -262,7 +264,6 @@ function HomePage() {
               { q: "Mascons delivered our digital wallet in record time. The platform is rock solid and our customers love the experience.", a: "Director of Product", c: "HiWiPay" },
               { q: "From card issuance to compliance workflows, Mascons became a true extension of our team. Truly white-label, truly turnkey.", a: "Head of Payments", c: "Instapay Technologies" },
               { q: "We launched our remittance corridor in under 90 days. The platform scales effortlessly across geographies.", a: "Founder & CEO", c: "MEGO Forex" },
-              { q: "The Mascons team understands fintech end-to-end — from regulatory nuances to customer experience.", a: "Chief Technology Officer", c: "Royal Bank Pacific" },
             ].map((t) => (
               <div key={t.q} className="glass-card rounded-2xl p-8 shadow-card">
                 <Zap className="h-6 w-6 text-accent mb-4" />
