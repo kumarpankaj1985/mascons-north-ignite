@@ -40,8 +40,9 @@ const clients = [
   { name: "KrosRemit", logo: krosremitAsset.url, className: "max-h-14 max-w-[80%]" },
   { name: "FINDI Bankit", logo: findiBankitAsset.url },
   { name: "RIS - Rashmitha Information Systems", logo: ris },
-
-  
+  { name: "MOXey", logo: moxeyAsset.url },
+  { name: "MOS Group of Companies", logo: mosGroupAsset.url },
+  { name: "Zokudo", logo: zokudoAsset.url },
 ];
 
 export function ClientsSection() {
