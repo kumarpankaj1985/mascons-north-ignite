@@ -8,12 +8,12 @@ import heroPoster from "@/assets/coffee-shop-pos-poster.jpg.asset.json";
 import heroVideo from "@/assets/coffee-shop-pos-loop.mp4.asset.json";
 import heroWebm from "@/assets/coffee-shop-pos-loop.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
-import platformPhoto from "@/assets/fintech-engineers.jpg";
+import platformPhoto from "@/assets/payment-infrastructure-reference.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
 import walletPhoto from "@/assets/product-digital-wallet.jpg";
 import cardPhoto from "@/assets/product-card-management.jpg";
 import merchantPhoto from "@/assets/product-merchant-acquiring.jpg";
-import globalPhoto from "@/assets/product-remittance-v2.jpg";
+import globalPhoto from "@/assets/product-remittance-reference.jpg";
 import closingPhoto from "@/assets/ai-audit-workshop.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
@@ -175,7 +175,7 @@ function HomePage() {
 
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
-              <img src={platformPhoto} alt="Fintech engineers collaborating on financial technology" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1408} height={912} />
+              <img src={platformPhoto} alt="Customer using a digital wallet with connected payment services" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1280} height={800} />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">

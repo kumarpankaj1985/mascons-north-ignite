@@ -9,3 +9,5 @@
 - [x] Verify the updated product imagery and titles at desktop and mobile widths
 - [x] Review reference image against every product visual and replace repetitive loan, remittance, expense, and BaaS scenes
 - [x] Check updated service imagery in desktop and mobile previews
+- [x] Match the supplied loan, banking API, payment infrastructure, and remittance references in their respective sections
+- [x] Check the four revised visuals on desktop and mobile
