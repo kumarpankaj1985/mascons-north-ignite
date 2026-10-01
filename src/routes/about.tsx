@@ -15,9 +15,11 @@ export const Route = createFileRoute("/about")({
       { name: "keywords", content: "Mascons, fintech company, agentic AI company, Pankaj Kumar, Gaurav Gupta, Abhay Desai, fintech founders, AI startup founders" },
       { property: "og:title", content: "About Mascons — Fintech & Agentic AI Innovators" },
       { property: "og:description", content: "Two decades of fintech innovation, a new chapter in Agentic AI. Meet the leadership behind Mascons." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/about" },
+      { rel: "canonical", href: "https://mascons.in/about" },
     ],
   }),
   component: AboutPage,

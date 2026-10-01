@@ -18,9 +18,11 @@ export const Route = createFileRoute("/book-a-demo")({
       { name: "keywords", content: "book fintech demo, AI audit, free AI readiness audit, fintech platform demo, agentic AI demo, Mascons demo" },
       { property: "og:title", content: "Book a Free Demo & AI Audit — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/book-a-demo" },
+      { rel: "canonical", href: "https://mascons.in/book-a-demo" },
     ],
   }),
   component: BookDemoPage,

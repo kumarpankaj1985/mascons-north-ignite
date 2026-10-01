@@ -17,9 +17,11 @@ export const Route = createFileRoute("/contact")({
       { name: "keywords", content: "contact Mascons, fintech vendor contact, AI consulting contact, fintech partnerships, AI partnerships" },
       { property: "og:title", content: "Contact Mascons — Fintech & AI" },
       { property: "og:description", content: "Reach our team. Response within 4 business hours." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/contact" },
+      { rel: "canonical", href: "https://mascons.in/contact" },
     ],
   }),
   component: ContactPage,

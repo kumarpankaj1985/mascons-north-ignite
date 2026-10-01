@@ -19,16 +19,18 @@ import { ClientsSection } from "@/components/ClientsSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — AI Powered Fintech-as-a-Service" },
-      { name: "description", content: "Mascons is an AI powered Fintech-as-a-Service company. We build white-label digital wallets, card management, remittance, BaaS platforms and intelligent fintech infrastructure for banks, NBFCs, and enterprises. Launch financial products under your brand." },
+      { title: "Mascons — Technology That Enables the Future of Fintech" },
+      { name: "description", content: "Mascons provides enterprise-grade fintech software and infrastructure that empowers banks, businesses and financial institutions to build, launch and scale modern financial products." },
       { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
-      { property: "og:title", content: "Mascons — AI Powered Fintech-as-a-Service" },
-      { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
+      { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
+      { property: "og:description", content: "Enterprise-grade fintech software and infrastructure for modern financial products." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
       { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/" },
+      { rel: "canonical", href: "https://mascons.in/" },
     ],
     scripts: [
       {
@@ -37,8 +39,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
-          logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
+          url: "https://mascons.in",
+          logo: "https://mascons.in/logo-mascons.png",
           description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
@@ -50,7 +52,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
+          url: "https://mascons.in",
         }),
       },
     ],
