@@ -38,7 +38,7 @@ const leadership = [
     name: "Pankaj Kumar",
     role: "Co-Founder",
     image: pankajPhoto,
-    desc: "Pankaj drives Mascons' fintech vision, global growth strategy, and alliance partnerships. With deep expertise in identifying market opportunities, building strategic relationships, and scaling sales across geographies, he has been instrumental in expanding Mascons' footprint across three continents.",
+    desc: "Pankaj drives Mascons' fintech vision, global growth strategy, and alliance partnerships. With deep expertise in identifying market opportunities, building strategic relationships, and scaling sales across geographies, he has been instrumental in expanding Mascons' footprint with deployments in 12+ countries.",
   },
   {
     name: "Gaurav Gupta",
@@ -80,7 +80,7 @@ function AboutPage() {
               <p>
                 At MASCONS, we specialize in building white-labeled fintech solutions customized to your
                 needs — so you can focus on growing, not building. Over the past decade and a half, we've
-                built, scaled, and launched fintech platforms trusted by clients on three continents.
+                built, scaled, and launched fintech platforms with deployments in 12+ countries.
               </p>
               <p>
                 Today we deliver compliance-aware fintech solutions — backed by a global team of
@@ -148,7 +148,7 @@ function AboutPage() {
             <Globe2 className="h-10 w-10 text-accent mb-5" />
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Global Presence</h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              With clients on three continents and a proven track record of delivering enterprise-grade
+              With deployments in 12+ countries and a proven track record of delivering enterprise-grade
               fintech solutions, Mascons serves businesses worldwide — from startups to large
               financial institutions.
             </p>

@@ -63,7 +63,7 @@ export const Route = createFileRoute("/")({
 const stats = [
   { value: "15+", label: "Years of Fintech Expertise", icon: Award },
   { value: "8", label: "Fintech Solutions", icon: Wallet },
-  { value: "3", label: "Continents of Global Clients", icon: Globe2 },
+  { value: "12+", label: "Countries with Deployments", icon: Globe2 },
   { value: "2", label: "Successful Fintech Exits", icon: TrendingUp },
 ];
 
