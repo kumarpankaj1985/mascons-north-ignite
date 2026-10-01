@@ -4,9 +4,9 @@ import {
   Shield, Rocket, Globe2, Zap, Wallet, CreditCard, Send, Store,
   ArrowRight, CheckCircle2, TrendingUp, Award, Building2,
 } from "lucide-react";
-import heroPoster from "@/assets/coffee-payment-poster.jpg.asset.json";
-import heroVideo from "@/assets/coffee-payment-story-optimized.mp4.asset.json";
-import heroWebm from "@/assets/coffee-payment-story.webm.asset.json";
+import heroPoster from "@/assets/coffee-payment-v2-poster.jpg.asset.json";
+import heroVideo from "@/assets/coffee-payment-v2.mp4.asset.json";
+import heroWebm from "@/assets/coffee-payment-v2.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/payment-infrastructure-wallet.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
