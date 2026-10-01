@@ -1,34 +1,28 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import {
-  Sparkles, Shield, Rocket, Globe2, Zap, Bot, Wallet, CreditCard, PhoneCall,
-  ArrowRight, CheckCircle2, TrendingUp, Users, Award, Building2,
+  Shield, Rocket, Globe2, Zap, Wallet, CreditCard, Building2,
+  ArrowRight, CheckCircle2, TrendingUp, Award, Gift, Landmark,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mascons.jpg";
 import fintechPillar from "@/assets/fintech-pillar.jpg";
-import aiPillar from "@/assets/ai-pillar.jpg";
 import teamCollab from "@/assets/team-collab.jpg";
-import aiRecruitment from "@/assets/ai-recruitment.jpg";
 import expenseDashboard from "@/assets/expense-dashboard.jpg";
-import aiCalling from "@/assets/ai-calling.jpg";
 import cardsPlatform from "@/assets/cards-platform.jpg";
-import aiHero from "@/assets/ai-hero.jpg";
 import globalPhoto from "@/assets/global-photo.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mascons — AI Powered Fintech-as-a-Service" },
+      { title: "Mascons — Technology That Enables the Future of Fintech" },
       { name: "description", content: "Mascons is an AI powered Fintech-as-a-Service company. We build white-label digital wallets, card management, remittance, BaaS platforms and intelligent fintech infrastructure for banks, NBFCs, and enterprises. Launch financial products under your brand." },
       { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
-      { property: "og:title", content: "Mascons — AI Powered Fintech-as-a-Service" },
+      { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
       { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-home.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/" },
+      { rel: "canonical", href: "https://www.mascons.in/" },
     ],
     scripts: [
       {
@@ -37,8 +31,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
-          logo: "https://mascons-north-ignite.lovable.app/logo-mascons.png",
+          url: "https://www.mascons.in",
+          logo: "https://www.mascons.in/logo-mascons.png",
           description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
@@ -50,7 +44,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Mascons",
-          url: "https://mascons-north-ignite.lovable.app",
+          url: "https://www.mascons.in",
         }),
       },
     ],
@@ -60,22 +54,20 @@ export const Route = createFileRoute("/")({
 
 const stats = [
   { value: "15+", label: "Years of Fintech Expertise", icon: Award },
-  { value: "7+", label: "Live AI Products Deployed", icon: Bot },
+  { value: "10", label: "Fintech Solutions", icon: Wallet },
   { value: "3", label: "Continents of Global Clients", icon: Globe2 },
   { value: "2", label: "Successful Fintech Exits", icon: TrendingUp },
 ];
 
 const featured = [
-  { icon: Users, title: "AI-Powered Recruitment", desc: "Hire smarter. Reduce time-to-hire by 60% with intelligent matching and screening.", image: aiRecruitment },
   { icon: Wallet, title: "AI Expense Management", desc: "Automate corporate spend, eliminate fraud, and save your finance team hours every week.", image: expenseDashboard },
-  { icon: PhoneCall, title: "AI Inbound & Outbound Calling", desc: "24/7 intelligent call handling with zero wait times and human-grade conversations.", image: aiCalling },
   { icon: CreditCard, title: "Corporate Wallet & Cards", desc: "Spend control, real-time visibility, and instant card issuance under your brand.", image: cardsPlatform },
+  { icon: Gift, title: "AI-Powered Rewards & Loyalty", desc: "Personalize incentives and keep customers engaged across every payment journey.", image: fintechPillar },
+  { icon: Landmark, title: "Loan Origination & Management", desc: "Bring lending from application to repayment onto one connected platform.", image: teamCollab },
 ];
 
 const whyUs = [
   "Proven founders with 15+ years in fintech and 2 successful exits",
-  "Live AI products already deployed — not concepts, not prototypes",
-  "End-to-end support: from AI readiness audit to full implementation",
   "Global delivery with deep domain expertise in financial services",
   "White-label first: you own the brand, we power the technology",
 ];
@@ -113,7 +105,7 @@ function HomePage() {
                 <Link to="/services">Explore Our Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
               <Button asChild variant="glow" size="xl">
-                <Link to="/book-a-demo">Book a Free AI Audit</Link>
+                <Link to="/book-a-demo">Book a Demo</Link>
               </Button>
             </div>
           </div>
@@ -138,12 +130,12 @@ function HomePage() {
       {/* CLIENTS & PARTNERS — moved up so visitors see trust signals immediately */}
       <ClientsSection />
 
-      {/* TWO PILLARS */}
+      {/* FINTECH PLATFORMS */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm font-semibold text-accent uppercase tracking-widest">What we do</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">
-            Two pillars. <span className="text-gradient-brand">Infinite outcomes.</span>
+            Built for the way <span className="text-gradient-brand">money moves.</span>
           </h2>
           <p className="mt-5 text-muted-foreground text-lg">
             Mascons operates at the intersection of advanced fintech infrastructure and Agentic AI —
@@ -239,11 +231,11 @@ function HomePage() {
                 can deliver measurable ROI within 90 days.
               </p>
               <Button asChild variant="hero" size="lg" className="mt-8">
-                <Link to="/book-a-demo">Start Your Free AI Audit <ArrowRight className="ml-1 h-4 w-4" /></Link>
+                <Link to="/book-a-demo">Explore Fintech Solutions <ArrowRight className="ml-1 h-4 w-4" /></Link>
               </Button>
             </div>
             <div className="relative min-h-[260px] md:min-h-0">
-              <img src={aiHero} alt="AI audit and intelligent automation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <img src={cardsPlatform} alt="Digital card and payment platform" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-r from-card via-card/50 to-card/20" />
             </div>
           </div>
@@ -310,7 +302,7 @@ function HomePage() {
       {/* FOOTER CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
-          <img src={globalPhoto} alt="Global fintech and AI delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
+          <img src={globalPhoto} alt="Global fintech delivery" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
           <div className="relative">
             <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />
