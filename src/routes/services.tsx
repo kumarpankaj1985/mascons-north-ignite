@@ -23,12 +23,10 @@ export const Route = createFileRoute("/services")({
       { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
-      { property: "og:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
-      { name: "twitter:image", content: "https://mascons-north-ignite.lovable.app/og-services.jpg" },
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+      { rel: "canonical", href: "https://www.mascons.in/services" },
     ],
     links: [
-      { rel: "canonical", href: "https://mascons-north-ignite.lovable.app/services" },
+      { rel: "canonical", href: "https://www.mascons.in/services" },
     ],
     scripts: [
       {
@@ -37,7 +35,7 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "Service",
           name: "Fintech-as-a-Service by Mascons",
-          provider: { "@type": "Organization", name: "Mascons", url: "https://mascons-north-ignite.lovable.app" },
+          provider: { "@type": "Organization", name: "Mascons", url: "https://www.mascons.in" },
           areaServed: "Worldwide",
           serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "AI-Powered Rewards & Loyalty", "Loan Origination & Management System", "AI-Powered HRMS with Expense Management", "Merchant Acquiring Platform"],
           description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, AI-powered rewards & loyalty, loan origination & management, AI-powered HRMS with expense management, and merchant acquiring platforms for digital wallet and UPI-based payments.",
@@ -204,7 +202,7 @@ function ServicesPage() {
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild variant="hero" size="lg"><Link to="/book-a-demo">Book a Demo</Link></Button>
-            <Button asChild variant="glow" size="lg"><Link to="/agentic-ai">Explore Agentic AI</Link></Button>
+            <Button asChild variant="glow" size="lg"><Link to="/contact">Talk to Us</Link></Button>
           </div>
         </div>
       </section>

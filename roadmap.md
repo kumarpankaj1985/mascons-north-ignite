@@ -1,0 +1,3 @@
+- [x] Remove standalone Agentic AI page, navigation and promotions while retaining AI in fintech products.
+- [x] Update homepage headline and supporting statement.
+- [ ] Refresh site colors and layout after visual direction is selected.
