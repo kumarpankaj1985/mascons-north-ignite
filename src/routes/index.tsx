@@ -264,7 +264,6 @@ function HomePage() {
         </div>
       </section>
 
-      <ShieldStrip />
     </div>
   );
 }
