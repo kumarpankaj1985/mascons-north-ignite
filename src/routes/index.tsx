@@ -62,7 +62,7 @@ export const Route = createFileRoute("/")({
 
 const stats = [
   { value: "15+", label: "Years of Fintech Expertise", icon: Award },
-  { value: "8", label: "Fintech Solutions", icon: Wallet },
+  { value: "10", label: "Fintech Solutions", icon: Wallet },
   { value: "12+", label: "Countries with Deployments", icon: Globe2 },
   { value: "2", label: "Successful Fintech Exits", icon: TrendingUp },
 ];
@@ -168,7 +168,7 @@ function HomePage() {
                 and built to scale with your business.
               </p>
               <Link to="/services" className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                Explore Fintech <ArrowRight className="h-4 w-4" />
+                Explore Solutions <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>

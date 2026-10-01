@@ -15,3 +15,5 @@
 - [x] Set testimonials to a balanced three without inventing new quotes
 - [x] Restore wallet send-money interface in the payment infrastructure image
 - [x] Align the Why Mascons photo and benefits, then check desktop and mobile
+- [x] Rename the Fintech navigation entry to Solutions and the expense product to HRMS & Expense Management
+- [x] Add Loyalty & Rewards Platform and Payment Gateway with the supplied imagery while preserving existing products

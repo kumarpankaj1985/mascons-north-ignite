@@ -88,7 +88,7 @@ function AboutPage() {
               </p>
               <p>
                 Our product portfolio spans digital wallets, card management, remittance, branchless banking,
-                corporate expense management, and Banking as a Service — all white-labeled, all launch-ready.
+                HRMS & expense management, loyalty & rewards, payment gateways, and Banking as a Service — all white-labeled, all launch-ready.
                 We help businesses launch and scale financial products with confidence.
               </p>
             </div>

@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Landmark, Store, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Landmark, Store, Gift, Banknote, ArrowRight, CheckCircle2 } from "lucide-react";
 import fintechHero from "@/assets/fintech-global-team.jpg";
 import walletPhoto from "@/assets/merchant-counter-payment.jpg";
 import globalPhoto from "@/assets/cross-border-people.jpg";
@@ -12,15 +12,17 @@ import baasApi from "@/assets/product-baas-reference.jpg";
 import expenseDashboard from "@/assets/product-expense-v2.jpg";
 import loanManagement from "@/assets/product-loan-approved.jpg";
 import merchantAcquiring from "@/assets/product-merchant-acquiring.jpg";
+import loyaltyRewards from "@/assets/loyalty-rewards.jpg.asset.json";
+import paymentGateway from "@/assets/payment-gateway.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Fintech Software Development Company | Digital Wallet, Cards, Remittance, BaaS — Mascons" },
-      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service (BaaS) APIs, loan origination & management systems, and merchant acquiring platforms for digital wallet and UPI-based payments. Launch in weeks." },
+      { title: "Fintech Solutions | Wallets, Cards, Loyalty, Payment Gateway — Mascons" },
+      { name: "description", content: "Mascons builds white-label fintech platforms: digital wallets, prepaid & credit card issuing, cross-border remittance, branchless banking, HRMS & expense management, Banking-as-a-Service (BaaS) APIs, loan origination & management systems, merchant acquiring, loyalty & rewards, and payment gateways. Launch in weeks." },
       { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, loan origination system, loan management system, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
-      { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
-      { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, loan management and merchant acquiring for digital wallet and UPI payments." },
+      { property: "og:title", content: "Fintech Solutions — Wallets, Loyalty, Payment Gateway | Mascons" },
+      { property: "og:description", content: "Launch-ready fintech platforms under your brand: wallets, cards, remittance, BaaS, lending, merchant acquiring, loyalty and payment gateways." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://mascons.in/services" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -37,8 +39,8 @@ export const Route = createFileRoute("/services")({
           name: "Fintech-as-a-Service by Mascons",
           provider: { "@type": "Organization", name: "Mascons", url: "https://mascons.in" },
           areaServed: "Worldwide",
-          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "Corporate Expense Management", "Branchless Banking", "Banking as a Service", "Loan Origination & Management System", "Merchant Acquiring Platform"],
-          description: "White-label fintech platforms — digital wallets, card issuing, cross-border remittance, branchless banking, corporate expense management, Banking-as-a-Service APIs, loan origination & management and merchant acquiring platforms for digital wallet and UPI-based payments.",
+          serviceType: ["Digital Wallet", "Card Management", "Remittance Platform", "HRMS & Expense Management", "Branchless Banking", "Banking as a Service", "Loan Origination & Management System", "Merchant Acquiring Platform", "Loyalty & Rewards Platform", "Payment Gateway"],
+          description: "White-label fintech platforms — wallets, card issuing, remittance, branchless banking, HRMS & expense management, BaaS APIs, lending, merchant acquiring, loyalty & rewards and payment gateways.",
         }),
       },
     ],
@@ -89,9 +91,10 @@ const services = [
   {
     icon: Receipt,
     image: expenseDashboard,
-    title: "Corporate Expense Management",
-    desc: "Manage corporate expenses effectively with real-time tracking and insights to optimize your financial operations.",
+    title: "HRMS & Expense Management",
+    desc: "Manage people and corporate expenses effectively with real-time tracking and insights to optimize your financial operations.",
     features: [
+      "Employee records, attendance and leave workflows",
       "Mobile receipt scanning with OCR",
       "Policy-based auto-approval workflows",
       "Real-time budget tracking by team or project",
@@ -151,6 +154,32 @@ const services = [
       "Unified dashboard for transactions, disputes, and payouts",
     ],
   },
+  {
+    icon: Gift,
+    image: loyaltyRewards.url,
+    title: "Loyalty & Rewards Platform",
+    desc: "Build lasting customer relationships with a branded loyalty platform that connects everyday transactions to meaningful rewards and incentives.",
+    features: [
+      "Points-based earning and redemption journeys",
+      "Personalized offers and cashback campaigns",
+      "Tiered memberships and customer benefits",
+      "Merchant and partner reward catalogs",
+      "Real-time engagement and campaign insights",
+    ],
+  },
+  {
+    icon: Banknote,
+    image: paymentGateway.url,
+    title: "Payment Gateway",
+    desc: "Bring payment methods together in one checkout experience, with secure routing and the visibility businesses need to manage transactions.",
+    features: [
+      "Cards, UPI, net banking and wallet acceptance",
+      "Online checkout and payment APIs",
+      "Transaction routing and payment status tracking",
+      "Merchant settlement and reconciliation workflows",
+      "Reporting and integration tools for payment operations",
+    ],
+  },
 ];
 
 function ServicesPage() {
@@ -165,7 +194,7 @@ function ServicesPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-8 py-24 md:py-32">
-          <p className="text-sm font-semibold text-accent uppercase tracking-widest">Fintech-as-a-Service</p>
+          <p className="text-sm font-semibold text-accent uppercase tracking-widest">Solutions</p>
           <h1 className="mt-4 text-4xl md:text-6xl font-bold tracking-tight max-w-4xl leading-[1.05]">
             Launch financial products <span className="text-gradient-brand">under your brand.</span>
           </h1>
