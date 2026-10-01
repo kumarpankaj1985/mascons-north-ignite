@@ -5,7 +5,7 @@ import {
   ArrowRight, CheckCircle2, TrendingUp, Award, Building2,
 } from "lucide-react";
 import heroImg from "@/assets/fintech-global-team.jpg";
-import heroVideo from "@/assets/fintech-workplace-hero.mp4.asset.json";
+import heroVideo from "@/assets/fintech-workplace-loop.mp4.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/fintech-engineers.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
@@ -86,7 +86,7 @@ function HomePage() {
     <div>
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="metadata" poster={heroImg} aria-hidden="true">
+        <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="auto" poster={heroImg} aria-hidden="true">
           <source src={heroVideo.url} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background" />
