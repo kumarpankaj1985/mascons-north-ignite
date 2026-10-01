@@ -13,6 +13,7 @@ import walletPhoto from "@/assets/mobile-wallet-user.jpg";
 import cardPhoto from "@/assets/card-payments-person.jpg";
 import merchantPhoto from "@/assets/merchant-counter-payment.jpg";
 import globalPhoto from "@/assets/global-payments-team.jpg";
+import closingPhoto from "@/assets/ai-audit-workshop.jpg";
 import { ClientsSection } from "@/components/ClientsSection";
 
 export const Route = createFileRoute("/")({
@@ -171,7 +172,7 @@ function HomePage() {
 
           <div className="glass-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all group">
             <div className="relative aspect-[16/9] overflow-hidden">
-              <img src={platformPhoto} alt="Fintech engineers collaborating on financial technology" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <img src={platformPhoto} alt="Fintech engineers collaborating on financial technology" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" width={1408} height={912} />
               <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
             <div className="p-8 md:p-10 -mt-6 relative">
@@ -276,7 +277,7 @@ function HomePage() {
       {/* FOOTER CTA */}
       <section className="mx-auto max-w-7xl px-4 md:px-8 py-24">
         <div className="relative overflow-hidden rounded-3xl glass-card shadow-elevated p-10 md:p-16 text-center">
-          <img src={globalPhoto} alt="International banking professionals reviewing global payment flows" className="absolute inset-0 h-full w-full object-cover opacity-30" loading="lazy" width={1408} height={912} />
+          <img src={closingPhoto} alt="Fintech professionals planning payment solutions" className="absolute inset-0 h-full w-full object-cover opacity-30" loading="lazy" width={1408} height={912} />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/75 to-background/90" />
           <div className="relative">
             <Rocket className="h-10 w-10 text-accent mx-auto mb-6" />

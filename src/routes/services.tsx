@@ -2,14 +2,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Wallet, CreditCard, Send, Receipt, Building2, Layers, Landmark, Store, ArrowRight, CheckCircle2 } from "lucide-react";
 import fintechHero from "@/assets/fintech-global-team.jpg";
-import walletPhoto from "@/assets/card-payments-person.jpg";
+import walletPhoto from "@/assets/merchant-counter-payment.jpg";
 import globalPhoto from "@/assets/cross-border-people.jpg";
 import walletMobile from "@/assets/mobile-wallet-user.jpg";
 import cardsPlatform from "@/assets/card-payments-person.jpg";
 import remittancePhoto from "@/assets/cross-border-people.jpg";
 import branchlessBanking from "@/assets/fintech-engineers.jpg";
-import baasApi from "@/assets/global-payments-team.jpg";
-import expenseDashboard from "@/assets/merchant-counter-payment.jpg";
+import baasApi from "@/assets/ai-audit-workshop.jpg";
+import expenseDashboard from "@/assets/expense-dashboard.jpg";
 import loanManagement from "@/assets/fintech-global-team.jpg";
 import merchantAcquiring from "@/assets/merchant-wallet-transaction.jpg";
 
