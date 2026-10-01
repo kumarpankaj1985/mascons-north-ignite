@@ -40,7 +40,7 @@
 :root {
   --radius: 0.75rem;
 
-  /* Warm premium fintech canvas — cream base, deep evergreen primary, gold accent */
+  /* Warm premium fintech canvas — cream base, espresso ink primary, bronze gold accent */
   --background: #faf6ee;
   --foreground: #211d15;
   --surface: #f2ebdd;
@@ -49,11 +49,11 @@
   --card-foreground: #211d15;
   --popover: #fffdf8;
   --popover-foreground: #211d15;
-  --primary: #17604c;
+  --primary: #2b2417;
   --primary-foreground: #fdfbf4;
-  --brand: #17604c;
+  --brand: #2b2417;
   --brand-foreground: #fdfbf4;
-  --brand-glow: #2e9a78;
+  --brand-glow: #8a6a1e;
   --secondary: #f2ebdd;
   --secondary-foreground: #211d15;
   --muted: #f1ead9;
@@ -64,12 +64,12 @@
   --destructive-foreground: #ffffff;
   --border: #e3d9c2;
   --input: #d5c8aa;
-  --ring: #17604c;
-  --gradient-brand: linear-gradient(115deg, #14523f, #2e9a78);
+  --ring: #a9761f;
+  --gradient-brand: linear-gradient(115deg, #2b2417, #6b5420);
   --gradient-hero: linear-gradient(130deg, #fdfaf3 0%, #f6eedd 58%, #efe4cb 100%);
   --gradient-card: linear-gradient(160deg, #fffdf8, #faf4e6);
-  --gradient-text: linear-gradient(120deg, #14523f, #8a6a1e);
-  --shadow-glow: 0 15px 40px -18px rgb(23 96 76 / 22%);
+  --gradient-text: linear-gradient(120deg, #2b2417, #8a6a1e);
+  --shadow-glow: 0 15px 40px -18px rgb(107 84 32 / 24%);
   --shadow-card: 0 14px 40px -26px rgb(60 50 28 / 28%);
   --shadow-elevated: 0 24px 64px -30px rgb(60 50 28 / 32%);
 
