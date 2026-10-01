@@ -18,6 +18,8 @@ export const Route = createFileRoute("/book-a-demo")({
       { name: "keywords", content: "book fintech demo, fintech platform demo, Mascons demo" },
       { property: "og:title", content: "Book a Fintech Demo — Mascons" },
       { property: "og:description", content: "Real products, real data, real ROI. Book your 45-minute session." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "canonical", href: "https://www.mascons.in/book-a-demo" },

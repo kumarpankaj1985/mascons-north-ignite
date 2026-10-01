@@ -20,9 +20,11 @@ export const Route = createFileRoute("/")({
       { name: "keywords", content: "AI powered fintech as a service, fintech software development company, white label fintech platform, digital wallet provider, card issuing platform, remittance software, banking as a service, BaaS provider, fintech infrastructure, AI fintech solutions" },
       { property: "og:title", content: "Mascons — Technology That Enables the Future of Fintech" },
       { property: "og:description", content: "White-label, launch-ready fintech platforms powered by AI. Wallets, cards, remittance, BaaS and more under your brand." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.mascons.in/" },
+      { rel: "canonical", href: "https://mascons.in/" },
     ],
     scripts: [
       {
@@ -31,8 +33,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Mascons",
-          url: "https://www.mascons.in",
-          logo: "https://www.mascons.in/logo-mascons.png",
+          url: "https://mascons.in",
+          logo: "https://mascons.in/logo-mascons.png",
           description: "AI powered Fintech-as-a-Service company building white-label fintech platforms for banks, NBFCs, and enterprises worldwide.",
           sameAs: [],
           areaServed: "Worldwide",
@@ -44,7 +46,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: "Mascons",
-          url: "https://www.mascons.in",
+          url: "https://mascons.in",
         }),
       },
     ],

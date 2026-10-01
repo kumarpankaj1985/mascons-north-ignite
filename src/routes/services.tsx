@@ -23,6 +23,8 @@ export const Route = createFileRoute("/services")({
       { name: "keywords", content: "fintech software development, white label digital wallet, card management platform, card issuing software, remittance software, cross border payments platform, branchless banking, banking as a service, BaaS, corporate expense management software, fintech platform provider, payment gateway development, AI rewards loyalty platform, loan origination system, loan management system, HRMS software, AI HRMS, expense management software, merchant acquiring platform, digital wallet merchant acquiring, UPI merchant acquiring, QR payments, POS payment platform" },
       { property: "og:title", content: "Fintech-as-a-Service — White-Label Wallets, Cards, Remittance | Mascons" },
       { property: "og:description", content: "Launch-ready, compliance-aware fintech platforms under your brand. Wallets, cards, remittance, BaaS, AI rewards & loyalty, loan management, AI HRMS, and merchant acquiring for digital wallet and UPI payments." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { rel: "canonical", href: "https://www.mascons.in/services" },
     ],
     links: [
