@@ -152,3 +152,7 @@
   to { transform: translateX(-50%); }
 }
 
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-motion-video { display: none; }
+}

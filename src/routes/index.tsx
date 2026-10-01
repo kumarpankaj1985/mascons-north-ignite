@@ -87,7 +87,8 @@ function HomePage() {
     <div>
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="auto" poster={heroImg} aria-hidden="true">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }} />
+        <video className="hero-motion-video absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="auto" poster={heroImg} aria-hidden="true">
           <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
