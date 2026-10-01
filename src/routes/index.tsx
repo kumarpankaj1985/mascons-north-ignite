@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import heroPoster from "@/assets/coffee-payment-poster.jpg.asset.json";
 import heroVideo from "@/assets/coffee-payment-story-optimized.mp4.asset.json";
+import heroWebm from "@/assets/coffee-payment-story.webm.asset.json";
 import fintechPillar from "@/assets/merchant-wallet-transaction.jpg";
 import platformPhoto from "@/assets/payment-infrastructure-wallet.jpg";
 import teamCollab from "@/assets/cross-border-people.jpg";
@@ -88,6 +89,7 @@ function HomePage() {
       <section className="relative overflow-hidden bg-gradient-hero">
         <img src={heroPoster.url} alt="" className="absolute inset-x-0 top-0 h-72 w-full object-cover object-[center_50%] md:inset-0 md:h-full md:object-[center_50%]" aria-hidden="true" />
         <video className="hero-motion-video absolute inset-x-0 top-0 h-72 w-full object-cover object-[center_50%] md:inset-0 md:h-full md:object-[center_50%]" autoPlay muted loop playsInline preload="auto" poster={heroPoster.url} aria-hidden="true">
+          <source src={heroWebm.url} type="video/webm" />
           <source src={heroVideo.url} type="video/mp4" />
         </video>
         <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-transparent via-transparent to-background md:inset-0 md:h-full md:bg-gradient-to-r md:from-background/95 md:via-background/75 md:to-transparent" />
