@@ -28,7 +28,7 @@ export function SiteFooter() {
           <div>
             <h4 className="text-sm font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
-              <li><Link to="/services" className="hover:text-foreground">Fintech Platforms</Link></li>
+              <li><Link to="/services" className="hover:text-foreground">Explore Solutions</Link></li>
               <li><Link to="/services" className="hover:text-foreground">Banking as a Service</Link></li>
             </ul>
           </div>
