@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
-import pankajPhoto from "@/assets/pankaj-kumar.jpg";
+import pankajPhotoAsset from "@/assets/pankaj-kumar.jpg.asset.json";
 import gauravPhoto from "@/assets/gaurav-gupta.png";
 import abhayPhoto from "@/assets/abhay-desai.avif";
 import fintechHero from "@/assets/fintech-global-team.jpg";
@@ -37,7 +37,7 @@ const leadership = [
   {
     name: "Pankaj Kumar",
     role: "Co-Founder",
-    image: pankajPhoto,
+    image: pankajPhotoAsset.url,
     desc: "Pankaj drives Mascons' fintech vision, global growth strategy, and alliance partnerships. With deep expertise in identifying market opportunities, building strategic relationships, and scaling sales across geographies, he has been instrumental in expanding Mascons' footprint with deployments in 12+ countries.",
   },
   {
