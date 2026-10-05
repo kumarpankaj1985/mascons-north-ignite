@@ -37,7 +37,7 @@ const leadership = [
   {
     name: "Pankaj Kumar",
     role: "Co-Founder",
-    image: pankajPhoto,
+    image: pankajPhotoAsset.url,
     desc: "Pankaj drives Mascons' fintech vision, global growth strategy, and alliance partnerships. With deep expertise in identifying market opportunities, building strategic relationships, and scaling sales across geographies, he has been instrumental in expanding Mascons' footprint with deployments in 12+ countries.",
   },
   {
