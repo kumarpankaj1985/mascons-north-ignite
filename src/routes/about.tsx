@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
-import pankajPhoto from "@/assets/pankaj-kumar.jpg";
+import pankajPhotoAsset from "@/assets/pankaj-kumar.jpg.asset.json";
 import gauravPhoto from "@/assets/gaurav-gupta.png";
 import abhayPhoto from "@/assets/abhay-desai.avif";
 import fintechHero from "@/assets/fintech-global-team.jpg";
