@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Target, Heart, Sparkles, Globe2, MapPin, Users } from "lucide-react";
 import pankajPhotoAsset from "@/assets/pankaj-kumar.jpg.asset.json";
 import gauravPhoto from "@/assets/gaurav-gupta.png";
-import abhayPhoto from "@/assets/abhay-desai.avif";
 import fintechHero from "@/assets/fintech-global-team.jpg";
 import remittanceGlobe from "@/assets/global-payments-team.jpg";
 
@@ -12,7 +11,7 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About Mascons — Global Fintech Technology" },
       { name: "description", content: "Mascons builds global fintech software for digital wallets, card platforms, remittance and modern banking. Meet the team." },
-      { name: "keywords", content: "Mascons, fintech company, financial technology company, Pankaj Kumar, Gaurav Gupta, Abhay Desai, fintech founders, fintech leaders" },
+      { name: "keywords", content: "Mascons, fintech company, financial technology company, Pankaj Kumar, Gaurav Gupta, fintech founders, fintech leaders" },
       { property: "og:title", content: "About Mascons — Global Fintech Technology" },
       { property: "og:description", content: "Fintech platforms built for real-world use. Meet the leadership behind Mascons." },
       { property: "og:type", content: "website" },
@@ -45,12 +44,6 @@ const leadership = [
     role: "Co-Founder",
     image: gauravPhoto,
     desc: "Gaurav leads Mascons' product architecture, engineering strategy, and platform design. With a strong focus on building scalable, secure, and production-ready fintech platforms, he oversees the end-to-end product lifecycle — from concept to launch.",
-  },
-  {
-    name: "Abhay Desai",
-    role: "Chief Product Officer",
-    image: abhayPhoto,
-    desc: "Abhay leads product strategy, roadmap, and user experience across all Mascons platforms. With a keen eye for market trends and deep customer empathy, he ensures every product delivers real business value and exceptional usability.",
   },
 ];
 
@@ -107,7 +100,7 @@ function AboutPage() {
             <p className="text-sm font-semibold text-accent uppercase tracking-widest">Leadership</p>
             <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">Meet our <span className="text-gradient-brand">team</span></h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {leadership.map((l) => (
               <div key={l.name} className="glass-card rounded-2xl p-6 text-center hover:shadow-glow transition-all">
                 <div className="mx-auto mb-5 h-32 w-32 overflow-hidden rounded-full border-2 border-accent/40 bg-background shadow-card">
