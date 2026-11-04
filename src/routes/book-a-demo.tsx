@@ -152,7 +152,7 @@ function BookDemoPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone">Mobile number</Label>
-                <Input id="phone" name="phone" type="tel" inputMode="tel" maxLength={20} placeholder="+91 70226 20747" />
+                <Input id="phone" name="phone" type="tel" inputMode="tel" maxLength={20} placeholder="+91 98765 43210" />
                 <p className="text-xs text-muted-foreground">Optional — we'll use it only to call you back.</p>
               </div>
               <div className="space-y-2">
