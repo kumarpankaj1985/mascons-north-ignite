@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Mail, MapPin, Clock, Linkedin, Twitter, Youtube, Briefcase, HandshakeIcon } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { submitEnquiry } from "@/lib/submit-enquiry";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -39,6 +39,7 @@ function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submitting) return;
     setSubmitting(true);
     const form = e.target as HTMLFormElement;
     const fd = new FormData(form);
@@ -49,14 +50,15 @@ function ContactPage() {
       subject: String(fd.get("cSubject") || "").trim(),
       message: String(fd.get("cMessage") || "").trim(),
     };
-    const { error } = await supabase.from("contact_submissions").insert(payload);
-    setSubmitting(false);
-    if (error) {
-      toast.error("Could not send message", { description: "Please try again or email support@mascons.in" });
-      return;
+    try {
+      await submitEnquiry("contact", payload);
+      form.reset();
+      toast.success("Message sent!", { description: "We'll respond within 4 business hours." });
+    } catch (error) {
+      toast.error("Could not send message", { description: error instanceof Error ? error.message : "Please try again or email support@mascons.in" });
+    } finally {
+      setSubmitting(false);
     }
-    form.reset();
-    toast.success("Message sent!", { description: "We'll respond within 4 business hours." });
   };
 
   return (
@@ -144,24 +146,24 @@ function ContactPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="cName">Full name</Label>
-                <Input id="cName" name="cName" required placeholder="Your name" />
+                <Input id="cName" name="cName" maxLength={100} required placeholder="Your name" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="cCompany">Company</Label>
-                <Input id="cCompany" name="cCompany" placeholder="Company (optional)" />
+                <Input id="cCompany" name="cCompany" maxLength={200} placeholder="Company (optional)" />
               </div>
             </div>
             <div className="space-y-2">
               <Label htmlFor="cEmail">Email</Label>
-              <Input id="cEmail" name="cEmail" type="email" required placeholder="you@company.com" />
+              <Input id="cEmail" name="cEmail" type="email" maxLength={254} required placeholder="you@company.com" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="cSubject">Subject</Label>
-              <Input id="cSubject" name="cSubject" required placeholder="How can we help?" />
+              <Input id="cSubject" name="cSubject" maxLength={200} required placeholder="How can we help?" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="cMessage">Message</Label>
-              <Textarea id="cMessage" name="cMessage" rows={5} required placeholder="Tell us a bit more..." />
+              <Textarea id="cMessage" name="cMessage" rows={5} maxLength={5000} required placeholder="Tell us a bit more..." />
             </div>
             <Button type="submit" variant="hero" size="lg" className="w-full" disabled={submitting}>
               {submitting ? "Sending..." : "Send Message"}

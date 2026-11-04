@@ -14,6 +14,9 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ApiPublicEnquiriesContactRouteImport } from './routes/api/public/enquiries/contact'
+import { Route as ApiPublicEnquiriesDemoRouteImport } from './routes/api/public/enquiries/demo'
+import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,6 +43,23 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicEnquiriesContactRoute =
+  ApiPublicEnquiriesContactRouteImport.update({
+    id: '/api/public/enquiries/contact',
+    path: '/api/public/enquiries/contact',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPublicEnquiriesDemoRoute = ApiPublicEnquiriesDemoRouteImport.update({
+  id: '/api/public/enquiries/demo',
+  path: '/api/public/enquiries/demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailTransactionalPreviewRoute =
+  LovableEmailTransactionalPreviewRouteImport.update({
+    id: '/lovable/email/transactional/preview',
+    path: '/lovable/email/transactional/preview',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +67,9 @@ export interface FileRoutesByFullPath {
   '/book-a-demo': typeof BookADemoRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
+  '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
+  '/api/public/enquiries/demo': typeof ApiPublicEnquiriesDemoRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +77,9 @@ export interface FileRoutesByTo {
   '/book-a-demo': typeof BookADemoRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
+  '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
+  '/api/public/enquiries/demo': typeof ApiPublicEnquiriesDemoRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +88,41 @@ export interface FileRoutesById {
   '/book-a-demo': typeof BookADemoRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
+  '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
+  '/api/public/enquiries/demo': typeof ApiPublicEnquiriesDemoRoute
+  '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/book-a-demo' | '/contact' | '/services'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/book-a-demo'
+    | '/contact'
+    | '/services'
+    | '/api/public/enquiries/contact'
+    | '/api/public/enquiries/demo'
+    | '/lovable/email/transactional/preview'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/book-a-demo' | '/contact' | '/services'
-  id: '__root__' | '/' | '/about' | '/book-a-demo' | '/contact' | '/services'
+  to:
+    | '/'
+    | '/about'
+    | '/book-a-demo'
+    | '/contact'
+    | '/services'
+    | '/api/public/enquiries/contact'
+    | '/api/public/enquiries/demo'
+    | '/lovable/email/transactional/preview'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/book-a-demo'
+    | '/contact'
+    | '/services'
+    | '/api/public/enquiries/contact'
+    | '/api/public/enquiries/demo'
+    | '/lovable/email/transactional/preview'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,6 +131,9 @@ export interface RootRouteChildren {
   BookADemoRoute: typeof BookADemoRoute
   ContactRoute: typeof ContactRoute
   ServicesRoute: typeof ServicesRoute
+  ApiPublicEnquiriesContactRoute: typeof ApiPublicEnquiriesContactRoute
+  ApiPublicEnquiriesDemoRoute: typeof ApiPublicEnquiriesDemoRoute
+  LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -116,6 +173,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/enquiries/contact': {
+      id: '/api/public/enquiries/contact'
+      path: '/api/public/enquiries/contact'
+      fullPath: '/api/public/enquiries/contact'
+      preLoaderRoute: typeof ApiPublicEnquiriesContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/enquiries/demo': {
+      id: '/api/public/enquiries/demo'
+      path: '/api/public/enquiries/demo'
+      fullPath: '/api/public/enquiries/demo'
+      preLoaderRoute: typeof ApiPublicEnquiriesDemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/transactional/preview': {
+      id: '/lovable/email/transactional/preview'
+      path: '/lovable/email/transactional/preview'
+      fullPath: '/lovable/email/transactional/preview'
+      preLoaderRoute: typeof LovableEmailTransactionalPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -125,6 +203,9 @@ const rootRouteChildren: RootRouteChildren = {
   BookADemoRoute: BookADemoRoute,
   ContactRoute: ContactRoute,
   ServicesRoute: ServicesRoute,
+  ApiPublicEnquiriesContactRoute: ApiPublicEnquiriesContactRoute,
+  ApiPublicEnquiriesDemoRoute: ApiPublicEnquiriesDemoRoute,
+  LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
