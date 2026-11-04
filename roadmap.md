@@ -22,5 +22,5 @@
 - [x] Set up the managed email infrastructure for notify.mascons.in
 - [x] Notify pankaj@mascons.in and gaurav@mascons.in after Book a Demo submissions using MYNTPE’s method
 - [x] Connect Contact Us owner notifications using the same delivery method
-- [ ] Verify both enquiry forms save successfully through the website
+- [x] Verify both enquiry forms save successfully through the website
 - [ ] Verify email delivery — blocked until notify.mascons.in DNS verification completes
