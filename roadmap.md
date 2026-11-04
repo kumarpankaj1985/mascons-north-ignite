@@ -19,3 +19,4 @@
 - [x] Add Loyalty & Rewards Platform and Payment Gateway with the supplied imagery while preserving existing products
 - [x] Replace the home background clip with a three-beat café payment story and keep the POS moment visible behind readable text
 - [x] Remove Abhay Desai from the About page team section and publish the site
+- [ ] Email the owner after Contact Us and Book a Demo submissions — awaiting sender-domain setup
