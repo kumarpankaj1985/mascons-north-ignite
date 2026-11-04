@@ -8,7 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { CheckCircle2, Calendar, Phone, Mail, Shield, Clock, Users, Target } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { submitEnquiry } from "@/lib/submit-enquiry";
+import { demoSchema } from "@/lib/enquiry-validation";
 
 export const Route = createFileRoute("/book-a-demo")({
   head: () => ({
@@ -44,6 +45,7 @@ function BookDemoPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submitting) return;
     setSubmitting(true);
     const form = e.target as HTMLFormElement;
     const fd = new FormData(form);
@@ -57,17 +59,20 @@ function BookDemoPage() {
       interest: interest || null,
       goal: String(fd.get("goal") || "").trim() || null,
     };
-    const { error } = await supabase.from("demo_requests").insert(payload);
-    setSubmitting(false);
-    if (error) {
-      toast.error("Could not submit request", { description: "Please try again or email support@mascons.in" });
-      return;
+    try {
+      const validated = demoSchema.safeParse(payload);
+      if (!validated.success) throw new Error("Please check all required fields and message length.");
+      await submitEnquiry("demo", validated.data);
+      form.reset();
+      setCountry(""); setCompanySize(""); setInterest("");
+      toast.success("Demo request received!", {
+        description: "A Mascons expert will reach out within 4 business hours.",
+      });
+    } catch (error) {
+      toast.error("Could not submit request", { description: error instanceof Error ? error.message : "Please try again or email support@mascons.in" });
+    } finally {
+      setSubmitting(false);
     }
-    form.reset();
-    setCountry(""); setCompanySize(""); setInterest("");
-    toast.success("Demo request received!", {
-      description: "A Mascons expert will reach out within 4 business hours.",
-    });
   };
 
   return (
@@ -132,20 +137,20 @@ function BookDemoPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First name</Label>
-                  <Input id="firstName" name="firstName" required placeholder="Jane" />
+                  <Input id="firstName" name="firstName" maxLength={100} required placeholder="Jane" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="lastName">Last name</Label>
-                  <Input id="lastName" name="lastName" required placeholder="Doe" />
+                  <Input id="lastName" name="lastName" maxLength={100} required placeholder="Doe" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Business email</Label>
-                <Input id="email" name="email" type="email" required placeholder="jane@company.com" />
+                <Input id="email" name="email" type="email" maxLength={254} required placeholder="jane@company.com" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="company">Company name</Label>
-                <Input id="company" name="company" required placeholder="Acme Inc." />
+                <Input id="company" name="company" maxLength={200} required placeholder="Acme Inc." />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -188,7 +193,7 @@ function BookDemoPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="goal">Tell us briefly about your challenge or goal</Label>
-                <Textarea id="goal" name="goal" rows={4} placeholder="What are you trying to solve or launch?" />
+                <Textarea id="goal" name="goal" rows={4} maxLength={5000} placeholder="What are you trying to solve or launch?" />
               </div>
               <Button type="submit" variant="hero" size="lg" className="w-full" disabled={submitting}>
                 {submitting ? "Submitting..." : "Book My Demo →"}
