@@ -23,6 +23,8 @@ export async function saveAndNotify(enquiry: Enquiry, store: Store, send: Sender
     ...(enquiry.kind === "demo" ? {
       kind: "demo request",
       name: `${enquiry.data.first_name} ${enquiry.data.last_name}`,
+      phone: enquiry.data.phone || "",
+
       message: enquiry.data.goal || "",
       country: countries[enquiry.data.country || ""] || "",
       companySize: enquiry.data.company_size || "",

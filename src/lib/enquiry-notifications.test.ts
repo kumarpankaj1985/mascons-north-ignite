@@ -6,7 +6,7 @@ import { acceptEnquiryRequest } from "./enquiry-rate-limit";
 
 const demo: Enquiry = { kind: "demo", data: {
   first_name: "Test", last_name: "Visitor", email: "visitor@example.com", company: "Test Company",
-  country: "in", company_size: "11-50", interest: "fintech", goal: "A wallet platform",
+  country: "in", company_size: "11-50", interest: "fintech", goal: "A wallet platform", phone: "+91 70226 20747",
 } };
 const contact: Enquiry = { kind: "contact", data: {
   full_name: "Test Visitor", email: "visitor@example.com", company: "Test Company",
@@ -28,7 +28,7 @@ describe("owner notifications", () => {
     expect(send.mock.calls.map(([, , options]) => options.idempotencyKey)).toEqual([
       "demo-owner-pankaj-submission-123", "demo-owner-gaurav-submission-123",
     ]);
-    expect(send.mock.calls[0][2].templateData).toMatchObject({ name: "Test Visitor", email: "visitor@example.com", country: "India", message: "A wallet platform" });
+    expect(send.mock.calls[0][2].templateData).toMatchObject({ name: "Test Visitor", email: "visitor@example.com", phone: "+91 70226 20747", country: "India", message: "A wallet platform" });
   });
 
   it("also notifies both owners after Contact Us is saved", async () => {
@@ -68,6 +68,16 @@ describe("owner notifications", () => {
     expect(demoSchema.safeParse({ ...demo.data, recipient: "outsider@example.com" }).success).toBe(false);
     expect(contactSchema.safeParse({ ...contact.data, email: "invalid" }).success).toBe(false);
   });
+
+  it("accepts an optional mobile number and rejects unusable ones", () => {
+    expect(demoSchema.safeParse({ ...demo.data, phone: "+91 70226 20747" }).success).toBe(true);
+    expect(demoSchema.safeParse({ ...demo.data, phone: "080-4123 4567" }).success).toBe(true);
+    expect(demoSchema.safeParse({ ...demo.data, phone: null }).success).toBe(true);
+    expect(demoSchema.safeParse({ ...demo.data, phone: "pankaj@example.com" }).success).toBe(false);
+    expect(demoSchema.safeParse({ ...demo.data, phone: "12345" }).success).toBe(false);
+    expect(demoSchema.safeParse({ ...demo.data, phone: "+91 70226 20747 ext 12" }).success).toBe(false);
+  });
+
 
   it("throttles a sixth request within ten minutes and allows requests after expiry", () => {
     const key = "rate-test";
