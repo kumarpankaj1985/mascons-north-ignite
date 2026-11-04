@@ -53,6 +53,8 @@ function BookDemoPage() {
       first_name: String(fd.get("firstName") || "").trim(),
       last_name: String(fd.get("lastName") || "").trim(),
       email: String(fd.get("email") || "").trim(),
+      phone: String(fd.get("phone") || "").trim() || null,
+
       company: String(fd.get("company") || "").trim(),
       country: country || null,
       company_size: companySize || null,
@@ -149,7 +151,13 @@ function BookDemoPage() {
                 <Input id="email" name="email" type="email" maxLength={254} required placeholder="jane@company.com" />
               </div>
               <div className="space-y-2">
+                <Label htmlFor="phone">Mobile number</Label>
+                <Input id="phone" name="phone" type="tel" inputMode="tel" maxLength={20} placeholder="+91 70226 20747" />
+                <p className="text-xs text-muted-foreground">Optional — we'll use it only to call you back.</p>
+              </div>
+              <div className="space-y-2">
                 <Label htmlFor="company">Company name</Label>
+
                 <Input id="company" name="company" maxLength={200} required placeholder="Acme Inc." />
               </div>
               <div className="grid grid-cols-2 gap-4">

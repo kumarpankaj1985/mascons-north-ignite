@@ -5,6 +5,8 @@ interface Props {
   kind?: string;
   name?: string;
   email?: string;
+  phone?: string;
+
   company?: string;
   subject?: string;
   message?: string;
@@ -15,7 +17,7 @@ interface Props {
   submittedAt?: string;
 }
 
-function OwnerEnquiry({ kind = "Enquiry", name = "Not provided", email, company, subject, message,
+function OwnerEnquiry({ kind = "Enquiry", name = "Not provided", email, phone, company, subject, message,
   country, companySize, interest, submissionId, submittedAt }: Props) {
   return (
     <Html lang="en" dir="ltr">
@@ -29,6 +31,8 @@ function OwnerEnquiry({ kind = "Enquiry", name = "Not provided", email, company,
           <Section style={styles.details}>
             <Text><strong>Name:</strong> {name}</Text>
             <Text><strong>Email:</strong> {email ? <Link href={`mailto:${email}`}>{email}</Link> : "Not provided"}</Text>
+            {phone && <Text><strong>Mobile:</strong> {phone}</Text>}
+
             <Text><strong>Company:</strong> {company || "Not provided"}</Text>
             {subject && <Text><strong>Subject:</strong> {subject}</Text>}
             {country && <Text><strong>Country:</strong> {country}</Text>}
