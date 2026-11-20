@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
-import { Mail, MapPin, Clock, Linkedin, Twitter, Youtube, Briefcase, HandshakeIcon } from "lucide-react";
+import { Mail, MapPin, Clock, Linkedin, Briefcase, HandshakeIcon } from "lucide-react";
 import { submitEnquiry } from "@/lib/submit-enquiry";
 
 export const Route = createFileRoute("/contact")({
@@ -135,9 +135,7 @@ function ContactPage() {
             <div>
               <h3 className="text-lg font-semibold mb-3">Follow</h3>
               <div className="flex gap-3">
-                <a href="#" className="p-2 rounded-md bg-surface hover:bg-surface-elevated transition-colors" aria-label="LinkedIn"><Linkedin className="h-4 w-4" /></a>
-                <a href="#" className="p-2 rounded-md bg-surface hover:bg-surface-elevated transition-colors" aria-label="Twitter"><Twitter className="h-4 w-4" /></a>
-                <a href="#" className="p-2 rounded-md bg-surface hover:bg-surface-elevated transition-colors" aria-label="YouTube"><Youtube className="h-4 w-4" /></a>
+                <a href="https://www.linkedin.com/company/100120813/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md bg-surface hover:bg-surface-elevated transition-colors" aria-label="LinkedIn"><Linkedin className="h-4 w-4" /></a>
               </div>
             </div>
           </div>
