@@ -23,4 +23,5 @@
 - [x] Notify pankaj@mascons.in and gaurav@mascons.in after Book a Demo submissions using MYNTPE’s method
 - [x] Connect Contact Us owner notifications using the same delivery method
 - [x] Verify both enquiry forms save successfully through the website
-- [ ] Verify email delivery — blocked until notify.mascons.in DNS verification completes
+- [ ] Verify owner inbox delivery — notify.mascons.in is active; needs an approved labelled test and inbox confirmation
+- [x] Refresh visitor-growth advice against the current live site and saved marketing plan without changing the website
