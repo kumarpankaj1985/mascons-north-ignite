@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
+import { Route as BranchlessBankingRouteImport } from './routes/branchless-banking'
+import { Route as CardManagementSolutionRouteImport } from './routes/card-management-solution'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ApiPublicEnquiriesContactRouteImport } from './routes/api/public/enquiries/contact'
@@ -31,6 +33,16 @@ const AboutRoute = AboutRouteImport.update({
 const BookADemoRoute = BookADemoRouteImport.update({
   id: '/book-a-demo',
   path: '/book-a-demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BranchlessBankingRoute = BranchlessBankingRouteImport.update({
+  id: '/branchless-banking',
+  path: '/branchless-banking',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CardManagementSolutionRoute = CardManagementSolutionRouteImport.update({
+  id: '/card-management-solution',
+  path: '/card-management-solution',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -65,6 +77,8 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/book-a-demo': typeof BookADemoRoute
+  '/branchless-banking': typeof BranchlessBankingRoute
+  '/card-management-solution': typeof CardManagementSolutionRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
   '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
@@ -75,6 +89,8 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/book-a-demo': typeof BookADemoRoute
+  '/branchless-banking': typeof BranchlessBankingRoute
+  '/card-management-solution': typeof CardManagementSolutionRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
   '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
@@ -86,6 +102,8 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/book-a-demo': typeof BookADemoRoute
+  '/branchless-banking': typeof BranchlessBankingRoute
+  '/card-management-solution': typeof CardManagementSolutionRoute
   '/contact': typeof ContactRoute
   '/services': typeof ServicesRoute
   '/api/public/enquiries/contact': typeof ApiPublicEnquiriesContactRoute
@@ -98,6 +116,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/book-a-demo'
+    | '/branchless-banking'
+    | '/card-management-solution'
     | '/contact'
     | '/services'
     | '/api/public/enquiries/contact'
@@ -108,6 +128,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/book-a-demo'
+    | '/branchless-banking'
+    | '/card-management-solution'
     | '/contact'
     | '/services'
     | '/api/public/enquiries/contact'
@@ -118,6 +140,8 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/book-a-demo'
+    | '/branchless-banking'
+    | '/card-management-solution'
     | '/contact'
     | '/services'
     | '/api/public/enquiries/contact'
@@ -129,6 +153,8 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BookADemoRoute: typeof BookADemoRoute
+  BranchlessBankingRoute: typeof BranchlessBankingRoute
+  CardManagementSolutionRoute: typeof CardManagementSolutionRoute
   ContactRoute: typeof ContactRoute
   ServicesRoute: typeof ServicesRoute
   ApiPublicEnquiriesContactRoute: typeof ApiPublicEnquiriesContactRoute
@@ -157,6 +183,20 @@ declare module '@tanstack/react-router' {
       path: '/book-a-demo'
       fullPath: '/book-a-demo'
       preLoaderRoute: typeof BookADemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/branchless-banking': {
+      id: '/branchless-banking'
+      path: '/branchless-banking'
+      fullPath: '/branchless-banking'
+      preLoaderRoute: typeof BranchlessBankingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/card-management-solution': {
+      id: '/card-management-solution'
+      path: '/card-management-solution'
+      fullPath: '/card-management-solution'
+      preLoaderRoute: typeof CardManagementSolutionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -201,6 +241,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BookADemoRoute: BookADemoRoute,
+  BranchlessBankingRoute: BranchlessBankingRoute,
+  CardManagementSolutionRoute: CardManagementSolutionRoute,
   ContactRoute: ContactRoute,
   ServicesRoute: ServicesRoute,
   ApiPublicEnquiriesContactRoute: ApiPublicEnquiriesContactRoute,

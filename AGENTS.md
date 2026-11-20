@@ -5,3 +5,4 @@
 - Store generated hero footage through a Lovable Assets pointer; this keeps large video files out of the repository.
 - Contact and demo submissions use dedicated public server actions that validate, throttle, save first, and send fixed-recipient owner notices through the managed email helper; this protects recipient selection and preserves enquiries if email fails.
 - Keep email rendering server-only and pin entities resolution in Vite; this prevents browser credential exposure and incompatible email-renderer imports.
+- Preserve legacy product URLs with route-level 301 redirects to existing Solutions content, excluded from the static public sitemap; this avoids broken inbound links and duplicate indexed pages.

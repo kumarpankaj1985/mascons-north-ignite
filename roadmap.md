@@ -25,3 +25,6 @@
 - [x] Verify both enquiry forms save successfully through the website
 - [ ] Verify owner inbox delivery — notify.mascons.in is active; needs an approved labelled test and inbox confirmation
 - [x] Refresh visitor-growth advice against the current live site and saved marketing plan without changing the website
+- [x] Permanently redirect the old card and branchless-banking URLs to Solutions
+- [x] Correct robots and sitemap to mascons.in and exclude deleted standalone AI content
+- [x] Verify both redirects, sitemap destinations, and desktop/mobile navigation
